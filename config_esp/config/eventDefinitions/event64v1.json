@@ -1,0 +1,11 @@
+{
+	"event64v1" : {
+		"id": "event64v1",
+		"name": "event64v1",
+		"description": "Recibo pagado de Tarjeta",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+	    "validationRule" : "#{['evento']['detalle']['situacionRecibo'] == '0' && new Float(['evento']['detalle']['importeDeRecibo']) >= 300 && (['evento']['detalle']['codigoConceptoApunte'] != '0000120' && ['evento']['detalle']['codigoConceptoApunte'] != '0000231' && ['evento']['detalle']['codigoConceptoApunte'] != '0000431' && ['evento']['detalle']['codigoConceptoApunte'] != '0000821' && ['evento']['detalle']['codigoConceptoApunte'] != '0000831' && ['evento']['detalle']['codigoConceptoApunte'] != '0000943')}",				
+		"eventFormat" : "xml",
+		"eventTarget" : "crmBatchStream"
+	}
+}

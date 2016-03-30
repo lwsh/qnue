@@ -1,0 +1,135 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SOAP-ENV:Body>
+		<m:verifySync xmlns:m="http://verify.services.verisign.com/">
+			<arg0>
+				<key>ENTRY_MODE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">web</value>
+			</arg0>
+			<arg0>
+				<key>SESSIONID</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.consumerRequestId</value>
+			</arg0>
+			<arg0>
+				<key>USERNAME</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.user</value>
+			</arg0>
+			<arg0>
+				<key>IP</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.H.x-forwarded-for</value>
+			</arg0>
+			<arg0>
+				<key>USERAGENT</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.H.user-agent</value>
+			</arg0>
+			<arg0>
+				<key>LOCALE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.H.accept-language.substring(0,5)</value>
+			</arg0>
+			<arg0>
+				<key>APPLICATION</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.aap</value>
+			</arg0>
+			<arg0>
+				<key>AUTH_FACTOR</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">coord</value>
+			</arg0>
+			<arg0>
+				<key>TYPE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">es_transfer_empresas</value>
+			</arg0>
+			<arg0>
+				<key>SIGNATURE_TYPE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">coord</value>
+			</arg0>
+			<arg0>
+				<key>MOBILE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.phone</value>
+			</arg0>
+			<arg0>
+				<key>SRC_ACCOUNT</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.sender.account.formats.iban.substring(4)</value>
+			</arg0>
+			<arg0>
+				<key>SRC_INSTITUTION_NAME</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.sender.account.formats.iban.substring(4,8)</value>
+			</arg0>
+			<arg0>
+				<key>SRC_INSTITUTION_COUNTRY</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.sender.account.formats.iban.substring(0,2)</value>
+			</arg0>
+			<arg0>
+				<key>SRC_ACCOUNT_OFFICE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.sender.account.formats.iban.substring(8,12)</value>
+			</arg0>
+			<arg0>
+				<key>DST_ACCOUNT</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.receiver.account.formats.iban.substring(4)</value>
+			</arg0>
+			<arg0>
+				<key>DST_INSTITUTION_NAME</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">#if($evento.M.arguments.wireTransfer.receiver.account.formats.iban.length() == 24)$!evento.M.arguments.wireTransfer.receiver.account.formats.iban.substring(4,8)#end</value>
+			</arg0>
+			<arg0>
+				<key>DST_INSTITUTION_COUNTRY</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.receiver.account.formats.iban.substring(0,2)</value>
+			</arg0>
+			<arg0>
+				<key>DST_ACCOUNT_OFFICE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">#if($evento.M.arguments.wireTransfer.receiver.account.formats.iban.length() == 24)$!evento.M.arguments.wireTransfer.receiver.account.formats.iban.substring(8,12)#end</value>
+			</arg0>
+			<arg0>
+				<key>BENEFICIARY_NAME</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.receiver.customer.name $!evento.M.arguments.wireTransfer.receiver.customer.lastName $!evento.M.arguments.wireTransfer.receiver.customer.mothersLastName</value>
+			</arg0>
+			<arg0>
+				<key>TRANSFER_DATE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.timestamp.date</value>
+			</arg0>
+			<arg0>
+				<key>TRANSFER_CATEGORY</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">wire_transfer</value>
+			</arg0>
+			<arg0>
+				<key>TRANSFER_COMMENT</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.description</value>
+			</arg0>
+			<arg0>
+				<key>AMOUNT</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.amount.amount</value>
+			</arg0>
+			<arg0>
+				<key>AMOUNT_ORIG</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.httpStatus</value>
+			</arg0>
+			<arg0>
+				<key>CURRENCY</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.result.grossWireTransferAmount.currency.id</value>
+			</arg0>
+			<arg0>
+				<key>ALERT_MOBILE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></value>
+			</arg0>
+			<arg0>
+				<key>ALERT_EMAIL</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"></value>
+			</arg0>
+			<arg0>
+				<key>TRANSFER_TYPE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.result.operationType.name.toLowerCase()</value>
+			</arg0>
+			<arg0>
+				<key>SRC_VALIDATED_PHONE</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">S</value>
+			</arg0>
+			<arg0>
+				<key>SRC_ACCOUNT_IBAN</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.sender.account.formats.iban</value>
+			</arg0>
+			<arg0>
+				<key>DST_ACCOUNT_IBAN</key>
+				<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">$!evento.M.arguments.wireTransfer.receiver.account.formats.iban</value>
+			</arg0>
+			<arg1>es_bbva_transfer</arg1>
+		</m:verifySync>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,15 @@
+{
+	"event230v1" : {
+		"id": "event230v1",
+		"name": "Aportacion extraordinaria PIAS",
+		"description": "Aportacion extraordinaria PIAS",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"integrado",
+			"produccion"
+		]
+	}
+}

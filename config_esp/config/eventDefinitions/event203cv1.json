@@ -1,0 +1,11 @@
+{
+	"event203cv1" :{
+		"id": "event203cv1",
+		"name": "Reintegro a credito tarjeta de banda anulada",
+		"description": "Reintegro a credito tarjeta de banda anulada",
+		"validationRule" : "#{['evento']['detalle']['cClientSal'].length() > 2 && ['evento']['detalle']['iucSal'].length() > 0 && ['evento']['detalle']['codAccSal'] == '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

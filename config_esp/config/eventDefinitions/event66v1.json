@@ -1,0 +1,11 @@
+{
+	"event66v1" : {
+		"id": "event66v1",
+		"name": "event66v1",
+		"description": "Recibo pagado de Tarjeta",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+	    "validationRule" : "#{['evento']['detalle']['appOrigen'] == 'NCBT'}",				
+		"eventFormat" : "xml",
+		"eventTarget" : "crmOnlineParaleloStream"
+	}
+}

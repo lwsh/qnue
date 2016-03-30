@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:m0="http://request.apx.pg.otma.domain.integration.elara.bbva.com" xmlns:m1="http://common.apx.pg.otma.domain.integration.elara.bbva.com">
+	<SOAP-ENV:Body>
+		<m:serviceOtmaPGApxListenerXml xmlns:m="http://ws.protocol.physical.integration.elara.bbva.com/">
+			<m:arg0>
+				<m0:body>
+					<m0:simpleFieldList>
+						<m1:simpleFieldType>
+							<m1:name>data</m1:name>
+							<m1:value>$jsonString</m1:value>
+						</m1:simpleFieldType>
+					</m0:simpleFieldList>
+				</m0:body>
+				<m0:header>
+					<m0:authorizationCode>012345678</m0:authorizationCode>
+					<m0:authorizationVersion>06</m0:authorizationVersion>
+					<m0:branchCode>$event.header.branch</m0:branchCode>
+					<m0:channelCode>$event.header.channel</m0:channelCode>
+#set($vCliente = 0)#if($event.header.document.length() > 25)#set($vCliente = $event.header.document.length() - 25)#end
+					<m0:clientDocument>$event.header.document.substring($vCliente)</m0:clientDocument>
+    				<m0:clientIdentificationType>$event.header.documentType</m0:clientIdentificationType>
+					<m0:contactIdentifier/>
+					<m0:countryCode>$event.header.countryCode</m0:countryCode>
+					<m0:currencyCode>ZZZ</m0:currencyCode>
+					<m0:entityCode>$event.header.bankCode</m0:entityCode>
+#set($vMedio = 0)#if($event.header.means.length() > 2)#set($vMedio = $event.header.means.length() - 2)#end
+					<m0:environCode>$event.header.means.substring( $vMedio )</m0:environCode>
+					<m0:headerName>QP05</m0:headerName>
+					<m0:ipAddress>0.0.0.0</m0:ipAddress>
+					<m0:languageCode>$event.header.countryCode</m0:languageCode>
+					<m0:logicalTransactionCode>KDCPT006</m0:logicalTransactionCode>
+					<m0:operationDate>$date.format('yyyyMMdd', $event.header.timeGen)</m0:operationDate>
+					<m0:operationTime>$date.format('HHmmss', $event.header.timeGen)</m0:operationTime>
+					<m0:operativeBranchCode>$event.header.branch</m0:operativeBranchCode>
+					<m0:operativeEntityCode>$event.header.bankCode</m0:operativeEntityCode>
+					<m0:productCode>$event.header.service</m0:productCode>
+					<m0:requestId>$date.get('yyyyMMddHHmmss')$random</m0:requestId>
+					<m0:secondaryCurrencyCode/>
+					<m0:serviceId>GEventos</m0:serviceId>
+					<m0:subtypeCode>01</m0:subtypeCode>
+					<m0:typeCode>01</m0:typeCode>
+					<m0:userCode>$event.header.apxUser</m0:userCode>
+					<m0:versionCode>01</m0:versionCode>
+					<m0:workstationCode>ZZZ</m0:workstationCode>
+				</m0:header>
+			</m:arg0>
+		</m:serviceOtmaPGApxListenerXml>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

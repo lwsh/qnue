@@ -1,0 +1,10 @@
+{
+	"eventSMC201400176v1" :{
+		"id": "eventSMC201400176v1",
+		"name": "event SMC201400267 version 1",
+		"description": "event SMC201400267 version 1",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "grantingTicketStream"
+	}
+}

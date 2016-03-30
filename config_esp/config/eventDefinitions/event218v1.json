@@ -1,0 +1,11 @@
+{
+	"event218v1" :{
+		"id": "event218v1",
+		"name": "event 218 version 1",
+		"description": "event 218 version 1",
+		"validationRule" : "#{'1'.equals(['evento']['detalle']['xtiTipoS']) && '08'.equals(['evento']['detalle']['codPushEOutS'])}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

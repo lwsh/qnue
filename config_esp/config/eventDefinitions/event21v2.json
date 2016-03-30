@@ -1,0 +1,11 @@
+{
+	"event21v2" : {
+		"id": "event21v2",
+		"name": "event 21 version 2",
+		"description": "event 21 version 2",				
+		"validationRule" : "#{['evento']['detalle']['impcompra'] >= 100000000 && ['evento']['detalle']['producto'] != '9482'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "MUSTACHE",
+		"eventTarget" : "crmOnlineProductivoStream"
+	}
+}

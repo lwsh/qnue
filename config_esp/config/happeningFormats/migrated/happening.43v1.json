@@ -1,0 +1,50 @@
+{
+   "00000043-01":{
+      "id":"00000043",
+      "version":"01",
+      "name":"00000043 happening format defintion (version 1)",
+      "description":"00000043 happening format defintion (version 1)",
+      "happeningTimestampField":"cabecera.timeRecepSucesoC",
+      "preFormatDefinitions":[
+         "hostHeader_ES"
+      ],
+      "formatDefinition":[
+         {
+            "detalle":[
+               {
+                  "fechaValor":{
+                     "length":10,
+                     "type":"dateTime",
+                	 "format":"yyyy-MM-dd"
+                  }
+               },
+               {
+                  "importeDeRecibo":{
+                     "length":15,
+                     "type":"string"
+                  }
+               },
+               {
+                  "fechaRevisionInteres":{
+                     "length":10,
+                     "type":"dateTime",
+                	 "format":"yyyy-MM-dd"
+                  }
+               },
+               {
+                  "modPago":{
+                     "length":1,
+                     "type":"string"
+                  }
+               },
+               {
+                  "panTarjeta":{
+                     "length":19,
+                     "type":"string"
+                  }
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,11 @@
+{
+	"event211bv2" :{
+		"id": "event211bv2",
+		"name": "Devolucion con tarjeta denegada",
+		"description": "Devolucion con tarjeta denegada",
+		"validationRule" : "#{['evento']['detalle']['xtiCompraAdi'] == 'D' && ['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && T(java.lang.Integer).valueOf(['evento']['detalle']['codRespuesta']) > 99 && ['evento']['detalle']['codRespuesta'] != '900' && ['evento']['detalle']['codRespuesta'] != '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

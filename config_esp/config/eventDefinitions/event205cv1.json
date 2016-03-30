@@ -1,0 +1,11 @@
+{
+	"event205cv1" :{
+		"id": "event205cv1",
+		"name": "Reintegro a credito tarjeta EMV anulada",
+		"description": "Reintegro a credito tarjeta EMV anulada",
+		"validationRule" : "#{['evento']['detalle']['cClienSal'].length() > 2 && ['evento']['detalle']['iucSal'].length() > 0 && ['evento']['detalle']['codAccSal'] == '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

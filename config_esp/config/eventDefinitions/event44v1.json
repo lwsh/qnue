@@ -1,0 +1,11 @@
+{
+	"event44v1" : {
+		"id": "event44v1",
+		"name": "event 44 v1",
+		"description": "event 40 v1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{'BDNO'.equalsIgnoreCase(['evento']['cabecera']['appOrigen'])}",
+		"eventFormat" : "XML",
+		"eventTarget" : "crmOnlineParaleloStream"
+	}
+}

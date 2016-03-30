@@ -1,0 +1,11 @@
+{
+	"event201av1" : {
+		"id": "event201av1",
+		"name": "Reintegro a debito tarjeta de banda autorizada",
+		"description": "Reintegro a debito tarjeta de banda autorizada",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{['evento']['detalle']['cClienSal'].length() > 2 && ['evento']['detalle']['iucSal'].length() > 0 && ((T(java.lang.Integer).valueOf(['evento']['detalle']['codAccSal']) >= 0 && T(java.lang.Integer).valueOf(['evento']['detalle']['codAccSal']) <= 99) || ['evento']['detalle']['codAccSal'] == '900')}",
+		"eventFormat" : "velocity",
+		"eventTarget" : "apx200-Stream"
+	}
+}

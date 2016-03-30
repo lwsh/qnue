@@ -1,0 +1,11 @@
+{
+	"event210v1" :{
+		"id": "event210v1",
+		"name": "event 210 version 1",
+		"description": "event 210 version 1",
+		"validationRule" : "#{false}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "defaultDelivery"
+	}
+}

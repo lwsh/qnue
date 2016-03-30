@@ -1,0 +1,14 @@
+{
+	"event234v1" : {
+		"id": "event234v1",
+		"name": "Envio contratacion multiproducto",
+		"description": "Envio contratacion multiproducto",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"produccion"
+		]
+	}
+}

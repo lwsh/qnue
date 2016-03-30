@@ -1,0 +1,19 @@
+{
+    "00000022-01>>event69v1" : {
+      "id" : "00000022-01>>event69v1",
+      "happeningId" : "00000022-01",
+      "eventId" : "event69v1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;exclude:version;exclude:tipoSuceso;exclude:correlId;exclude:idioma;exclude:correlId;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000006901'}",
+         "evento.cabecera.version" : "#{1}",         
+         "evento.cabecera.tipoEvento" : "#{69}",
+         "evento.cabecera.idioma" : "#{'spa'}",			
+         
+         "evento.detalle.codSesion" : "#{['contexto']['contextoA'] != null ? ['contexto']['contextoA']['idSesion'] : ['contexto']['contextoN']['idSesion']}",
+         "evento.detalle.idiomaApp" : "#{'spa'}",
+         "evento.detalle.densidadPantalla" : "#{'xhdpi'}",
+         "evento.detalle.app" : "#{'BMES'}"
+      }
+   }
+}

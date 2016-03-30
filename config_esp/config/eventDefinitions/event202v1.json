@@ -1,0 +1,11 @@
+{
+	"event202v1" : {
+		"id": "event202v1",
+		"name": "event 202 version 1",
+		"description": "event 42 version 1",
+		"validationRule" : "#{false}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "json",
+		"eventTarget" : "defaultDelivery"
+	}
+}

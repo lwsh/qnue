@@ -1,0 +1,10 @@
+{
+	"event224v3" : {
+		"id": "event224v3",
+		"name": "Puesta en vigor de cuentas personales, fondos de inversión,... v3",
+		"description": "Puesta en vigor de cuentas personales, fondos de inversión, planes de pensiones, comercios, depósitos, préstamos y tarjetas v3",		
+		"eventTimestampField" : "event.header.eventGenerated",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "crmReportingEventQueue"
+	}
+}

@@ -1,0 +1,176 @@
+{
+  "00000021-03": {
+    "id": "00000021",
+    "version": "03",
+    "name": "00000021 happening format defintion (version 3)",
+    "description": "00000021 happening format defintion (version 3)",
+    "happeningTimestampField" : "header.happeningReceived",
+    "executionIdLocation" : "header.happening",
+    "preFormatDefinitions": [
+      "hostHeader"
+    ],
+    "formatDefinition": [
+      {
+        "detail": [
+          {
+            "product": {
+              "length": 4,
+              "type": "string"
+            }
+          },
+          {
+            "operationDate": {
+              "length": 10,
+              "type": "dateTime",
+              "format" : "yyyy-MM-dd"
+            }
+          },
+          {
+            "operationalSign": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "purchaseAmount": {
+              "length": 21,
+              "type": "double"
+            }
+          },
+          {
+            "currencyCode": {
+              "length": 3,
+              "type": "string"
+            }
+          },
+          {
+            "availableSign": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "availableAmount": {
+              "length": 21,
+              "type": "double"
+            }
+          },
+          {
+            "limitSign": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "limitAmount": {
+              "length": 21,
+              "type": "double"
+            }
+          },
+          {
+            "tradeCode": {
+              "length": 15,
+              "type": "string"
+            }
+          },
+          {
+            "tradeName": {
+              "length": 30,
+              "type": "string"
+            }
+          },
+          {
+            "branch": {
+              "length": 4,
+              "type": "string"
+            }
+          },
+          {
+            "location": {
+              "length": 28,
+              "type": "string"
+            }
+          },
+          {
+            "comCountry": {
+              "length": 2,
+              "type": "string"
+            }
+          },
+          {
+            "authorizationNumber": {
+              "length": 6,
+              "type": "string"
+            }
+          },
+          {
+            "cardPANCode": {
+              "length": 19,
+              "type": "string"
+            }
+          },
+          {
+            "creditDebitFlag": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "contractState": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "cardState": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "cardBlock": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "contractBlock": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "paymentMethod": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "operationCode": {
+              "length": 29,
+              "type": "string"
+            }
+          },
+          {
+            "clausesMobileFlag": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+          	"quoteAmount" : {
+          		"length" : 12,
+          		"type" : "string"
+          	}
+          },
+          {
+          	"byTAE" : {
+          		"length" : 8,
+          		"type" : "string"
+          	}
+          }
+        ]
+      }
+    ]
+  }
+}

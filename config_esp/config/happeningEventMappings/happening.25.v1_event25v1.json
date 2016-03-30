@@ -1,0 +1,21 @@
+{
+	"00000025-01>>event25v1": {
+		"id" :"00000025-01>>event25v1",
+		"happeningId" : "00000025-01",
+		"eventId" : "event25v1",
+		
+		"mappings" :{
+			"evento.cabecera" : "cabecera(suceso>correlid;modoSuceso>modoEvento;exclude:timeGen;exclude:version)",
+            "evento.cabecera.timeGen" : "#{new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ssXXX\").parse(['cabecera']['timeGen'])}",
+			"evento.cabecera.tipoEvento" : "#{'00000025'}",
+			"evento.cabecera.version" : "#{'01'}",
+			"evento.cabecera.esbUser" : "#{['propertyResolver'].resolve('env.conf.esb.username')}",
+			"evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000002501'}",			
+			
+			"evento.detalle" : "detalle(exclude:numeroSecuencia)",
+			"evento.detalle.numeroSecuencia" : "#{T(java.lang.Long).valueOf(['detalle']['numeroSecuencia'])}",
+			
+			"evento.contexto" : "contexto"
+		}
+	}
+}

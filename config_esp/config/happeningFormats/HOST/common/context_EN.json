@@ -1,0 +1,51 @@
+{
+  "contextH" : {
+      "id":"contextH",
+      "name":"context H",
+      "description":"context H",
+      "formatDefinition":[
+        {
+          "context":[
+            {
+              "phisicalTransactionCode":{
+                "length":8,
+                "type":"string"
+              }
+            },
+            {
+              "logicalTransactionCode":{
+                "length":8,
+                "type":"string"
+              }
+            },
+            {
+              "operationTypeCode":{
+                "length":2,
+                "type":"string"
+              }
+            },
+            {
+              "subtypeCode":{
+                "length":2,
+                "type":"string"
+              }
+            },
+            {
+              "idPuesto":{
+                "length":10,
+                "type":"string"
+              }
+            },
+            {
+              "phisicalOriginId":{
+                "length":21,
+                "type":"string"
+              }
+            }
+          ]
+        }
+      ],
+      "preFormatDefinitions":[],
+      "postFormatDefinitions":[]
+  }
+}  

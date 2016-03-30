@@ -1,0 +1,10 @@
+{
+	"event408v1" :{
+		"id": "event408v1",
+		"name": "P2P Expiracion 7 dias - solicitud a receptor",
+		"description": "Expiracion periodo de respuesta (7 dias) aviso solicitud a receptor - (PR4)",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx400-Stream"
+	}
+}

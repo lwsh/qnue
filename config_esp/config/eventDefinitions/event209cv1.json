@@ -1,0 +1,11 @@
+{
+	"event209cv1" : {
+		"id": "event209cv1",
+		"name": "Reintegro con tarjeta en cajero ajeno anulado",
+		"description": "Reintegro con tarjeta en cajero ajeno anulado",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && ['evento']['detalle']['codRespuesta'] == '400'}", 
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

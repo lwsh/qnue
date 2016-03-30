@@ -1,0 +1,30 @@
+{
+    "SMC201300739>>eventSMC201300739v1" : {
+      "id" : "SMC201300739>>eventSMC201300739v1",
+      "happeningId" : "SMC201300739",
+      "eventId" : "eventSMC201300739v1",
+      "mappings" : {         
+         "evento.H" : "H",
+         "evento.M" : "M(exclude:arguments)",
+         "evento.M.arguments" : "#{['M']['httpStatus']==200 ? ['M']['arguments'][0] : '-'}",
+         "evento.L" : "L",
+         "evento.timestamp.date" : "timestamp.$date",
+         "aap": "aap",
+		 "evento.user": "user",
+		 "evento.consumerRequestId": "consumerRequestId",
+		 "evento._id": "_id",
+		 "evento.serviceRegistryId": "serviceRegistryId",
+		 "evento.serviceLogicalId": "serviceLogicalId",
+		 "evento.contactId": "contactId",
+		 "evento.callingChannel": "callingChannel",
+		 "evento.accessMedium": "accessMedium",
+		 "evento.productService": "productService",
+		 "evento.country": "country",
+		 "evento.entity": "entity",
+		 "evento.clientIdType": "clientIdType",
+		 "evento.clientId": "clientId",
+		 "evento.applicationUUAA": "applicationUUAA",
+		 "evento.cloneId": "cloneId"
+      }
+   }
+}

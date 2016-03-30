@@ -1,0 +1,14 @@
+{
+    "00000022-01>>event37v1" : {
+      "id" : "00000022-01>>event37v1",
+      "happeningId" : "00000022-01",
+      "eventId" : "event37v1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000003701'}",
+			          
+         "evento.detalle.idSesion" : "contexto.contextoN.idSesion",
+         "evento.detalle.timInicioSesion" : "cabecera.timeGen"
+      }
+   }
+}

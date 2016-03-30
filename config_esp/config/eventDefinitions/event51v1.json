@@ -1,0 +1,11 @@
+{
+	"event51v1" : {
+		"id": "event51v1",
+		"name": "event 51 version 1",
+		"description": "event 51 version 1",
+		"validationRule" : "#{true}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "XML",
+		"eventTarget" : "crmBatchStream"
+	}
+}

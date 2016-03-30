@@ -1,0 +1,32 @@
+{
+    "00000208-02>>event508v2" : {
+      "id" : "00000208-02>>event508v2",
+      "happeningId" : "00000208-02",
+      "eventId" : "event508v2",
+	  "eventUniqueID" : "event_id",
+      "mappings" : {     
+      	 "message_type" : "detalle.codIdenMens",
+      	 "client_id" : "detalle.codCclienAdi",
+      	 "cod_contract.cod_country" : "detalle.codPaisOalfAdi",
+      	 "cod_contract.cod_bank" : "detalle.codEntAlfaAdi",
+      	 "cod_contract.cod_contra" : "detalle.codPgcContrAdi",
+      	 "cod_contract.cod_iuc" : "detalle.codIdContraAdi",
+      	 "client_card" : "#{['detalle']['codBinAdi']+'******'+['detalle']['codPan4Adi']}",
+      	 "operation" : "#{['detalle']['xtiCompraAdi']=='C'?'compra':'devolución'}",
+      	 "transaction_type" : "detalle.xtiTipOper",
+      	 "amount.operation_amount" : "#{['detalle']['impMoTransaEntera']+'.'+['detalle']['impMoTransaDecimal']}",
+      	 "amount.operation_currency" : "detalle.codDivTran",
+      	 "amount.original_amount" : "#{['detalle']['impOperacEntera']+'.'+['detalle']['impOperacDecimal']}",
+      	 "amount.original_currency" : "detalle.codDivisa",
+      	 "operation_timestamp.utc_timestamp" : "#{(new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ss'Z'\")).format((['detalle']['codFecHora']))}",
+      	 "recorded_timestamp.utc_timestamp" : "#{(new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ss'Z'\")).format((['cabecera']['timeGen']))}",
+      	 "recorded_timestamp.utc_offset" : "#{(new java.text.SimpleDateFormat(\"ZZ\")).format((['cabecera']['timeGen']))}",
+      	 "concept" : "detalle.desConcepto",
+      	 "merchant_id" : "detalle.codFuc",
+      	 "fee.amount" : "#{['detalle']['impComisEntera']+'.'+['detalle']['impComisDecimal']}",
+      	 "fee.currency" : "detalle.codDivCom",
+      	 "event_type" : "#{'event508v2'}",
+      	 "event_id" : "#{['cabecera']['suceso']+(new java.text.SimpleDateFormat(\"yyyyMMddHHmmss\")).format((['cabecera']['timeGen']))}"
+      }
+   }
+}

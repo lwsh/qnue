@@ -1,0 +1,11 @@
+{
+	"event69ENAXv1" : {
+		"id": "event69ENAXv1",
+		"name": "Login Banca a distancia (ENAX)",
+		"description": "evento generado al producirse un login en banca a distancia",
+		"validationRule" : "#{['evento']['cabecera']['status'] == 200 && ('0106' == ['evento']['cabecera']['servicio'] || '0107' == ['evento']['cabecera']['servicio'])}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",		
+		"eventFormat" : "json",
+		"eventTarget" : "crmLoginEventQueue"
+	}
+}

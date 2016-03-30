@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SOAPmsg:Envelope xmlns:SOAPmsg="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dc="datos_cabecera" xmlns:ds="datos_servicio" xmlns:t="http://schemas.bbva.com/esb/servicios/mensajes" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope">
+	<SOAPmsg:Header>
+		<dc:bloque_cabecera>
+			<esbUsuario>$evento.cabecera.esbUser</esbUsuario>
+			<esbOficina>$evento.cabecera.oficina</esbOficina>
+			<esbBanco>$evento.cabecera.banco</esbBanco>
+			<esbMedio>$evento.cabecera.medio</esbMedio>
+			<esbCanal>$evento.cabecera.canal</esbCanal>
+			<esbServicio>$evento.cabecera.servicio</esbServicio>
+			<esbPuesto>01</esbPuesto>
+		</dc:bloque_cabecera>
+		<ds:bloque_cabecera>
+			<esbNombreServicio>recibirRespuestaSMS</esbNombreServicio>
+			<esbVersionServicio>1</esbVersionServicio>
+			<esbSistemaOrigen>QTGE</esbSistemaOrigen>
+			<esbIdMensaje>$evento.cabecera.eventoC</esbIdMensaje>
+		</ds:bloque_cabecera>
+	</SOAPmsg:Header>
+	<SOAPmsg:Body>
+		<t:recibirRespuestaSMSPeticion>
+			<t:evento>
+				<t:cabecera>
+					<t:appOrigen>$evento.cabecera.appOrigen</t:appOrigen>
+					<t:tipoEvento>$evento.cabecera.tipoEvento</t:tipoEvento>
+					<t:correlid>$evento.cabecera.correlid</t:correlid>
+					<t:eventoC>$evento.cabecera.eventoC</t:eventoC>
+					<t:canal>$evento.cabecera.canal</t:canal>
+					<t:medio>$evento.cabecera.medio</t:medio>
+					<t:servicio>$evento.cabecera.servicio</t:servicio>
+					<t:version>$evento.cabecera.version</t:version>					
+					<t:timeGen>$date.format('yyyy-MM-dd-HH.mm.ss.000000', $evento.cabecera.timeGen)</t:timeGen>
+					<t:idioma>$evento.cabecera.idioma</t:idioma>
+					<t:fuenteSuceso>$evento.cabecera.fuenteSuceso</t:fuenteSuceso>
+					<t:modoEvento>$evento.cabecera.modoEvento</t:modoEvento>
+				</t:cabecera>
+				<t:detalle>
+					<t:telefonoMovil>$evento.detalle.telefono</t:telefonoMovil>
+#if ($evento.detalle.fechaRespuesta.length()>0)
+					<t:fechaRespuesta>${evento.detalle.fechaRespuesta}-${evento.detalle.horaRespuesta}.000000</t:fechaRespuesta>
+#end
+					<t:contenido>$evento.detalle.respuestaRecibida</t:contenido>
+					<t:codClient>$evento.cabecera.cliente</t:codClient>
+					<t:banco>$evento.cabecera.banco</t:banco>
+					<t:oficina>$evento.cabecera.oficina</t:oficina>
+					<t:noClient>$evento.cabecera.noClient</t:noClient>
+					<t:pais>$evento.cabecera.pais</t:pais>
+					<t:tipoCliente>$evento.cabecera.tipoCliente</t:tipoCliente>
+					<t:codigoCampaniaSinf>$evento.detalle.codigoCampania</t:codigoCampaniaSinf>
+					<t:codigoRespuesta>$evento.detalle.tipoRespuesta</t:codigoRespuesta>
+					<t:origenCampania>$evento.detalle.origenCampania</t:origenCampania>
+#if ($evento.detalle.fechaRespuesta.length() > 0)
+					<t:numeroSecuencia>$evento.detalle.numeroSecuencia</t:numeroSecuencia>
+#end					
+					<t:caso>$evento.detalle.caso</t:caso>
+				</t:detalle>
+			</t:evento>
+		</t:recibirRespuestaSMSPeticion>
+	</SOAPmsg:Body>
+</SOAPmsg:Envelope>

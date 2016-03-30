@@ -1,0 +1,38 @@
+{
+   "00000409-01":{
+      "id":"00000409",
+      "version":"01",
+      "name":"Cliente pasa a estar operativo",
+      "description":"Tras alta de cliente en la Net, se ha desbloqueado la cuenta",
+      "happeningTimestampField":"header.happeningReceived",
+      "executionIdLocation":"header.happening",
+      "type":"FRAME",
+      "preFormatDefinitions":[
+         "hostHeader"
+      ],
+      "formatDefinition":[
+         {
+            "detail":[
+               {
+                  "countryCode":{
+                     "length":2,
+                     "type":"string"
+                  }
+               },
+               {
+                  "bankCode":{
+                     "length":4,
+                     "type":"string"
+                  }
+               },
+               {
+                  "clientCode":{
+                     "length":9,
+                     "type":"string"
+                  }
+               }
+            ]
+         }
+      ]
+   }
+}

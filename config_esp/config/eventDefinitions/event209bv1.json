@@ -1,0 +1,11 @@
+{
+	"event209bv1" : {
+		"id": "event209bv1",
+		"name": "Reintegro con tarjeta en cajero ajeno denegado",
+		"description": "Reintegro con tarjeta en cajero ajeno denegado",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && T(java.lang.Integer).valueOf(['evento']['detalle']['codRespuesta']) > 99 && ['evento']['detalle']['codRespuesta'] != '900' && ['evento']['detalle']['codRespuesta'] != '400'}", 
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

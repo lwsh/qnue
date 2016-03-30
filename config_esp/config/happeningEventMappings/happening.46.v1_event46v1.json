@@ -1,0 +1,36 @@
+{
+   "00000046-01>>event46v1" : {
+      "id" : "00000046-01>>event46v1",
+      "happeningId" : "00000046-01",
+      "eventId" : "event46v1",
+      "mappings" : {
+		"evento.cabecera" : "cabecera(suceso>correlid;exclude:tipoSuceso;modoSuceso>modoEvento;exclude:version)",
+		"evento.cabecera.tipoEvento" : "#{'00000046'}",
+		"evento.cabecera.version" : "#{'01'}",         
+		"evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000004601'}",         
+         
+		"evento.detalle.contrapartida": "detalle.contrapartida",
+		"evento.detalle.folio": "detalle.folio",
+		"evento.detalle.cdepen": "detalle.cdepen",
+		"evento.detalle.codContrato": "#{['detalle']['contrapartida'] + ['detalle']['folio'] + ['detalle']['cdepen']}",
+		"evento.detalle.panTarjeta": "detalle.numeroTarjeta",
+		"evento.detalle.fechaAltaPan": "detalle.fechaAlta",
+		"evento.detalle.limiteContrato": "detalle.limiteCreditoContrato",
+		"evento.detalle.crFacturacion": "detalle.indFacturacion",
+		"evento.detalle.crPagaCuota": "detalle.indPagoCuota",
+		"evento.detalle.crPoseeTarjetaDebito": "detalle.indTarjtaDebito",
+		"evento.detalle.desMotivoCancelacion": "detalle.desMotivoCancelacion",
+		"evento.detalle.codigoOficinaCargo": "#{['detalle']['cuentaCargo'].length() > 7 ? ['detalle']['cuentaCargo'].substring(4,8) : ''}",
+		"evento.detalle.codigoDcCargo": "#{['detalle']['cuentaCargo'].length() > 9 ? ['detalle']['cuentaCargo'].substring(8,10) : ''}", 
+		"evento.detalle.codigoCuentaCargo": "#{['detalle']['cuentaCargo'].length() > 7 ? ['detalle']['cuentaCargo'].substring(10,20) : ''}",
+		"evento.detalle.desProducto": "detalle.desProducto",
+		"evento.detalle.ccc": "detalle.cuentaCargo",
+		"evento.detalle.desModalidadPago": "detalle.desModalidadPago",
+		"evento.detalle.validacionCuenta": "detalle.indCuentaCargoCancelada",
+		"evento.detalle.hermesComp": "detalle.indHermes",
+		"evento.detalle.telefono1": "detalle.telefonoUno",
+		"evento.detalle.telefono2": "detalle.telefonoDos",
+		"evento.detalle.fechaNacimiento": "detalle.fechaNacimiento"
+      }
+   }
+}

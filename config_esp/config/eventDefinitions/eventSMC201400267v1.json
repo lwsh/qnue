@@ -1,0 +1,11 @@
+{
+	"eventSMC201400267v1" :{
+		"id": "eventSMC201400267v1",
+		"name": "event SMC201400267 version 1",
+		"description": "event SMC201400267 version 1",
+		"validationRule" : "#{T(java.lang.Integer).valueOf(['evento']['M']['httpStatus']) == 200}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "grantingTicketStream"
+	}
+}

@@ -1,0 +1,13 @@
+{
+   "00000229-03>>event229v3" : {
+      "id" : "00000229-03>>event229v3",
+      "happeningId" : "00000229-03",
+      "eventId" : "event229v3",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000022903'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.crm.username')}",
+         "evento.detalle" : "detalle"
+     }
+   }
+}

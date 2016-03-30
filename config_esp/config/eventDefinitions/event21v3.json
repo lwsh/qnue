@@ -1,0 +1,11 @@
+{
+	"event21v3" : {
+		"id": "event21v3",
+		"name": "event 21 version 3",
+		"description": "event 21 version 3",		
+		"validationRule" : "#{['event']['detail']['purchaseAmount'] >= 100000000 && ['event']['detail']['product'] != '9482'}",
+		"eventTimestampField" : "event.header.eventGenerated",
+		"eventFormat" : "json",
+		"eventTarget" : "crmShoppingEventQueue"
+	}
+}

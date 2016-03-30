@@ -1,0 +1,11 @@
+{
+    "SMC201400176" : {
+	    "id":"SMC201400176",
+	    "version":"01",
+	    "name":"SucesoSMC201400176v01",
+	    "description":"Detalle de suceso SMC201400176 v01",
+	    "executionIdLocation" : "_id",
+        "happeningTimestampField":"evento.cabecera.timeGenSuceso",
+        "type": "service json"
+    }
+}

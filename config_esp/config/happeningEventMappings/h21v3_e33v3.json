@@ -1,0 +1,13 @@
+{
+	"00000021-03>>event33v3" : {
+      "id" : "00000021-03>>event33v3",
+      "happeningId" : "00000021-03",
+      "eventId" : "event33v3",
+      "mappings" : {
+         "event.header" : "header(happening>correlid;happeningMode>eventMode)",
+         "event.header.eventId" : "#{T(java.util.UUID).randomUUID()}",
+         "event.header.eventType" : "#{'00000033'}",
+         "event.detail" : "detail"
+      }
+   }
+}

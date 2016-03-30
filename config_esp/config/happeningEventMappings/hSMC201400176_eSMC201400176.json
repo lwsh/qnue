@@ -1,0 +1,30 @@
+{
+    "SMC201400176>>eventSMC201400176v1" : {
+      "id" : "SMC201400176>>eventSMC201400176v1",
+      "happeningId" : "SMC201400176",
+      "eventId" : "eventSMC201400176v1",
+      "mappings" : {    
+      	 "evento.A" : "A",     
+      	 "evento.prueba" : "#{['A'][0]}",   
+         "evento.H" : "H",
+         "evento.M" : "M(exclude:arguments)",
+         "evento.M.arguments" : "#{['M']['arguments'][0]}",
+         "evento.aap": "aap",
+		 "evento.user": "user",
+		 "evento.consumerRequestId": "consumerRequestId",
+		 "evento._id": "_id",
+		 "evento.serviceRegistryId": "serviceRegistryId",
+		 "evento.serviceLogicalId": "serviceLogicalId",
+		 "evento.contactId": "contactId",
+		 "evento.callingChannel": "callingChannel",
+		 "evento.accessMedium": "accessMedium",
+		 "evento.productService": "productService",
+		 "evento.clientIdType": "clientIdType",
+		 "evento.clientId": "clientId",
+		 "evento.applicationUUAA": "applicationUUAA",
+		 "evento.cloneId": "cloneId",
+		 "evento.phone": "#{(['M']['arguments'][0]['wireTransfer']['sender']['customer']['id'] == null) ? '' : ['customersEnricher'].getPhone(['M']['arguments'][0]['wireTransfer']['sender']['customer'], ['A'][2]['object'])}",
+		 "evento.timestamp.date" : "#{new java.text.SimpleDateFormat(\"yyyy-MM-dd' 'hh:mm:ss.S\").format(new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\").parse(['timestamp']['$date']))}"
+      }
+   }
+}

@@ -1,0 +1,8 @@
+{
+  "00000200-01" : {
+    "id":"00000200",
+    "version":"01",    
+    "type":"HOST_TRANSACTION_CONTENT",
+    "discard" : true
+  }
+}

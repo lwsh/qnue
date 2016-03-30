@@ -1,0 +1,11 @@
+{
+	"event208v1" :{
+		"id": "event208v1",
+		"name": "event 208 version 1",
+		"description": "event 208 version 1",
+		"validationRule" : "#{['evento']['detalle']['xtiCompraAdi'] == 'C' && ['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

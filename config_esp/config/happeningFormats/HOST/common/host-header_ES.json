@@ -1,0 +1,14 @@
+{
+  "hostHeader_ES" : {
+      "id":"hostHeader_ES",
+      "name":"Header(ES)",
+      "description":"Spanish header",
+      "type":"HOST_TRANSACTION_HEADER",
+      "happeningSourceIds":[
+      ],
+      "preFormatDefinitions": [
+      	"cabecera", "contextoH"
+      ],
+	  "formatDefinition" : []      
+	}
+}

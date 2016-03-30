@@ -1,0 +1,10 @@
+{
+	"event23v1" : {
+		"id": "event23v1",
+		"name": "evento 00000023 version 01",
+		"description": "evento 00000023 version 01",		
+		"eventTimestampField" : "evento.cabecera.timeGenEventoC",
+		"eventFormat" : "mustache",
+		"eventTarget" : "gucOnlineMQ"
+	}
+}

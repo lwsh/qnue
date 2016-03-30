@@ -1,0 +1,16 @@
+{
+	"event508v2" :{
+		"id": "event508v2",
+		"name": "Compra con tarjeta",
+		"description": "Compra con tarjeta",
+		"eventTimestampField" : "timeGenEvent",
+		"validationRule" : "#{['operation'] == 'compra'}",
+		"eventFormat" : "JSON",
+		"eventTarget" : "openPlatformDelivery",
+		
+		"discardedIn": 
+		[
+			"produccion"
+		]
+	}
+}

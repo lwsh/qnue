@@ -1,0 +1,12 @@
+{
+   "00000063-01>>event63v1" : {
+      "id" : "00000063-01>>event63v1",
+      "happeningId" : "00000063-01",
+      "eventId" : "event63v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento;timeRecepSucesoC>timeRecepSucesoC;timeRecepSucesoC>timeGenEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000006301'}",
+         "evento.detalle" : "detalle"
+      }
+   }
+}

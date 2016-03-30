@@ -1,0 +1,11 @@
+{
+	"event22v1" : {
+		"id": "event22v1",
+		"name": "event 22 v1",
+		"description": "event 22 v1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{'BDNT'.equalsIgnoreCase(['evento']['cabecera']['appOrigen']) || 'KQOF'.equalsIgnoreCase(['evento']['cabecera']['appOrigen'])}",
+		"eventFormat" : "XML",
+		"eventTarget" : "crmOnlineParaleloStream"
+	}
+}

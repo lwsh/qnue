@@ -1,0 +1,11 @@
+{
+	"event65v1" : {
+		"id": "event65v1",
+		"name": "event65v1",
+		"description": "Recibo pagado de Tarjeta",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+	    "validationRule" : "#{['evento']['detalle']['situacionRecibo'] == '1'}",		
+		"eventFormat" : "xml",
+		"eventTarget" : "crmBatchStream"
+	}
+}

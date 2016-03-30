@@ -1,0 +1,37 @@
+{
+  "00000040-01" : {
+    "id" : "00000040",
+    "version" : "01",
+    "name" : "00000040 happening format defintion",
+    "description" : "00000040 happening format defintion",
+    "happeningTimestampField":"cabecera.timeRecepSucesoC",
+    "type" : "HOST_TRANSACTION_CONTENT",
+    "preFormatDefinitions" : [ "hostHeader_ES" ],
+    "formatDefinition": [
+      {
+        "detalle": [
+          {
+            "fechaValor": {
+              "length": 10,
+              "type": "timestamp",
+              "format" : "yyyy-MM-dd"
+            }
+          },
+          {
+            "importeDeRecibo": {
+              "length": 15,
+              "type": "double"
+            }
+          },
+          {
+            "fechaRevisionInteres": {
+              "length": 10,
+              "type": "timestamp",
+              "format" : "yyyy-MM-dd"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

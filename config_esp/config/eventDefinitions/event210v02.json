@@ -1,0 +1,11 @@
+{
+	"event210v02" :{
+		"id": "event210v02",
+		"name": "event 210 version 2",
+		"description": "event 210 version 2",
+		"validationRule" : "#{true}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "json",
+		"eventTarget" : "crmLoginEventQueue"
+	}
+}

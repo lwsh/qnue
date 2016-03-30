@@ -1,0 +1,46 @@
+{
+    "SMC201400392>>event69ENAXv1" : {
+      "id" : "SMC201400392>>event69ENAXv1",
+      "happeningId" : "SMC201400392",
+      "eventId" : "event69ENAXv1",
+      "mappings" : {         
+		"evento.cabecera.status" : "M.httpStatus",
+		"evento.cabecera.version":"#{2}",
+		"evento.cabecera.tipoEvento" : "#{69}",
+		"evento.cabecera.eventoC": "#{['_id'] + T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(5)}",
+		"evento.cabecera.banco":"entity",
+		"evento.cabecera.tipoCliente":"clientIdType",
+		"evento.cabecera.cliente":"clientId",
+		"evento.cabecera.pais":"country",
+		"evento.cabecera.noClient":"#{'????'}",
+		"evento.cabecera.canal":"callingChannel",
+		"evento.cabecera.medio":"accessMedium",
+		"evento.cabecera.servicio":"productService",
+		"evento.cabecera.fuenteSuceso":"#{'services'}",
+		"evento.cabecera.oficina":"M.result.customer.branch",
+		"evento.cabecera.timeGen":"timestamp.$date",
+		"evento.cabecera.correlid":"_id",
+		"evento.cabecera.appOrigen":"applicationUUAA",
+		"evento.cabecera.modoEvento":"#{'O'}",
+		"evento.cabecera.timeGenSuceso" : "timeGenSuceso",
+		
+		"evento.detalle.sessionId":"consumerRequestId",
+		"evento.detalle.banco":"entity",
+		"evento.detalle.pais":"country",
+		"evento.detalle.idioma":"H.accept-language",
+		"evento.detalle.canal":"callingChannel",
+		"evento.detalle.medio":"accessMedium",
+
+		"evento.detalle.uid" : "#{['H']['Bbva-user-agent'].split(';')[0]}",
+		"evento.detalle.plataforma" : "#{['H']['Bbva-user-agent'].split(';')[1]}",
+		"evento.detalle.fabricante" : "#{['H']['Bbva-user-agent'].split(';')[2]}",
+		"evento.detalle.modelo" : "#{['H']['Bbva-user-agent'].split(';')[3]}",
+		"evento.detalle.resolucionPantalla" : "#{['H']['Bbva-user-agent'].split(';')[4]}",
+		"evento.detalle.sistemaOperativo" : "#{['H']['Bbva-user-agent'].split(';')[5]}",
+		"evento.detalle.versionSistemaOperativo" : "#{['H']['Bbva-user-agent'].split(';')[6]}",
+		"evento.detalle.app" : "#{['H']['Bbva-user-agent'].split(';')[7]}",
+		"evento.detalle.versionApp" : "#{['H']['Bbva-user-agent'].split(';')[8]}",
+		"evento.detalle.densidad" : "#{['H']['Bbva-user-agent'].split(';')[9]}"			
+      }
+   }
+}

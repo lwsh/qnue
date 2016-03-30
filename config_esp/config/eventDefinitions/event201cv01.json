@@ -1,0 +1,11 @@
+{
+	"event201cv1" : {
+		"id": "event201cv1",
+		"name": "Reintegro a débito tarjeta de banda anulada",
+		"description": "Reintegro a débito tarjeta de banda anulada",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{['evento']['detalle']['cClienSal'].length() > 2 && ['evento']['detalle']['iucSal'].length() > 0 && ['evento']['detalle']['codAccSal'] == '400'}",
+		"eventFormat" : "velocity",
+		"eventTarget" : "apx200-Stream"
+	}
+}

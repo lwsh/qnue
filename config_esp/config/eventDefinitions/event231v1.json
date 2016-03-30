@@ -1,0 +1,16 @@
+{
+	"event231v1" : {
+		"id": "event231v1",
+		"name": "Anulacion de aportaciones PPA acumulacion y SIALP",
+		"description": "Anulacion de aportaciones PPA acumulacion y SIALP",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

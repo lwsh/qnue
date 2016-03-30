@@ -1,0 +1,11 @@
+{
+	"event205bv1" :{
+		"id": "event205bv1",
+		"name": "Reintegro a credito tarjeta EMV denegada",
+		"description": "Reintegro a credito tarjeta EMV denegada",
+		"validationRule" : "#{['evento']['detalle']['cClienSal'].length() > 2 && ['evento']['detalle']['iucSal'].length() > 0 && T(java.lang.Integer).valueOf(['evento']['detalle']['codAccSal']) > 99 && ['evento']['detalle']['codAccSal'] != '900' && ['evento']['detalle']['codAccSal'] != '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

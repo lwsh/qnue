@@ -1,0 +1,4397 @@
+{
+	"00000210-02" : {
+		"id" : "00000210",
+		"version" : "02",
+		"name" : "00000210 (Login cajero) happening format defintion",
+		"description" : "00000210 (Login cajero) happening format defintion",
+		"happeningTimestampField" : "cabecera.timeRecepSucesoC",
+		"preFormatDefinitions" : [
+			"hostHeader_ES"
+		],
+		"formatDefinition" : [{
+				"detalle" : [{
+						"codPan" : {
+							"length" : 19,
+							"type" : "string"
+						}
+					}, {
+						"indUNNIM" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indSolicitudCuentas" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"numFilas" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"paginacion" : {
+							"length" : 100,
+							"type" : "string"
+						}
+					}, {
+						"codTimestampE" : {
+							"length" : 18,
+							"type" : "string"
+						}
+					}, {
+						"codFmtopantE" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"codIdiomtjtE" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"codMarcaE" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"numFilasSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"masDatosSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"paginacionSal" : {
+							"length" : 100,
+							"type" : "string"
+						}
+					}, {
+						"cClienSal" : {
+							"length" : 9,
+							"type" : "string"
+						}
+					}, {
+						"nombreSal" : {
+							"length" : 80,
+							"type" : "string"
+						}
+					}, {
+						"apellido1Sal" : {
+							"length" : 40,
+							"type" : "string"
+						}
+					}, {
+						"apellido2Sal" : {
+							"length" : 40,
+							"type" : "string"
+						}
+					}, {
+						"fechaNacimientoSal" : {
+							"length" : 10,
+							"type" : "string"
+						}
+					}, {
+						"tipoDocumentoSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"documentoSal" : {
+							"length" : 25,
+							"type" : "string"
+						}
+					}, {
+						"indPrestamoPreconcedidoSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indTareasDiferidasSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indSicavsSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indPasaporteMulticanalSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indAnexoPasaporteMulticanalSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indOfrecimientoOCLSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indAceptacionAgendaSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"indCRMSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind9Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind10Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind11Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind12Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind13Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind14Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"ind15Sal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"movilSal" : {
+							"length" : 80,
+							"type" : "string"
+						}
+					}, {
+						"indMovilValidadoSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"mailSal" : {
+							"length" : 80,
+							"type" : "string"
+						}
+					}, {
+						"indMailValidadoSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"nombreRedSocialSal" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"direccionRedSocialSal" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"estadoRedSocialSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"oficinaOperativaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"bancoPlasticoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaPlasticoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaPlasticoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioPlasticoSal" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"dependientePlasticoSal" : {
+							"length" : 9,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCPlasticoSal" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCPlasticoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContraIUCPlasticoSal" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"aliasPlasticoSal" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"idiomaPlasticoSal" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"indAnonimaSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"titularidadSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"paisClienteSal" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadClienteSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"codClienteSal" : {
+							"length" : 9,
+							"type" : "string"
+						}
+					}, {
+						"bancoContratoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaContratoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaContratoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioContratoSal" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCContratoSal" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCContratoSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoSal" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"indicadorExisteCuentaSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"situacionCuentaSal" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"bloqueoCuentaSal" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_1" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_1" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_1" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_1" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_1" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_1" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_1" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_1" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_1" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_1" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_2" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_2" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_2" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_2" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_2" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_2" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_2" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_2" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_2" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_2" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_3" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_3" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_3" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_3" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_3" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_3" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_3" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_3" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_3" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_3" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_4" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_4" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_4" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_4" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_4" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_4" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_4" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_4" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_4" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_4" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_5" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_5" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_5" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_5" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_5" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_5" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_5" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_5" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_5" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_5" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_6" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_6" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_6" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_6" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_6" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_6" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_6" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_6" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_6" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_6" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_7" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_7" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_7" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_7" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_7" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_7" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_7" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_7" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_7" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_7" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_8" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_8" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_8" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_8" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_8" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_8" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_8" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_8" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_8" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_8" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_9" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_9" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_9" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_9" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_9" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_9" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_9" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_9" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_9" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_9" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_10" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_10" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_10" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_10" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_10" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_10" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_10" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_10" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_10" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_10" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_11" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_11" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_11" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_11" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_11" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_11" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_11" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_11" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_11" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_11" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_12" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_12" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_12" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_12" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_12" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_12" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_12" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_12" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_12" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_12" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_13" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_13" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_13" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_13" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_13" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_13" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_13" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_13" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_13" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_13" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_14" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_14" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_14" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_14" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_14" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_14" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_14" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_14" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_14" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_14" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_15" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_15" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_15" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_15" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_15" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_15" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_15" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_15" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_15" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_15" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_16" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_16" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_16" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_16" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_16" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_16" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_16" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_16" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_16" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_16" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_17" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_17" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_17" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_17" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_17" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_17" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_17" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_17" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_17" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_17" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_18" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_18" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_18" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_18" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_18" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_18" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_18" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_18" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_18" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_18" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_19" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_19" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_19" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_19" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_19" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_19" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_19" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_19" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_19" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_19" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_20" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_20" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_20" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_20" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_20" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_20" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_20" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_20" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_20" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_20" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_21" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_21" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_21" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_21" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_21" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_21" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_21" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_21" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_21" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_21" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_22" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_22" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_22" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_22" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_22" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_22" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_22" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_22" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_22" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_22" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_23" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_23" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_23" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_23" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_23" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_23" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_23" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_23" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_23" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_23" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_24" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_24" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_24" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_24" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_24" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_24" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_24" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_24" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_24" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_24" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_25" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_25" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_25" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_25" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_25" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_25" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_25" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_25" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_25" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_25" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_26" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_26" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_26" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_26" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_26" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_26" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_26" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_26" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_26" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_26" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_27" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_27" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_27" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_27" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_27" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_27" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_27" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_27" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_27" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_27" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_28" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_28" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_28" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_28" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_28" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_28" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_28" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_28" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_28" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_28" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_29" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_29" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_29" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_29" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_29" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_29" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_29" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_29" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_29" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_29" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_30" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_30" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_30" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_30" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_30" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_30" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_30" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_30" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_30" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_30" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_31" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_31" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_31" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_31" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_31" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_31" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_31" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_31" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_31" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_31" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_32" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_32" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_32" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_32" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_32" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_32" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_32" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_32" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_32" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_32" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_33" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_33" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_33" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_33" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_33" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_33" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_33" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_33" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_33" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_33" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_34" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_34" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_34" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_34" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_34" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_34" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_34" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_34" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_34" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_34" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_35" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_35" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_35" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_35" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_35" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_35" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_35" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_35" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_35" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_35" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_36" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_36" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_36" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_36" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_36" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_36" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_36" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_36" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_36" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_36" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_37" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_37" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_37" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_37" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_37" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_37" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_37" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_37" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_37" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_37" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_38" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_38" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_38" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_38" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_38" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_38" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_38" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_38" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_38" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_38" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_39" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_39" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_39" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_39" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_39" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_39" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_39" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_39" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_39" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_39" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_40" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_40" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_40" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_40" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_40" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_40" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_40" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_40" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_40" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_40" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_41" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_41" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_41" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_41" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_41" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_41" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_41" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_41" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_41" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_41" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_42" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_42" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_42" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_42" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_42" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_42" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_42" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_42" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_42" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_42" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_43" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_43" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_43" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_43" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_43" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_43" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_43" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_43" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_43" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_43" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_44" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_44" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_44" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_44" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_44" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_44" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_44" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_44" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_44" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_44" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_45" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_45" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_45" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_45" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_45" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_45" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_45" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_45" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_45" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_45" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_46" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_46" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_46" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_46" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_46" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_46" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_46" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_46" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_46" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_46" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_47" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_47" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_47" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_47" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_47" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_47" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_47" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_47" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_47" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_47" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_48" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_48" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_48" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_48" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_48" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_48" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_48" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_48" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_48" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_48" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_49" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_49" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_49" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_49" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_49" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_49" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_49" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_49" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_49" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_49" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_50" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_50" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_50" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_50" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_50" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_50" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_50" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_50" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_50" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_50" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_51" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_51" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_51" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_51" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_51" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_51" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_51" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_51" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_51" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_51" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_52" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_52" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_52" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_52" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_52" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_52" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_52" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_52" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_52" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_52" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_53" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_53" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_53" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_53" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_53" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_53" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_53" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_53" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_53" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_53" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_54" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_54" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_54" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_54" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_54" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_54" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_54" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_54" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_54" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_54" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_55" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_55" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_55" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_55" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_55" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_55" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_55" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_55" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_55" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_55" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_56" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_56" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_56" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_56" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_56" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_56" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_56" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_56" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_56" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_56" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_57" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_57" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_57" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_57" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_57" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_57" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_57" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_57" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_57" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_57" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_58" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_58" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_58" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_58" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_58" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_58" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_58" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_58" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_58" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_58" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_59" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_59" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_59" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_59" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_59" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_59" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_59" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_59" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_59" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_59" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_60" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_60" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_60" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_60" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_60" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_60" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_60" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_60" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_60" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_60" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_61" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_61" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_61" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_61" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_61" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_61" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_61" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_61" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_61" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_61" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_62" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_62" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_62" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_62" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_62" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_62" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_62" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_62" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_62" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_62" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_63" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_63" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_63" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_63" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_63" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_63" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_63" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_63" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_63" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_63" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_64" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_64" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_64" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_64" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_64" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_64" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_64" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_64" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_64" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_64" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_65" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_65" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_65" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_65" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_65" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_65" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_65" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_65" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_65" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_65" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_66" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_66" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_66" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_66" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_66" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_66" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_66" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_66" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_66" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_66" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_67" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_67" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_67" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_67" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_67" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_67" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_67" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_67" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_67" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_67" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_68" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_68" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_68" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_68" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_68" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_68" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_68" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_68" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_68" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_68" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_69" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_69" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_69" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_69" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_69" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_69" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_69" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_69" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_69" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_69" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_70" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_70" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_70" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_70" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_70" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_70" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_70" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_70" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_70" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_70" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_71" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_71" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_71" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_71" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_71" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_71" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_71" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_71" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_71" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_71" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_72" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_72" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_72" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_72" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_72" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_72" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_72" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_72" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_72" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_72" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_73" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_73" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_73" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_73" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_73" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_73" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_73" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_73" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_73" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_73" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_74" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_74" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_74" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_74" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_74" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_74" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_74" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_74" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_74" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_74" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_75" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_75" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_75" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_75" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_75" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_75" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_75" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_75" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_75" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_75" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_76" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_76" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_76" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_76" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_76" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_76" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_76" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_76" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_76" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_76" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_77" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_77" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_77" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_77" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_77" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_77" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_77" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_77" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_77" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_77" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_78" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_78" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_78" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_78" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_78" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_78" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_78" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_78" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_78" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_78" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_79" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_79" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_79" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_79" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_79" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_79" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_79" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_79" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_79" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_79" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"bancoCuentaSal_80" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"oficinaCuentaSal_80" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"contrapartidaCuentaSal_80" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"folioCuentaSal_80" : {
+							"length" : 14,
+							"type" : "string"
+						}
+					}, {
+						"paisIUCCuentaSal_80" : {
+							"length" : 2,
+							"type" : "string"
+						}
+					}, {
+						"entidadIUCCuentaSal_80" : {
+							"length" : 4,
+							"type" : "string"
+						}
+					}, {
+						"idContratoCuentaSal_80" : {
+							"length" : 26,
+							"type" : "string"
+						}
+					}, {
+						"cccCuentaSal_80" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}, {
+						"claseContratoCuentaSal_80" : {
+							"length" : 1,
+							"type" : "string"
+						}
+					}, {
+						"aliasCuentaSal_80" : {
+							"length" : 20,
+							"type" : "string"
+						}
+					}
+				]
+			}
+		]
+	}
+}

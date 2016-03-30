@@ -1,0 +1,19 @@
+{
+	"rabbitMQConnection": 
+	{
+		"host": "${env.conf.rabbitmq.host}",
+		"port": "${env.conf.rabbitmq.port}",
+		"username": "${env.conf.rabbitmq.username}",
+		"password": "${env.conf.rabbitmq.password}",
+		"virtualHost": "${env.conf.rabbitmq.virtualHost}"
+	},
+
+	"monitoringConnection": 
+	{
+		"host": "${env.conf.rabbitmq.monitoring.host}",
+		"port": "${env.conf.rabbitmq.monitoring.port}",
+		"username": "${env.conf.rabbitmq.monitoring.username}",
+		"password": "${env.conf.rabbitmq.monitoring.password}",
+		"virtualHost": "${env.conf.rabbitmq.monitoring.virtualHost}"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"event236v1" : {
+		"id": "event236v1",
+		"name": "Envio clientes contratacion",
+		"description": "Envio clientes contratacion",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"produccion"
+		]
+	}
+}

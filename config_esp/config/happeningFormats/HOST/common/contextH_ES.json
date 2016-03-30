@@ -1,0 +1,50 @@
+{
+    "contextoH" : {
+    	"id" : "contextoH",
+    	"happeningSourceIds":[],      
+	    "preFormatDefinition" : [],
+	    "formatDefinition" : [
+		     {
+	          "contexto":[
+	            {
+	              "codTransaccionFisica":{
+	                "length":8,
+	                "type":"string"
+	              }
+	            },
+	            {
+	              "codTransaccionLogica":{
+	                "length":8,
+	                "type":"string"
+	              }
+	            },
+	            {
+	              "codTipoOperacion":{
+	                "length":2,
+	                "type":"string"
+	              }
+	            },
+	            {
+	              "codSubtipo":{
+	                "length":2,
+	                "type":"string"
+	              }
+	            },
+	            {
+	              "idPuesto":{
+	                "length":10,
+	                "type":"string"
+	              }
+	            },
+	            {
+	              "idOrigenFisico":{
+	                "length":21,
+	                "type":"string"
+	              }
+	            }
+	          ]
+	        }        
+	    ]        
+    }
+
+}

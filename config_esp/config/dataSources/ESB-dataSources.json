@@ -1,0 +1,9 @@
+{
+	"esbOnlineMQ" : {        
+		"hostName" : "${env.conf.mq.esb.host}",
+		"port" : "${env.conf.mq.esb.port}",
+		"channel" : "${env.conf.mq.esb.channel}",
+		"queueManager" : "${env.conf.mq.esb.queueManager}",
+		"queue" : "${env.conf.mq.esb.queue}"
+     }
+}

@@ -1,0 +1,11 @@
+{
+	"event211av2" :{
+		"id": "event211av2",
+		"name": "Devolucion con tarjeta autorizada",
+		"description": "Devolucion con tarjeta autorizada",
+		"validationRule" : "#{['evento']['detalle']['xtiCompraAdi'] == 'D' && ['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && ((T(java.lang.Integer).valueOf(['evento']['detalle']['codRespuesta']) >= 0 && T(java.lang.Integer).valueOf(['evento']['detalle']['codRespuesta']) <= 99) || ['evento']['detalle']['codRespuesta'] == '900')}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

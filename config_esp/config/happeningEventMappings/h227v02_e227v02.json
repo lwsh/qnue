@@ -1,0 +1,13 @@
+{
+   "00000227-02>>event227v2" : {
+      "id" : "00000227-02>>event227v2",
+      "happeningId" : "00000227-02",
+      "eventId" : "event227v2",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000022702'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.crm.username')}",
+         "evento.detalle" : "detalle"
+     }
+   }
+}

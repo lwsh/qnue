@@ -1,0 +1,11 @@
+{
+	"event33v4" : {
+		"id": "event33v4",
+		"name": "event 33 version 4",
+		"description": "event 33 version 4",		
+		"eventTimestampField" : "event.header.eventGenerated",
+		"validationRule" : "#{['event']['detail']['purchaseAmount'] >= 100000000 && ['event']['detail']['product'] != '9482' && (['event']['detail']['paymentMethod'] == 'I' || ['event']['detail']['paymentMethod'] == 'T')}",
+		"eventFormat" : "json",
+		"eventTarget" : "unknown"
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "00000210-02>>event210v02" : {
+      "id" : "00000210-02>>event210v02",
+      "happeningId" : "00000210-02",
+      "eventId" : "event210v02",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000021002'}",
+         
+         "evento.detalle.cClienSal" : "detalle.cClienSal",
+         "evento.detalle.codTimestampE" : "detalle.codTimestampE",
+         "evento.detalle.codIdiomtjtE" : "detalle.codIdiomtjtE",
+         "evento.detalle.codFmtopantE" : "detalle.codFmtopantE",
+         "evento.detalle.codMarcaE" : "detalle.codMarcaE",
+         
+         "evento.detalle.timeGen" : "cabecera.timeGen"
+      }
+   }
+}

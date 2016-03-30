@@ -1,0 +1,24 @@
+{
+   "00000401-01":{
+      "id":"00000401",
+      "version":"01",
+      "name":" happening format defintion (version 1)",
+      "description":" happening format defintion (version 1)",
+      "happeningTimestampField":"cabecera.timeRecepSucesoC",
+      "preFormatDefinitions":[
+         "hostHeader_ES"
+      ],
+      "formatDefinition":[
+         {
+            "detalle":[
+               {
+                  "codCampna":{
+                     "length":10,
+                     "type":"string"
+                  }
+               }
+            ]
+         }
+      ]
+   }
+}

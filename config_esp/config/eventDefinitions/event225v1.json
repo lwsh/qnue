@@ -1,0 +1,11 @@
+{
+	"event225v1" : {
+		"id": "event225v1",
+		"name": "Alta de un cliente en el banco desde el móvil",
+		"description": "Alta de un cliente en el banco desde el móvil",		
+		"validationRule" : "#{['evento']['detalle']['ContactKey'] != null}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream"
+	}
+}

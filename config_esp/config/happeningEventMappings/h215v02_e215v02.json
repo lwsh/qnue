@@ -1,0 +1,21 @@
+{
+   "00000215-02>>event215v2" : {
+      "id" : "00000215-02>>event215v2",
+      "happeningId" : "00000215-02",
+      "eventId" : "event215v2",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000021502'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.crm.username')}",
+         "evento.detalle.ContactKey" : "detalle.cpx7CodPersexS",
+         "evento.detalle.EventDefinitionKey" : "#{'DCRM-IDOMOO-3'}",
+         "evento.detalle.Data.SubscriberKey" : "detalle.cpx7CodPersexS",
+         "evento.detalle.Data.EmailAddress" : "#{['detalle']['cpx7CodPersexS']+'@dominio.com'}",
+         "evento.detalle.Data.UUID" : "#{T(java.util.UUID).randomUUID()}",
+         "evento.detalle.Data.DES_DOMCOPRO" : "detalle.m070sDesGeograf",
+         "evento.detalle.Data.COD_IDIOMA" : "detalle.cq41CodIdisoalfE_0",
+         "evento.detalle.Data.DES_NOMPILA" : "detalle.cq41DesNombfjE_0",
+         "evento.detalle.Data.XTI_SEXO" : "detalle.cq41XtiSexoE_0"       
+      }
+   }
+}

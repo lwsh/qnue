@@ -1,0 +1,10 @@
+{
+  "00000025-01": {
+    "id": "00000025",
+    "version": "01",
+    "name": "00000025 happening format definition (version 1)",
+    "description": "00000025 happening format definition (version 1)",
+    "happeningTimestampField": "cabecera.timeRecepSucesoC",
+    "happeningType": "xml"
+  }
+}

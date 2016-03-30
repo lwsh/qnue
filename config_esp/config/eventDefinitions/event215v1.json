@@ -1,0 +1,11 @@
+{
+	"event215v1" : {
+		"id": "event215v1",
+		"name": "Alta de cliente en la Net",
+		"description": "Alta de cliente en la Net",		
+		"validationRule" : "#{'04'.equals(['evento']['cabecera']['canal']) && '07'.equals(['evento']['cabecera']['medio']) && '0019'.equals(['evento']['cabecera']['servicio'])}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream"
+	}
+}

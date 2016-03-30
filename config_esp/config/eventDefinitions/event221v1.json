@@ -1,0 +1,11 @@
+{
+	"event221v1" : {
+		"id": "event221v1",
+		"name": "Puesta en vigor (intervinientes, importe,oficina producto...)",
+		"description": "Puesta en vigor (intervinientes, importe,oficina producto...)",		
+		"validationRule" : "#{true}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream"
+	}
+}

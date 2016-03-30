@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:m0="http://request.apx.pg.otma.domain.integration.elara.bbva.com" xmlns:m1="http://common.apx.pg.otma.domain.integration.elara.bbva.com" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Body>
+		<m:serviceOtmaPGApxListenerXml xmlns:m="http://ws.protocol.physical.integration.elara.bbva.com/">
+			<m:arg0>
+				<m0:body>
+					<m0:complexFieldList>
+						<m1:complexFieldType>
+							<m1:name>NOTIFICATION</m1:name>
+							<m1:simpleFieldList>
+								<m1:simpleFieldType>
+									<m1:name>NOTIFICATION-CODE</m1:name>
+									<m1:value>00005</m1:value>
+								</m1:simpleFieldType>
+								<m1:simpleFieldType>
+									<m1:name>CREATION-TIME</m1:name>
+									<m1:value>$date.format("yyyy-MM-dd'T'HH:mm:ssXXX", $evento.cabecera.timeGen)</m1:value>
+								</m1:simpleFieldType>
+								<m1:simpleFieldType>
+									<m1:name>APPLICATION-CODE</m1:name>
+									<m1:value>$evento.cabecera.appOrigen</m1:value>
+								</m1:simpleFieldType>
+							</m1:simpleFieldList>
+						</m1:complexFieldType>
+						<m1:complexFieldType>
+							<m1:name>DESTINATIONS</m1:name>
+							<m1:complexFieldList>
+								<m1:complexFieldType>
+									<m1:name>DESTINATION</m1:name>
+									<m1:complexFieldList>
+										<m1:complexFieldType>
+											<m1:name>DESTINATION-GROUP</m1:name>
+											<m1:simpleFieldList>
+												<m1:simpleFieldType>
+													<m1:name>DESTINATION-TYPE</m1:name>
+													<m1:value>CUSTOMER</m1:value>
+												</m1:simpleFieldType>
+												<m1:simpleFieldType>
+													<m1:name>DESTINATION-ID</m1:name>
+													<m1:value>$evento.cabecera.pais$evento.cabecera.banco$evento.cabecera.cliente</m1:value>
+												</m1:simpleFieldType>
+											</m1:simpleFieldList>
+										</m1:complexFieldType>
+									</m1:complexFieldList>
+								</m1:complexFieldType>
+							</m1:complexFieldList>
+						</m1:complexFieldType>
+						<m1:complexFieldType>
+							<m1:name>NOTIFICATION-PARAMS</m1:name>
+							<m1:complexFieldList>
+								<m1:complexFieldType>
+									<m1:name>SIMPLE-PARAM</m1:name>
+									<m1:simpleFieldList>
+										<m1:simpleFieldType>
+											<m1:name>PARAM-NAME</m1:name>
+											<m1:value>A0023</m1:value>
+										</m1:simpleFieldType>
+										<m1:simpleFieldType>
+											<m1:name>PARAM-VALUE</m1:name>
+											<m1:value>$evento.detalle.numPromPdtes</m1:value>
+										</m1:simpleFieldType>
+									</m1:simpleFieldList>
+								</m1:complexFieldType>
+							</m1:complexFieldList>
+						</m1:complexFieldType>
+					</m0:complexFieldList>
+				</m0:body>
+				<m0:header>
+					<m0:authorizationCode>012345678</m0:authorizationCode>
+					<m0:authorizationVersion>06</m0:authorizationVersion>
+					<m0:branchCode>$evento.cabecera.oficina</m0:branchCode>
+					<m0:channelCode>$evento.cabecera.canal</m0:channelCode>
+#set($vCliente = 0)#if($evento.cabecera.cliente.length() > 25)#set($vCliente = $evento.cabecera.cliente.length() - 25)#end
+					<m0:clientDocument>$evento.cabecera.cliente.substring($vCliente)</m0:clientDocument>
+#set($vTipoCliente = 0)#if($evento.cabecera.tipoCliente.length() > 1)#set($vTipoCliente = $evento.cabecera.tipoCliente.length() - 1)#end
+					<m0:clientIdentificationType>$evento.cabecera.tipoCliente.substring( $vTipoCliente )</m0:clientIdentificationType>
+					<m0:contactIdentifier/>
+					<m0:countryCode>$evento.cabecera.pais</m0:countryCode>
+					<m0:currencyCode>ZZZ</m0:currencyCode>
+					<m0:entityCode>$evento.cabecera.banco</m0:entityCode>
+#set($vMedio = 0)#if($evento.cabecera.medio.length() > 2)#set($vMedio = $evento.cabecera.medio.length() - 2)#end
+					<m0:environCode>$evento.cabecera.medio.substring( $vMedio )</m0:environCode>
+					<m0:headerName>QP05</m0:headerName>
+					<m0:ipAddress>0.0.0.0</m0:ipAddress>
+					<m0:languageCode>$evento.cabecera.pais</m0:languageCode>
+					<m0:logicalTransactionCode>KYFET001</m0:logicalTransactionCode>
+					<m0:operationDate>$date.format('yyyyMMdd', $evento.cabecera.timeGen)</m0:operationDate>
+					<m0:operationTime>$date.format('HHmmss', $evento.cabecera.timeGen)</m0:operationTime>
+					<m0:operativeBranchCode>$evento.cabecera.oficina</m0:operativeBranchCode>
+					<m0:operativeEntityCode>$evento.cabecera.banco</m0:operativeEntityCode>
+					<m0:productCode>$evento.cabecera.servicio</m0:productCode>
+					<m0:requestId>$date.get('yyyyMMddHHmmss')$random</m0:requestId>
+					<m0:secondaryCurrencyCode/>
+					<m0:serviceId>GEventos</m0:serviceId>
+					<m0:subtypeCode>01</m0:subtypeCode>
+					<m0:typeCode>01</m0:typeCode>
+					<m0:userCode>$evento.cabecera.apxUser</m0:userCode>
+					<m0:versionCode>01</m0:versionCode>
+					<m0:workstationCode>ZZZ</m0:workstationCode>
+				</m0:header>
+			</m:arg0>
+		</m:serviceOtmaPGApxListenerXml>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

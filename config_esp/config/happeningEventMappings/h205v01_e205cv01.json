@@ -1,0 +1,18 @@
+{
+    "00000205-01>>event205cv1" : {
+      "id" : "00000205-01>>event205cv1",
+      "happeningId" : "00000205-01",
+      "eventId" : "event205cv1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000205c01'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.detalle" :"detalle(exclude:impMoTranEntera;exclude:impMoTranDecimal;exclude:impComisSalEntera;exclude:impComisSalDecimal;exclude:monComisSal)",
+         "evento.detalle.impMoTranEntera":"#{['detalle']['impMoTranEntera'].replace('[^\\d.]','').length() > 0 ? ['detalle']['impMoTranEntera']  : '0'}",
+         "evento.detalle.impMoTranDecimal":"#{(['detalle']['impMoTranDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impMoTranDecimal'] : '00'}",
+         "evento.detalle.impComisSalEntera":"#{['detalle']['impComisSalEntera'].replace('[^\\d.]','').length() > 0 ?  ['detalle']['impComisSalEntera'] : '0'}",
+         "evento.detalle.impComisSalDecimal":"#{(['detalle']['impComisSalDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impComisSalDecimal'] : '00'}",
+         "evento.detalle.monComisSal":"#{(['detalle']['impComisSalEntera'].replace('[^\\d.]','').length() + ['detalle']['impComisSalDecimal'].replace('[^\\d.]','').length()) > 0 ?  ['detalle']['monComisSal'] : ['detalle']['codMoTran']}"
+      }
+   }
+}

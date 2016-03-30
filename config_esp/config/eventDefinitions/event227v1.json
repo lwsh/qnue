@@ -1,0 +1,16 @@
+{
+	"event227v1" : {
+		"id": "event227v1",
+		"name": "Bloqueo y desbloqueo de tarjetas desde banca a distancia y banca telefonica",
+		"description": "Bloqueo y desbloqueo de tarjetas desde banca a distancia y banca telefonica",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

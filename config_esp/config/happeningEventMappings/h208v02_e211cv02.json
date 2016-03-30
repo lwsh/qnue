@@ -1,0 +1,14 @@
+{
+    "00000208-02>>event211cv2" : {
+      "id" : "00000208-02>>event211cv2",
+      "happeningId" : "00000208-02",
+      "eventId" : "event211cv2",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000211c02'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.detalle" : "detalle(exclude:desConcepto)",
+         "evento.detalle.desConcepto" : "#{T(org.apache.commons.lang3.StringEscapeUtils).escapeXml11(['detalle']['desConcepto'])}"
+      }
+   }
+}

@@ -1,0 +1,12 @@
+{
+    "SMC201400151" : {
+	    "id":"SMC201400151",
+	    "version":"01",
+	    "name":"granting ticket",
+	    "description":"Granting ticket happening",
+	    "executionIdLocation" : "_id",
+        "happeningTimestampField":"received",
+        "type": "service json",
+        "discardedIn" : ["desarrollo", "integrado", "produccion", "calidad"]
+    }
+}

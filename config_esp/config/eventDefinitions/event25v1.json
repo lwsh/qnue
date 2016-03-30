@@ -1,0 +1,11 @@
+{
+	"event25v1" : {
+		"id": "event25v1",
+		"name": "event 25 version 1",
+		"description": "event 25 version 1",
+		"validationRule" : "#{['evento']['cabecera']['appOrigen'] == 'KDHF'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "esbStream"
+	}
+}

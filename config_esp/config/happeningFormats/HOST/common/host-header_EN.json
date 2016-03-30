@@ -1,0 +1,13 @@
+{
+  "hostHeader" : {
+      "id":"hostHeader",
+      "name":"Host Header",
+      "description":"Common Host Header",      
+      "preFormatDefinitions":[
+		"header", "contextH"
+      ],
+      "postFormatDefinitions":[
+
+      ]
+  }
+}  

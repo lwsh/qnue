@@ -1,0 +1,13 @@
+{
+   "00000405-01>>event405v1" : {
+      "id" : "00000405-01>>event405v1",
+      "happeningId" : "00000405-01",
+      "eventId" : "event405v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000040501'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.detalle" : "detalle"         
+      }
+   }
+}

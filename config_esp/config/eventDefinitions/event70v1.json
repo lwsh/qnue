@@ -1,0 +1,10 @@
+{
+	"event70v1" : {
+		"id": "event70v1",
+		"name": "event 70 version 1",
+		"description": "event 70 version 1",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "MUSTACHE",
+		"eventTarget" : "KXDAMQ"
+	}
+}

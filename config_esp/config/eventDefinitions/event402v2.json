@@ -1,0 +1,10 @@
+{
+	"event402v2" :{
+		"id": "event402v2",
+		"name": "event 402 version 2",
+		"description": "event 402 version 2",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx400-Stream"
+	}
+}

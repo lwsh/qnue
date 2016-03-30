@@ -1,0 +1,14 @@
+{
+   "00000045-01>>event45v1" : {
+      "id" : "00000045-01>>event45v1",
+      "happeningId" : "00000045-01",
+      "eventId" : "event45v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;exclude:tipoSuceso;modoSuceso>modoEvento;exclude:version)",
+         "evento.cabecera.tipoEvento" : "#{'00000045'}",
+         "evento.cabecera.version" : "#{'01'}",         
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000004501'}",
+         "evento.detalle" : "detalle"
+      }
+   }
+}

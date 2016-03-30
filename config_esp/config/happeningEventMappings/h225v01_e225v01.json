@@ -1,0 +1,23 @@
+{
+   "00000225-01>>event225v1":{
+      "id":"00000225-01>>event225v1",
+      "happeningId":"00000225-01",
+      "eventId":"event225v1",
+      "mappings":{
+         "evento.cabecera":"cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC":"#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000022501'}",
+         "evento.cabecera.apxUser":"#{['propertyResolver'].resolve('env.conf.apx.crm.username')}",
+         "evento.detalle.ContactKey":"detalle.cclientExterno",
+         "evento.detalle.EventDefinitionKey":"#{'DCRM_ONBOARDING_MOVIL_1'}",
+         "evento.detalle.Data.SubscriberKey":"detalle.cclientExterno",
+         "evento.detalle.Data.EmailAddress":"#{['detalle']['cclientExterno']+'@dominio.com'}",
+         "evento.detalle.Data.UUID":"#{T(java.util.UUID).randomUUID()}",
+         "evento.detalle.Data.DES_DOMCOPRO":"detalle.provincia",
+         "evento.detalle.Data.COD_IDIOMA":"detalle.idioma",
+         "evento.detalle.Data.DES_NOMPILA":"detalle.nombrePila",
+         "evento.detalle.Data.XTI_SEXO":"detalle.sexo",
+         "evento.detalle.Data.COD_DOC1":"detalle.codDocumento1",
+         "evento.detalle.Data.COD_DOC2":"detalle.codDocumento2"
+      }
+   }
+}

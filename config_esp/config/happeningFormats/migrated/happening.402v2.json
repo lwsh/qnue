@@ -1,0 +1,106 @@
+{
+   "00000402-02":{
+      "id":"00000402",
+      "version":"02",
+      "name":" happening format defintion (version 1)",
+      "description":" happening format defintion (version 1)",
+      "happeningTimestampField":"cabecera.timeRecepSucesoC",
+      "preFormatDefinitions":[
+         "hostHeader_ES"
+      ],
+      "formatDefinition":[
+         {
+            "detalle":[
+  {"pais": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"entidad": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"cclien": {
+    "length": 9,
+    "type": "string"
+  }},
+  {"pan": {
+    "length": 19,
+    "type": "string"
+  }},
+  {"iuc": {
+    "length": 26,
+    "type": "string"
+  }},
+  {"codBin": {
+    "length": 6,
+    "type": "string"
+  }},
+  {"codPan4": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"xtiPago": {
+    "length": 1,
+    "type": "string"
+  }},
+  {"ffRecibo": {
+    "length": 10,
+    "type": "string"
+  }},
+  {"impReciboEntera": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"impReciboDecimal": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"divisaRecibo": {
+    "length": 3,
+    "type": "string"
+  }},
+  {"ffCargo": {
+    "length": 10,
+    "type": "string"
+  }},
+  {"ctaCargo": {
+    "length": 20,
+    "type": "string"
+  }},
+  {"indFinanciable": {
+    "length": 1,
+    "type": "string"
+  }},
+  {"cuotaMinimaEntera": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"cuotaMinimaDecimal": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"plazosCuotaMinima": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"impReciboFinanciableEntera": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"impReciboFinanciableDecimal": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"impReciboNoFinanciableEntera": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"impReciboNoFinanciableDecimal": {
+    "length": 2,
+    "type": "string"
+  }}
+]
+         }
+      ]
+   }
+}

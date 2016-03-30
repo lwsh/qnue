@@ -1,0 +1,10 @@
+{
+	"event407v1" :{
+		"id": "event407v1",
+		"name": "P2P Expiracion 7 dias - solicitud a emisor",
+		"description": "Expiracion periodo de respuesta (7 dias) aviso solicitud a emisor - (PE4)",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx400-Stream"
+	}
+}

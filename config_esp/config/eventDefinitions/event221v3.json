@@ -1,0 +1,10 @@
+{
+	"event221v3" : {
+		"id": "event221v3",
+		"name": "Puesta en vigor (intervinientes, importe,oficina producto...) v3",
+		"description": "Puesta en vigor (intervinientes, importe,oficina producto...) v3",		
+		"eventTimestampField" : "event.header.eventGenerated",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "crmReportingEventQueue"
+	}
+}

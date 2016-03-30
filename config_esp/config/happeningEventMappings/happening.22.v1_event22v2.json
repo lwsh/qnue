@@ -1,0 +1,15 @@
+{
+    "@DISABLE@00000022-01>>event22v2" : {
+      "id" : "00000022-01>>event22v2",
+      "happeningId" : "00000022-01",
+      "eventId" : "event22v2",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;exclude:version;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000002202'}",
+         "evento.cabecera.version" : "#{'02'}",			
+			 
+         "evento.detalle" : "detalle",
+         "evento.detalle.sessionId" : "contexto.contextoN.idSesion"
+      }
+   }
+}

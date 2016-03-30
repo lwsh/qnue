@@ -1,0 +1,16 @@
+{
+	"event224v1" : {
+		"id": "event224v1",
+		"name": "Puesta en vigor de cuentas personales, fondos de inversión,...",
+		"description": "Puesta en vigor de cuentas personales, fondos de inversión, planes de pensiones, comercios, depósitos, préstamos y tarjetas",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

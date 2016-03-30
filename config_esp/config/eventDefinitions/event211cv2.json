@@ -1,0 +1,11 @@
+{
+	"event211cv2" :{
+		"id": "event211cv2",
+		"name": "Devolucion con tarjeta anulada",
+		"description": "Devolucion con tarjeta anulada",
+		"validationRule" : "#{['evento']['detalle']['xtiCompraAdi'] == 'D' && ['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && ['evento']['detalle']['codRespuesta'] == '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

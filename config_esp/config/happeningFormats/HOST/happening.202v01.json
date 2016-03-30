@@ -1,0 +1,94 @@
+{
+	"00000202-01" : {
+		"id" : "00000202",
+		"version" : "01",
+		"name" : "00000202 happening format defintion",
+		"description" : "00000202 happening format defintion",
+		"happeningTimestampField":"cabecera.timeRecepSucesoC",
+		"type" : "HOST_TRANSACTION_CONTENT",
+		"preFormatDefinitions" : [ "hostHeader_ES" ],
+		"formatDefinition" : [
+		  {"qpejt015010101E": [
+		    {"codTransacE": {
+		      "length": 8,
+		      "type": "string"
+		    }},
+		    {"codTiptrnE": {
+		      "length": 2,
+		      "type": "string"
+		    }},
+		    {"codSubtrnE": {
+		      "length": 2,
+		      "type": "string"
+		    }},
+		    {"codVertrnE": {
+		      "length": 2,
+		      "type": "string"
+		    }},
+		    {"xtiMensajeE": {
+		      "length": 1,
+		      "type": "string"
+		    }}
+		  ]},
+		  {"qpejt015010101S": [
+		    {"codTrnimsS": {
+		      "length": 8,
+		      "type": "string"
+		    }},
+		    {"codTrncicsS": {
+		      "length": 4,
+		      "type": "string"
+		    }},
+		    {"xsnSalidaS": {
+		      "length": 1,
+		      "type": "string"
+		    }},
+		    {"tbListCamposS": {
+		      "listCamposS": [
+		        {"desCamptrnS": {
+		          "length": 20,
+		          "type": "string"
+		        }},
+		        {"qnuCampoS": {
+		          "length": 4,
+		          "type": "integer"
+		        }},
+		        {"qnuSubcampoS": {
+		          "length": 4,
+		          "type": "integer"
+		        }},
+		        {"qnuIteraciS": {
+		          "length": 4,
+		          "type": "integer"
+		        }},
+		        {"qnuTotcampsS": {
+		          "length": 4,
+		          "type": "integer"
+		        }},
+		        {"qnuLonmaxS": {
+		          "length": 9,
+		          "type": "integer"
+		        }},
+		        {"xtiFormatoS": {
+		          "length": 1,
+		          "type": "string"
+		        }},
+		        {"xtiObligatS": {
+		          "length": 1,
+		          "type": "string"
+		        }},
+		        {"qnuDecimalS": {
+		          "length": 4,
+		          "type": "integer"
+		        }},
+		        {"xtiSignoS": {
+		          "length": 1,
+		          "type": "string"
+		        }}
+		      ],
+		      "occurrences": 200
+		    }}
+		  ]}
+		]
+	}
+}	

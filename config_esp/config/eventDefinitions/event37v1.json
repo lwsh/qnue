@@ -1,0 +1,11 @@
+{
+	"event37v1" : {
+		"id": "event37v1",
+		"name": "event 37 v1",
+		"description": "event 37 v1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{'NCBT'.equalsIgnoreCase(['evento']['cabecera']['appOrigen'])}",
+		"eventFormat" : "XML",
+		"eventTarget" : "crmOnlineParaleloStream"
+	}
+}

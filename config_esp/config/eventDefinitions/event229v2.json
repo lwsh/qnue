@@ -1,0 +1,16 @@
+{
+	"event229v2" : {
+		"id": "event229v2",
+		"name": "Aportacion extraordinaria de PPA Acumulacion y Aportacion extraordinaria de SIALP v2",
+		"description": "Aportacion extraordinaria de PPA Acumulacion y Aportacion extraordinaria de SIALP v2",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

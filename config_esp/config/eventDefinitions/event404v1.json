@@ -1,0 +1,10 @@
+{
+	"event404v1" :{
+		"id": "event404v1",
+		"name": "P2P Expiracion 7 dias - envio a emisor",
+		"description": "Expiracion periodo de respuesta (7 dias) aviso envio a emisor - (PE4)",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx400-Stream"
+	}
+}

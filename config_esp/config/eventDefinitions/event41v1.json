@@ -1,0 +1,11 @@
+{
+	"event41v1" : {
+		"id": "event41v1",
+		"name": "event 41 version 1",
+		"description": "event 41 version 1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{['dateOperations'].isSameDay(['evento']['detalle']['fechaValor'], ['dateOperations'].addDaysToCurrentDate(9))  && ['dateOperations'].dateBetween(['dateOperations'].currentDate(), ['dateOperations'].daysBeforeLastDayOfMonth(['dateOperations'].lastMonth(), 2), ['dateOperations'].dayOfCurrentMonth(6))}",
+		"eventFormat" : "MUSTACHE",
+		"eventTarget" : "crmOnlineParaleloStream"
+	}
+}

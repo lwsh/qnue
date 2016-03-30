@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evento>
+	<cabecera>
+		<appOrigen>{{evento.cabecera.appOrigen}}</appOrigen>
+		<tipoEvento>{{evento.cabecera.tipoEvento}}</tipoEvento>
+		<correlid>{{evento.cabecera.correlid}}</correlid>
+		<eventoC>{{evento.cabecera.eventoC}}</eventoC>
+		<banco>{{evento.cabecera.banco}}</banco>
+		<pais>{{evento.cabecera.pais}}</pais>
+		<cliente>{{evento.cabecera.cliente}}</cliente>
+		<tipoCliente>{{evento.cabecera.tipoCliente}}</tipoCliente>
+		<noClient>{{evento.cabecera.noClient}}</noClient>
+		<canal>{{evento.cabecera.canal}}</canal>
+		<medio>{{evento.cabecera.medio}}</medio>
+		<version>{{evento.cabecera.version}}</version>
+		<servicio>{{evento.cabecera.servicio}}</servicio>
+		<oficina>{{evento.cabecera.oficina}}</oficina>
+		<timeGen>{{evento.cabecera.timeGen}}</timeGen>
+		<idioma>{{evento.cabecera.idioma}}</idioma>
+		<modoEvento>{{evento.cabecera.modoEvento}}</modoEvento>
+		<timeRecepSucesoC>{{evento.cabecera.timeRecepSucesoC}}</timeRecepSucesoC>
+		<timeGenEvento>{{evento.cabecera.timeGenEvento}}</timeGenEvento>
+		<fuenteSuceso>{{evento.cabecera.fuenteSuceso}}</fuenteSuceso>
+	</cabecera>
+	<detalle>
+		<user>{{evento.detalle.user}}</user>
+		<ip>{{evento.detalle.ip}}</ip>
+		<port>{{evento.detalle.port}}</port>
+		<cohKey>{{evento.detalle.cohKey}}</cohKey>
+		<codPhyOffice>{{evento.detalle.codPhyOffice}}</codPhyOffice>
+		<codOpOffice>{{evento.detalle.codOpOffice}}</codOpOffice>
+		<station>{{evento.detalle.station}}</station>
+		<codPhyBanc>{{evento.detalle.codPhyBanc}}</codPhyBanc>
+		<codOpBanc>{{evento.detalle.codOpBanc}}</codOpBanc>
+		<locale>{{evento.detalle.locale}}</locale>
+		<servlet>{{evento.detalle.servlet}}</servlet>
+		<entEjec>{{evento.detalle.entEjec}}</entEjec>
+		<topic>{{evento.detalle.topic}}</topic>
+	</detalle>
+</evento>

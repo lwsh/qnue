@@ -1,0 +1,9 @@
+{
+    "rabbitMQServicesConnection" : {
+        "host" : "${env.conf.rabbitmq.service.host}",
+		"port" : "${env.conf.rabbitmq.service.port}",
+		"username" : "${env.conf.rabbitmq.service.username}",
+		"password" : "${env.conf.rabbitmq.service.password}",
+		"virtualHost" : "${env.conf.rabbitmq.service.virtualHost}"
+    }
+}

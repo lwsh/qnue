@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>	
+<SOAPmsg:Envelope xmlns:SOAPmsg="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dc="datos_cabecera" xmlns:ds="datos_servicio" xmlns:m="http://schemas.bbva.com/esb/servicios/mensajes" xmlns:xalan="http://xml.apache.org/xslt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2003/05/soap-envelope">xsi:schemaLocation=>"http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAPmsg:Header>
+		<dc:bloque_cabecera>
+			<esbUsuario>$evento.cabecera.esbUser</esbUsuario>
+			<esbOficina>$evento.cabecera.oficina</esbOficina>
+			<esbBanco>$evento.detalle.banco</esbBanco>
+			<esbMedio>$evento.detalle.medio</esbMedio>
+			<esbCanal>$evento.detalle.canal</esbCanal>
+			<esbServicio>$evento.cabecera.servicio</esbServicio>
+		</dc:bloque_cabecera>
+		<ds:bloque_cabecera>
+			<esbNombreServicio>consultarOOCC</esbNombreServicio>
+			<esbVersionServicio>1</esbVersionServicio>
+			<esbSistemaOrigen>QTGE</esbSistemaOrigen>
+			<esbIdMensaje>$evento.detalle.idSesion</esbIdMensaje>
+		</ds:bloque_cabecera>
+	</SOAPmsg:Header>
+	<SOAPmsg:Body>
+		<m:consultarOOCCPeticion>
+			<m:cliente>$evento.cabecera.cliente</m:cliente>
+			<m:noClient>$evento.cabecera.noClient</m:noClient>
+			<m:idSesion>$evento.detalle.idSesion</m:idSesion>
+			<m:pais>$evento.detalle.pais</m:pais>
+			<m:banco>$evento.detalle.banco</m:banco>
+			<m:oficina>$evento.cabecera.oficina</m:oficina>
+			<m:canal>$evento.detalle.canal</m:canal>
+			<m:medio>$evento.detalle.medio</m:medio>
+			<m:servicio>$evento.cabecera.servicio</m:servicio>
+			<m:subInteraccion>$evento.detalle.subInteraccion</m:subInteraccion>
+			<m:idioma>$evento.detalle.idioma</m:idioma>
+			<m:tipoEvento>$evento.cabecera.tipoEvento</m:tipoEvento>
+			<m:modoEvento>$evento.cabecera.modoEvento</m:modoEvento>
+			<m:timeGen>$date.format('yyyy-MM-dd-HH.mm.ss.000000', $evento.cabecera.timeGen)</m:timeGen>
+			<m:evento>$evento.cabecera.eventoC</m:evento>
+		</m:consultarOOCCPeticion>
+	</SOAPmsg:Body>
+</SOAPmsg:Envelope>

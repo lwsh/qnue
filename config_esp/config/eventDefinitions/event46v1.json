@@ -1,0 +1,10 @@
+{
+	"event46v1" : {
+		"id": "event46v1",
+		"name": "event 46 version 1",
+		"description": "event 46 version 1",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "XML",
+		"eventTarget" : "crmBatchStream"
+	}
+}

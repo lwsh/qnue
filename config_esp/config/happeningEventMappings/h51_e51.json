@@ -1,0 +1,12 @@
+{
+   "00000051-01>>event51v1" : {
+      "id" : "00000051-01>>event51v1",
+      "happeningId" : "00000051-01",
+      "eventId" : "event51v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento;timeRecepSucesoC>timeRecepSucesoC;timeRecepSucesoC>timeGenEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000005101'}",
+         "evento.detalle.informarBloqAccActMOLPeticion.servicioInformacionalBloqueo.bloqueo" : "detalle"
+      }
+   }
+}

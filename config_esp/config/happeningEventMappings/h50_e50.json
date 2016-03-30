@@ -1,0 +1,12 @@
+{
+   "00000050-01>>event50v1" : {
+      "id" : "00000050-01>>event50v1",
+      "happeningId" : "00000050-01",
+      "eventId" : "event50v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento;timeRecepSucesoC>timeRecepSucesoC;timeRecepSucesoC>timeGenEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000005001'}",
+         "evento.detalle.informarSatGlobCanalPeticion.servicioInformacionalBloqueo.bloqueo" : "detalle"
+      }
+   }
+}

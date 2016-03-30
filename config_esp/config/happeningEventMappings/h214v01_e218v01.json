@@ -1,0 +1,14 @@
+{
+    "00000214-01>>event218v1" : {
+      "id" : "00000214-01>>event218v1",
+      "happeningId" : "00000214-01",
+      "eventId" : "event218v1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000021801'}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.cabecera.requestId" : "#{T(org.apache.commons.lang.RandomStringUtils).randomNumeric(11)}",
+         "evento.detalle" : "detalle"
+      }
+   }
+}

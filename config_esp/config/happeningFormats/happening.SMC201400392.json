@@ -1,0 +1,11 @@
+{
+    "SMC201400392" : {
+	    "id":"SMC201400392",
+	    "version":"01",
+	    "name":"Suceso SMC201400392",
+	    "description":"Detalle de suceso SMC201400392 (getUserContextualData)",
+	    "executionIdLocation" : "_id",
+        "happeningTimestampField":"timeGenSuceso",
+        "type": "service json"
+    }
+}

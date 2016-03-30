@@ -1,0 +1,33 @@
+{
+    "rabbitMQConnection" : {
+        "host" : "${env.conf.rabbitmq.host}",
+		"port" : "${env.conf.rabbitmq.port}",
+		"username" : "${env.conf.rabbitmq.username}",
+		"password" : "${env.conf.rabbitmq.password}",
+		"virtualHost" : "${env.conf.rabbitmq.virtualHost}"
+    },
+    
+    "rabbitMQCRMConnection" : {
+        "host" : "${env.conf.rabbitmq.crm.host}",
+		"port" : "${env.conf.rabbitmq.crm.port}",
+		"username" : "${env.conf.rabbitmq.crm.username}",
+		"password" : "${env.conf.rabbitmq.crm.password}",
+		"virtualHost" : "${env.conf.rabbitmq.crm.virtualHost}"
+    },
+    
+    "crmOnlineMQ" : {        
+        "hostName" : "${env.conf.mq.crm.host}",
+		"port" : "${env.conf.mq.crm.port}",
+		"channel" : "${env.conf.mq.crm.channel}",
+		"queueManager" : "${env.conf.mq.crm.queueManager}",
+		"queue" : "${env.conf.mq.crm.queue}"
+     },
+     
+     "crmBatchMQ"  : {        
+        "hostName" : "${env.conf.mq.crm.batch.host}",
+		"port" : "${env.conf.mq.crm.batch.port}",
+		"channel" : "${env.conf.mq.crm.batch.channel}",
+		"queueManager" : "${env.conf.mq.crm.batch.queueManager}",
+		"queue" : "${env.conf.mq.crm.batch.queue}"
+     }    
+}

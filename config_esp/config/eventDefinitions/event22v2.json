@@ -1,0 +1,12 @@
+{
+	"event22v2" : {
+		"id": "event22v2",
+		"name": "event 22 v2",
+		"description": "event 22 v2",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{'ENPP'.equalsIgnoreCase(['evento']['cabecera']['appOrigen'])}",
+		"eventFormat" : "json",
+		"eventTarget" : "crmLoginEventQueue"
+	}
+}
+

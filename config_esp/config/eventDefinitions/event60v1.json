@@ -1,0 +1,10 @@
+{
+	"event60v1" : {
+		"id": "event60v1",
+		"name": "event 60 v1",
+		"description": "event 60 v1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "esbStream"
+	}
+}

@@ -1,0 +1,1675 @@
+{
+	"contract": {
+		"branch": "$!event.detail.contract.branch",
+		"id": "$!event.detail.contract.id",
+		"bank": "$!event.detail.contract.bank",
+		"product": [
+			{
+				"id": "$!event.detail.contract.product_0.id",
+				"commercialClassifications": [
+					#if($event.detail.contract.product_0.commercialClassifications_0.id.length()>0)
+					{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_0.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_0.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_1.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_1.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_1.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_2.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_2.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_2.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_3.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_3.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_3.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_4.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_4.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_4.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_5.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_5.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_5.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_6.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_6.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_6.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_7.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_7.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_7.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_8.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_8.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_8.name"
+					}
+					#end
+					#if($event.detail.contract.product_0.commercialClassifications_9.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_0.commercialClassifications_9.id",
+						"name": "$!event.detail.contract.product_0.commercialClassifications_9.name"
+					}
+					#end
+				],
+				"openingDate": "$!event.detail.contract.product_0.id",
+				"participants":[
+					#if($event.detail.contract.product_0.participants_0.id.length() > 0)
+					{
+						"id":"$!event.detail.contract.product_0.participants_0.id",
+						"externalId":"$!event.detail.contract.product_0.participants_0.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_0.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_1.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_1.id",
+						"externalId":"$!event.detail.contract.product_0.participants_1.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_1.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_2.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_2.id",
+						"externalId":"$!event.detail.contract.product_0.participants_2.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_2.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_3.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_3.id",
+						"externalId":"$!event.detail.contract.product_0.participants_3.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_3.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_4.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_4.id",
+						"externalId":"$!event.detail.contract.product_0.participants_4.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_4.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_5.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_5.id",
+						"externalId":"$!event.detail.contract.product_0.participants_5.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_5.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_6.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_6.id",
+						"externalId":"$!event.detail.contract.product_0.participants_6.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_6.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_7.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_7.id",
+						"externalId":"$!event.detail.contract.product_0.participants_7.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_7.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_8.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_8.id",
+						"externalId":"$!event.detail.contract.product_0.participants_8.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_8.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_9.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_9.id",
+						"externalId":"$!event.detail.contract.product_0.participants_9.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_9.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_10.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_10.id",
+						"externalId":"$!event.detail.contract.product_0.participants_10.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_10.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_11.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_11.id",
+						"externalId":"$!event.detail.contract.product_0.participants_11.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_11.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_12.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_12.id",
+						"externalId":"$!event.detail.contract.product_0.participants_12.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_12.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_13.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_13.id",
+						"externalId":"$!event.detail.contract.product_0.participants_13.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_13.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_14.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_14.id",
+						"externalId":"$!event.detail.contract.product_0.participants_14.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_14.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_15.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_15.id",
+						"externalId":"$!event.detail.contract.product_0.participants_15.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_15.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_16.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_16.id",
+						"externalId":"$!event.detail.contract.product_0.participants_16.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_16.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_17.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_17.id",
+						"externalId":"$!event.detail.contract.product_0.participants_17.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_17.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_18.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_18.id",
+						"externalId":"$!event.detail.contract.product_0.participants_18.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_18.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_0.participants_19.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_0.participants_19.id",
+						"externalId":"$!event.detail.contract.product_0.participants_19.externalId",
+						"relationship":{
+					"order":"$!event.detail.contract.product_0.participants_19.relationship.order"
+						}
+					}
+					#end
+
+				],
+				
+				
+				
+			
+				"transactions":{
+					"transaction":[
+						#if($event.detail.contract.product_0.transactions.transaction_0.id.length() > 0)
+						{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_0.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_0.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_0.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_0.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_0.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_0.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_0.amount="")#end$!event.detail.contract.product_0.transactions.transaction_0.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_1.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_1.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_1.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_1.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_1.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_1.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_1.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_1.amount="")#end$!event.detail.contract.product_0.transactions.transaction_1.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_2.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_2.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_2.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_2.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_2.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_2.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_2.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_2.amount="")#end$!event.detail.contract.product_0.transactions.transaction_2.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_3.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_3.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_3.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_3.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_3.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_3.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_3.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_3.amount="")#end$!event.detail.contract.product_0.transactions.transaction_3.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_4.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_4.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_4.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_4.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_4.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_4.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_4.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_4.amount="")#end$!event.detail.contract.product_0.transactions.transaction_4.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_5.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_5.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_5.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_5.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_5.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_5.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_5.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_5.amount="")#end$!event.detail.contract.product_0.transactions.transaction_5.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_6.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_6.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_6.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_6.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_6.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_6.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_6.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_6.amount="")#end$!event.detail.contract.product_0.transactions.transaction_6.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_7.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_7.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_7.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_7.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_7.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_7.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_7.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_7.amount="")#end$!event.detail.contract.product_0.transactions.transaction_7.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_8.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_8.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_8.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_8.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_8.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_8.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_8.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_8.amount="")#end$!event.detail.contract.product_0.transactions.transaction_8.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_9.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_9.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_9.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_9.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_9.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_9.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_9.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_9.amount="")#end$!event.detail.contract.product_0.transactions.transaction_9.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_10.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_10.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_10.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_10.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_10.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_10.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_10.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_10.amount="")#end$!event.detail.contract.product_0.transactions.transaction_10.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_11.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_11.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_11.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_11.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_11.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_11.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_11.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_11.amount="")#end$!event.detail.contract.product_0.transactions.transaction_11.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_12.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_12.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_12.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_12.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_12.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_12.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_12.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_12.amount="")#end$!event.detail.contract.product_0.transactions.transaction_12.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_13.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_13.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_13.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_13.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_13.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_13.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_13.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_13.amount="")#end$!event.detail.contract.product_0.transactions.transaction_13.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_14.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_14.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_14.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_14.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_14.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_14.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_14.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_14.amount="")#end$!event.detail.contract.product_0.transactions.transaction_14.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_15.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_15.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_15.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_15.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_15.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_15.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_15.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_15.amount="")#end$!event.detail.contract.product_0.transactions.transaction_15.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_16.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_16.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_16.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_16.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_16.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_16.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_16.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_16.amount="")#end$!event.detail.contract.product_0.transactions.transaction_16.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_17.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_17.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_17.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_17.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_17.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_17.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_17.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_17.amount="")#end$!event.detail.contract.product_0.transactions.transaction_17.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_18.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_18.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_18.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_18.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_18.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_18.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_18.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_18.amount="")#end$!event.detail.contract.product_0.transactions.transaction_18.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_19.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_19.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_19.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_19.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_19.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_19.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_19.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_19.amount="")#end$!event.detail.contract.product_0.transactions.transaction_19.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_20.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_20.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_20.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_20.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_20.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_20.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_20.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_20.amount="")#end$!event.detail.contract.product_0.transactions.transaction_20.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_21.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_21.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_21.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_21.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_21.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_21.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_21.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_21.amount="")#end$!event.detail.contract.product_0.transactions.transaction_21.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_22.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_22.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_22.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_22.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_22.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_22.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_22.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_22.amount="")#end$!event.detail.contract.product_0.transactions.transaction_22.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_23.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_23.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_23.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_23.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_23.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_23.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_23.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_23.amount="")#end$!event.detail.contract.product_0.transactions.transaction_23.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_24.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_24.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_24.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_24.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_24.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_24.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_24.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_24.amount="")#end$!event.detail.contract.product_0.transactions.transaction_24.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_25.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_25.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_25.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_25.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_25.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_25.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_25.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_25.amount="")#end$!event.detail.contract.product_0.transactions.transaction_25.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_26.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_26.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_26.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_26.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_26.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_26.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_26.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_26.amount="")#end$!event.detail.contract.product_0.transactions.transaction_26.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_27.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_27.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_27.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_27.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_27.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_27.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_27.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_27.amount="")#end$!event.detail.contract.product_0.transactions.transaction_27.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_28.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_28.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_28.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_28.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_28.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_28.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_28.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_28.amount="")#end$!event.detail.contract.product_0.transactions.transaction_28.amount"
+						}
+						#end
+						#if($event.detail.contract.product_0.transactions.transaction_29.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_0.transactions.transaction_29.id",
+							"name":"$!event.detail.contract.product_0.transactions.transaction_29.name",
+							"transactionDate":"$!event.detail.contract.product_0.transactions.transaction_29.transactionDate",
+							"valueDate":"$!event.detail.contract.product_0.transactions.transaction_29.valueDate",
+							"status":"$!event.detail.contract.product_0.transactions.transaction_29.status",
+							"amount":"#if($event.detail.contract.product_0.transactions.transaction_29.amount.length()==1)#set($event.detail.contract.product_0.transactions.transaction_29.amount="")#end$!event.detail.contract.product_0.transactions.transaction_29.amount"
+						}
+						#end
+					]
+				}
+  		},
+			{
+				"id":"$!event.detail.contract.product_1.id",
+				"commercialClassifications":[
+					#if($event.detail.contract.product_1.commercialClassifications_0.id.length() > 0)
+					{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_0.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_0.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_1.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_1.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_1.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_2.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_2.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_2.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_3.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_3.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_3.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_4.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_4.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_4.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_5.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_5.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_5.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_6.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_6.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_6.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_7.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_7.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_7.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_8.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_8.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_8.name"
+					}
+					#end
+					#if($event.detail.contract.product_1.commercialClassifications_9.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_1.commercialClassifications_9.id",
+						"name":"$!event.detail.contract.product_1.commercialClassifications_9.name"
+					}
+					#end
+
+					],
+				"openingDate":"$!event.detail.contract.product_1.id",
+				"participants": [
+					#if($event.detail.contract.product_1.participants_0.id.length()>0)
+					{
+						"id": "$!event.detail.contract.product_1.participants_0.id",
+						"externalId": "$!event.detail.contract.product_1.participants_0.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_0.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_1.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_1.id",
+						"externalId": "$!event.detail.contract.product_1.participants_1.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_1.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_2.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_2.id",
+						"externalId": "$!event.detail.contract.product_1.participants_2.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_2.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_3.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_3.id",
+						"externalId": "$!event.detail.contract.product_1.participants_3.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_3.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_4.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_4.id",
+						"externalId": "$!event.detail.contract.product_1.participants_4.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_4.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_5.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_5.id",
+						"externalId": "$!event.detail.contract.product_1.participants_5.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_5.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_6.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_6.id",
+						"externalId": "$!event.detail.contract.product_1.participants_6.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_6.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_7.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_7.id",
+						"externalId": "$!event.detail.contract.product_1.participants_7.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_7.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_8.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_8.id",
+						"externalId": "$!event.detail.contract.product_1.participants_8.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_8.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_9.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_9.id",
+						"externalId": "$!event.detail.contract.product_1.participants_9.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_9.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_10.id.length() > 0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_10.id",
+						"externalId": "$!event.detail.contract.product_1.participants_10.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_10.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_11.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_11.id",
+						"externalId": "$!event.detail.contract.product_1.participants_11.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_11.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_12.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_12.id",
+						"externalId": "$!event.detail.contract.product_1.participants_12.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_12.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_13.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_13.id",
+						"externalId": "$!event.detail.contract.product_1.participants_13.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_13.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_14.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_14.id",
+						"externalId": "$!event.detail.contract.product_1.participants_14.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_14.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_15.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_15.id",
+						"externalId": "$!event.detail.contract.product_1.participants_15.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_15.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_16.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_16.id",
+						"externalId": "$!event.detail.contract.product_1.participants_16.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_16.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_17.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_17.id",
+						"externalId": "$!event.detail.contract.product_1.participants_17.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_17.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_18.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_18.id",
+						"externalId": "$!event.detail.contract.product_1.participants_18.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_18.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_1.participants_19.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_1.participants_19.id",
+						"externalId": "$!event.detail.contract.product_1.participants_19.externalId",
+					"relationship": {
+					"order": "$!event.detail.contract.product_1.participants_19.relationship.order"
+						}
+					}
+					#end
+				],
+				
+				
+				
+			
+				"transactions":{
+					"transaction":[
+						#if($event.detail.contract.product_1.transactions.transaction_0.id.length() > 0)
+						{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_0.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_0.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_0.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_0.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_0.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_0.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_0.amount="")#end$!event.detail.contract.product_1.transactions.transaction_0.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_1.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_1.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_1.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_1.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_1.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_1.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_1.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_1.amount="")#end$!event.detail.contract.product_1.transactions.transaction_1.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_2.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_2.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_2.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_2.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_2.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_2.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_2.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_2.amount="")#end$!event.detail.contract.product_1.transactions.transaction_2.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_3.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_3.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_3.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_3.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_3.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_3.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_3.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_3.amount="")#end$!event.detail.contract.product_1.transactions.transaction_3.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_4.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_4.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_4.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_4.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_4.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_4.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_4.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_4.amount="")#end$!event.detail.contract.product_1.transactions.transaction_4.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_5.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_5.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_5.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_5.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_5.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_5.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_5.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_5.amount="")#end$!event.detail.contract.product_1.transactions.transaction_5.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_6.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_6.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_6.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_6.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_6.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_6.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_6.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_6.amount="")#end$!event.detail.contract.product_1.transactions.transaction_6.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_7.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_7.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_7.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_7.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_7.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_7.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_7.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_7.amount="")#end$!event.detail.contract.product_1.transactions.transaction_7.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_8.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_8.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_8.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_8.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_8.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_8.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_8.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_8.amount="")#end$!event.detail.contract.product_1.transactions.transaction_8.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_9.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_9.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_9.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_9.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_9.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_9.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_9.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_9.amount="")#end$!event.detail.contract.product_1.transactions.transaction_9.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_10.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_10.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_10.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_10.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_10.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_10.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_10.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_10.amount="")#end$!event.detail.contract.product_1.transactions.transaction_10.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_11.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_11.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_11.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_11.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_11.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_11.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_11.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_11.amount="")#end$!event.detail.contract.product_1.transactions.transaction_11.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_12.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_12.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_12.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_12.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_12.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_12.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_12.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_12.amount="")#end$!event.detail.contract.product_1.transactions.transaction_12.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_13.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_13.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_13.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_13.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_13.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_13.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_13.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_13.amount="")#end$!event.detail.contract.product_1.transactions.transaction_13.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_14.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_14.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_14.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_14.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_14.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_14.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_14.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_14.amount="")#end$!event.detail.contract.product_1.transactions.transaction_14.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_15.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_15.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_15.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_15.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_15.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_15.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_15.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_15.amount="")#end$!event.detail.contract.product_1.transactions.transaction_15.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_16.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_16.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_16.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_16.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_16.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_16.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_16.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_16.amount="")#end$!event.detail.contract.product_1.transactions.transaction_16.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_17.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_17.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_17.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_17.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_17.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_17.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_17.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_17.amount="")#end$!event.detail.contract.product_1.transactions.transaction_17.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_18.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_18.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_18.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_18.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_18.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_18.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_18.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_18.amount="")#end$!event.detail.contract.product_1.transactions.transaction_18.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_19.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_19.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_19.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_19.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_19.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_19.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_19.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_19.amount="")#end$!event.detail.contract.product_1.transactions.transaction_19.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_20.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_20.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_20.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_20.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_20.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_20.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_20.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_20.amount="")#end$!event.detail.contract.product_1.transactions.transaction_20.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_21.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_21.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_21.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_21.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_21.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_21.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_21.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_21.amount="")#end$!event.detail.contract.product_1.transactions.transaction_21.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_22.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_22.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_22.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_22.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_22.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_22.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_22.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_22.amount="")#end$!event.detail.contract.product_1.transactions.transaction_22.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_23.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_23.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_23.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_23.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_23.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_23.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_23.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_23.amount="")#end$!event.detail.contract.product_1.transactions.transaction_23.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_24.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_24.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_24.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_24.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_24.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_24.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_24.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_24.amount="")#end$!event.detail.contract.product_1.transactions.transaction_24.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_25.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_25.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_25.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_25.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_25.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_25.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_25.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_25.amount="")#end$!event.detail.contract.product_1.transactions.transaction_25.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_26.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_26.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_26.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_26.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_26.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_26.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_26.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_26.amount="")#end$!event.detail.contract.product_1.transactions.transaction_26.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_27.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_27.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_27.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_27.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_27.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_27.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_27.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_27.amount="")#end$!event.detail.contract.product_1.transactions.transaction_27.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_28.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_28.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_28.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_28.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_28.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_28.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_28.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_28.amount="")#end$!event.detail.contract.product_1.transactions.transaction_28.amount"
+						}
+						#end
+						#if($event.detail.contract.product_1.transactions.transaction_29.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_1.transactions.transaction_29.id",
+							"name":"$!event.detail.contract.product_1.transactions.transaction_29.name",
+							"transactionDate":"$!event.detail.contract.product_1.transactions.transaction_29.transactionDate",
+							"valueDate":"$!event.detail.contract.product_1.transactions.transaction_29.valueDate",
+							"status":"$!event.detail.contract.product_1.transactions.transaction_29.status",
+							"amount":"#if($event.detail.contract.product_1.transactions.transaction_29.amount.length()==1)#set($event.detail.contract.product_1.transactions.transaction_29.amount="")#end$!event.detail.contract.product_1.transactions.transaction_29.amount"
+						}
+						#end
+					]
+				}
+			},
+			{
+				"id": "$!event.detail.contract.product_2.id",
+				"commercialClassifications": [
+					#if($event.detail.contract.product_2.commercialClassifications_0.id.length()>0)
+					{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_0.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_0.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_1.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_1.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_1.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_2.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_2.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_2.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_3.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_3.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_3.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_4.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_4.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_4.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_5.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_5.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_5.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_6.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_6.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_6.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_7.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_7.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_7.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_8.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_8.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_8.name"
+					}
+					#end
+					#if($event.detail.contract.product_2.commercialClassifications_9.id.length()>0)
+					,{
+						"id": "$!event.detail.contract.product_2.commercialClassifications_9.id",
+						"name": "$!event.detail.contract.product_2.commercialClassifications_9.name"
+					}
+					#end
+				],
+				"openingDate": "$!event.detail.contract.product_2.id",
+				"participants":      [
+					#if($event.detail.contract.product_2.participants_0.id.length() > 0)
+					{
+						"id":"$!event.detail.contract.product_2.participants_0.id",
+						"externalId":"$!event.detail.contract.product_2.participants_0.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_0.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_1.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_1.id",
+						"externalId":"$!event.detail.contract.product_2.participants_1.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_1.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_2.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_2.id",
+						"externalId":"$!event.detail.contract.product_2.participants_2.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_2.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_3.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_3.id",
+						"externalId":"$!event.detail.contract.product_2.participants_3.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_3.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_4.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_4.id",
+						"externalId":"$!event.detail.contract.product_2.participants_4.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_4.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_5.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_5.id",
+						"externalId":"$!event.detail.contract.product_2.participants_5.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_5.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_6.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_6.id",
+						"externalId":"$!event.detail.contract.product_2.participants_6.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_6.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_7.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_7.id",
+						"externalId":"$!event.detail.contract.product_2.participants_7.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_7.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_8.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_8.id",
+						"externalId":"$!event.detail.contract.product_2.participants_8.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_8.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_9.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_9.id",
+						"externalId":"$!event.detail.contract.product_2.participants_9.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_9.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_10.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_10.id",
+						"externalId":"$!event.detail.contract.product_2.participants_10.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_10.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_11.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_11.id",
+						"externalId":"$!event.detail.contract.product_2.participants_11.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_11.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_12.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_12.id",
+						"externalId":"$!event.detail.contract.product_2.participants_12.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_12.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_13.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_13.id",
+						"externalId":"$!event.detail.contract.product_2.participants_13.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_13.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_14.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_14.id",
+						"externalId":"$!event.detail.contract.product_2.participants_14.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_14.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_15.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_15.id",
+						"externalId":"$!event.detail.contract.product_2.participants_15.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_15.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_16.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_16.id",
+						"externalId":"$!event.detail.contract.product_2.participants_16.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_16.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_17.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_17.id",
+						"externalId":"$!event.detail.contract.product_2.participants_17.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_17.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_18.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_18.id",
+						"externalId":"$!event.detail.contract.product_2.participants_18.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_18.relationship.order"
+						}
+					}
+					#end
+					#if($event.detail.contract.product_2.participants_19.id.length() > 0)
+					,{
+						"id":"$!event.detail.contract.product_2.participants_19.id",
+						"externalId":"$!event.detail.contract.product_2.participants_19.externalId",
+						"relationship":{
+							"order":"$!event.detail.contract.product_2.participants_19.relationship.order"
+						}
+					}
+					#end
+				],
+	  		"transactions":{
+					"transaction":[
+						#if($event.detail.contract.product_2.transactions.transaction_0.id.length() > 0)
+						{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_0.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_0.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_0.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_0.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_0.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_0.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_0.amount="")#end$!event.detail.contract.product_2.transactions.transaction_0.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_1.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_1.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_1.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_1.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_1.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_1.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_1.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_1.amount="")#end$!event.detail.contract.product_2.transactions.transaction_1.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_2.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_2.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_2.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_2.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_2.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_2.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_2.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_2.amount="")#end$!event.detail.contract.product_2.transactions.transaction_2.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_3.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_3.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_3.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_3.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_3.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_3.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_3.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_3.amount="")#end$!event.detail.contract.product_2.transactions.transaction_3.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_4.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_4.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_4.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_4.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_4.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_4.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_4.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_4.amount="")#end$!event.detail.contract.product_2.transactions.transaction_4.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_5.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_5.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_5.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_5.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_5.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_5.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_5.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_5.amount="")#end$!event.detail.contract.product_2.transactions.transaction_5.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_6.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_6.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_6.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_6.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_6.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_6.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_6.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_6.amount="")#end$!event.detail.contract.product_2.transactions.transaction_6.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_7.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_7.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_7.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_7.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_7.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_7.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_7.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_7.amount="")#end$!event.detail.contract.product_2.transactions.transaction_7.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_8.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_8.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_8.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_8.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_8.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_8.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_8.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_8.amount="")#end$!event.detail.contract.product_2.transactions.transaction_8.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_9.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_9.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_9.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_9.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_9.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_9.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_9.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_9.amount="")#end$!event.detail.contract.product_2.transactions.transaction_9.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_10.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_10.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_10.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_10.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_10.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_10.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_10.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_10.amount="")#end$!event.detail.contract.product_2.transactions.transaction_10.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_11.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_11.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_11.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_11.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_11.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_11.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_11.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_11.amount="")#end$!event.detail.contract.product_2.transactions.transaction_11.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_12.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_12.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_12.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_12.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_12.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_12.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_12.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_12.amount="")#end$!event.detail.contract.product_2.transactions.transaction_12.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_13.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_13.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_13.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_13.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_13.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_13.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_13.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_13.amount="")#end$!event.detail.contract.product_2.transactions.transaction_13.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_14.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_14.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_14.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_14.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_14.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_14.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_14.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_14.amount="")#end$!event.detail.contract.product_2.transactions.transaction_14.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_15.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_15.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_15.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_15.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_15.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_15.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_15.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_15.amount="")#end$!event.detail.contract.product_2.transactions.transaction_15.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_16.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_16.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_16.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_16.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_16.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_16.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_16.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_16.amount="")#end$!event.detail.contract.product_2.transactions.transaction_16.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_17.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_17.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_17.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_17.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_17.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_17.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_17.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_17.amount="")#end$!event.detail.contract.product_2.transactions.transaction_17.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_18.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_18.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_18.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_18.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_18.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_18.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_18.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_18.amount="")#end$!event.detail.contract.product_2.transactions.transaction_18.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_19.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_19.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_19.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_19.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_19.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_19.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_19.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_19.amount="")#end$!event.detail.contract.product_2.transactions.transaction_19.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_20.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_20.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_20.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_20.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_20.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_20.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_20.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_20.amount="")#end$!event.detail.contract.product_2.transactions.transaction_20.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_21.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_21.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_21.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_21.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_21.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_21.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_21.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_21.amount="")#end$!event.detail.contract.product_2.transactions.transaction_21.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_22.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_22.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_22.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_22.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_22.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_22.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_22.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_22.amount="")#end$!event.detail.contract.product_2.transactions.transaction_22.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_23.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_23.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_23.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_23.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_23.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_23.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_23.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_23.amount="")#end$!event.detail.contract.product_2.transactions.transaction_23.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_24.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_24.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_24.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_24.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_24.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_24.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_24.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_24.amount="")#end$!event.detail.contract.product_2.transactions.transaction_24.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_25.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_25.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_25.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_25.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_25.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_25.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_25.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_25.amount="")#end$!event.detail.contract.product_2.transactions.transaction_25.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_26.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_26.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_26.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_26.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_26.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_26.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_26.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_26.amount="")#end$!event.detail.contract.product_2.transactions.transaction_26.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_27.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_27.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_27.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_27.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_27.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_27.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_27.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_27.amount="")#end$!event.detail.contract.product_2.transactions.transaction_27.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_28.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_28.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_28.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_28.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_28.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_28.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_28.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_28.amount="")#end$!event.detail.contract.product_2.transactions.transaction_28.amount"
+						}
+						#end
+						#if($event.detail.contract.product_2.transactions.transaction_29.id.length() > 0)
+						,{
+							"id":"$!event.detail.contract.product_2.transactions.transaction_29.id",
+							"name":"$!event.detail.contract.product_2.transactions.transaction_29.name",
+							"transactionDate":"$!event.detail.contract.product_2.transactions.transaction_29.transactionDate",
+							"valueDate":"$!event.detail.contract.product_2.transactions.transaction_29.valueDate",
+							"status":"$!event.detail.contract.product_2.transactions.transaction_29.status",
+							"amount":"#if($event.detail.contract.product_2.transactions.transaction_29.amount.length()==1)#set($event.detail.contract.product_2.transactions.transaction_29.amount="")#end$!event.detail.contract.product_2.transactions.transaction_29.amount"
+						}
+						#end
+					]
+				}
+			}
+		]
+	}
+}

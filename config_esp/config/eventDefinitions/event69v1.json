@@ -1,0 +1,11 @@
+{
+	"event69v1" : {
+		"id": "event69v1",
+		"name": "Login Banca a distancia",
+		"description": "evento generado al producirse un login en banca a distancia",
+		"validationRule" : "#{'ENPP'.equalsIgnoreCase(['evento']['cabecera']['appOrigen'])}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",		
+		"eventFormat" : "json",
+		"eventTarget" : "crmLoginEventQueue"
+	}
+}

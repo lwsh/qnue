@@ -1,0 +1,11 @@
+{
+	"event217v1" :{
+		"id": "event217v1",
+		"name": "event 217 version 1",
+		"description": "event 217 version 1",
+		"validationRule" : "#{'1'.equals(['evento']['detalle']['xtiTipoS']) && '11'.equals(['evento']['detalle']['codPushEOutS'])}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

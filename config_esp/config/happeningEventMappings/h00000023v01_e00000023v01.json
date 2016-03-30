@@ -1,0 +1,45 @@
+{
+	"00000023-01>>event23v1": {
+		"id" :"00000023-01>>event23v1",
+		"happeningId" : "00000023-01",
+		"eventId" : "event23v1",
+		"mappings" :{
+			"evento.cabecera.appOrigen" : "cabecera.appOrigen",
+			"evento.cabecera.tipoEvento" : "#{'00000023'}",
+			"evento.cabecera.correlid" : "cabecera.suceso",
+			"evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000002301'}",
+			"evento.cabecera.banco" : "cabecera.banco",
+			"evento.cabecera.pais" : "cabecera.pais",
+			"evento.cabecera.cliente" : "cabecera.cliente",
+			"evento.cabecera.tipoCliente" : "cabecera.tipoCliente",
+			"evento.cabecera.noClient" : "cabecera.noClient",
+			"evento.cabecera.canal" : "cabecera.canal",
+			"evento.cabecera.medio" : "cabecera.medio",
+			"evento.cabecera.version" : "#{'01'}",
+			"evento.cabecera.servicio" : "cabecera.servicio",
+			"evento.cabecera.oficina" : "cabecera.oficina",
+			"evento.cabecera.timeGen" : "cabecera.timeGen",
+			"evento.cabecera.idioma" : "cabecera.idioma",
+			"evento.cabecera.modoEvento" : "cabecera.modoSuceso",
+			"evento.cabecera.timeRecepSucesoC" : "#{(new java.text.SimpleDateFormat('yyyy-MM-dd HH:mm:ss.SSSSSS')).format((['cabecera']['timeRecepSuceso']))}",
+			"evento.cabecera.timeGenEvento" : "#{(new java.text.SimpleDateFormat('yyyy-MM-dd HH:mm:ss.SSSSSS')).format((new java.util.Date(T(System).currentTimeMillis())))}",
+			"evento.cabecera.fuenteSuceso" : "cabecera.fuenteSuceso",
+			
+			
+			"evento.detalle.user" : "detalle.user",
+			"evento.detalle.ip" : "#{((['detalle']['dns']!=null && (['detalle']['dns']).length()>0))?(['detalle']['dns']):(['detalle']['ip'])}",
+			"evento.detalle.port" : "detalle.port",
+			"evento.detalle.cohKey" : "detalle.cohKey",
+			"evento.detalle.codPhyOffice" : "detalle.codPhyOffice",
+			"evento.detalle.codOpOffice" : "detalle.codOpOffice",
+			"evento.detalle.station" : "detalle.station",
+			"evento.detalle.codPhyBanc" : "detalle.codPhyBanc",
+			"evento.detalle.codOpBanc" : "detalle.codOpBanc",
+			"evento.detalle.locale" : "detalle.locale",
+			"evento.detalle.servlet" : "detalle.servlet",
+			"evento.detalle.entEjec" : "detalle.entEjec",
+			"evento.detalle.topic" : "#{((['detalle']['topic']!=null && (['detalle']['topic']).length()>0))?(['detalle']['topic']):('ofi')}"
+			
+		}
+	}
+}

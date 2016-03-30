@@ -1,0 +1,20 @@
+{
+    "00000022-01>>event60v1" : {
+      "id" : "00000022-01>>event60v1",
+      "happeningId" : "00000022-01",
+      "eventId" : "event60v1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;modoSuceso>modoEvento;exclude:timeGen)",
+         "evento.cabecera.timeGen" : "#{new java.text.SimpleDateFormat(\"yyyy-MM-dd'T'HH:mm:ssXXX\").parse(['cabecera']['timeGen'])}",
+         "evento.cabecera.tipoEvento" : "#{'00000060'}",
+         "evento.cabecera.version" : "#{'01'}",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000006001'}",         
+         "evento.cabecera.esbUser" : "#{['propertyResolver'].resolve('env.conf.esb.username')}",
+
+         "evento.detalle" : "detalle(exclude:medio;exclude:canal)",
+         "evento.detalle.medio" : "#{T(java.lang.Integer).valueOf(['detalle']['medio'])}",
+         "evento.detalle.canal" : "#{T(java.lang.Integer).valueOf(['detalle']['canal'])}",
+         "evento.detalle.idSesion" : "#{['contexto']['contextoA'] != null ? ['contexto']['contextoA']['idSesion'] : ['contexto']['contextoN']['idSesion']}"
+      }
+   }
+}

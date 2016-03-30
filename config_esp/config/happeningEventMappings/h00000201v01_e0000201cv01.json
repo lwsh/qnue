@@ -1,0 +1,35 @@
+{
+	"00000201-01>>event201cv1": {
+		"id" :"00000201-01>>event201cv1",
+		"happeningId" : "00000201-01",
+		"eventId" : "event201cv1",
+		"mappings" :{
+			"evento.cabecera" :"cabecera(suceso>correlid;modoSuceso>modoEvento;timeRecepSucesoC>timeGenEvento)",
+			"evento.cabecera.tipoEvento" :"#{'00000201'}",
+			"evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000201c01'}",
+			"evento.detalle" :"detalle(exclude:impMoTranEntera;exclude:impMoTranDecimal;exclude:impComisSalEntera;exclude:impComisSalDecimal;exclude:monComisSal)",
+			"evento.cabecera.idEvento" :"#{T(java.util.UUID).randomUUID()}",
+			"evento.detalle.ffOper_R_5":"#{(['detalle']['ffOper']).substring(2,8)}",
+			"evento.detalle.panSal_R_5":"#{((((['detalle']['panSal'])!=null) && ((['detalle']['panSal']).length()>4)))?((['detalle']['panSal']).substring((['detalle']['panSal']).length()-5)):''}",
+			"evento.cabecera.cliente_R_25_25":"#{((((['cabecera']['cliente'])!=null) && ((['cabecera']['cliente']).length()>25)))?((['cabecera']['cliente']).substring((['cabecera']['cliente']).length()-25)):(['cabecera']['cliente'])}",
+			"evento.cabecera.tipoCliente_R_1_1":"#{((((['cabecera']['tipoCliente'])!=null) && ((['cabecera']['tipoCliente']).length()>1)))?((['cabecera']['tipoCliente']).substring((['cabecera']['tipoCliente']).length()-1)):(['cabecera']['tipoCliente'])}",
+			"evento.cabecera.medio_R_2_2":"#{((((['cabecera']['medio'])!=null) && ((['cabecera']['medio']).length()>2)))?((['cabecera']['medio']).substring((['cabecera']['medio']).length()-2)):(['cabecera']['medio'])}",
+			"evento.cabecera.timeGenChar":"#{((new java.text.SimpleDateFormat('yyyy-MM-dd HH:mm:ss.SSSZZZZZ')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenAnno":"#{((new java.text.SimpleDateFormat('yyyy')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenMes":"#{((new java.text.SimpleDateFormat('MM')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenDia":"#{((new java.text.SimpleDateFormat('dd')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenHora":"#{((new java.text.SimpleDateFormat('HH')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenMinuto":"#{((new java.text.SimpleDateFormat('mm')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenSegundo":"#{((new java.text.SimpleDateFormat('ss')).format((['cabecera']['timeGen'])))}",
+			"evento.cabecera.timeGenZonaA":"#{((new java.text.SimpleDateFormat('ZZZ')).format((['cabecera']['timeGen'])).substring(0,3))}",
+			"evento.cabecera.timeGenZonaB":"#{((new java.text.SimpleDateFormat('ZZZ')).format((['cabecera']['timeGen'])).substring(3))}",
+        	"evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+        	"evento.detalle.impMoTranEntera":"#{['detalle']['impMoTranEntera'].replace('[^\\d.]','').length() > 0 ? ['detalle']['impMoTranEntera']  : '0'}",
+        	"evento.detalle.impMoTranDecimal":"#{(['detalle']['impMoTranDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impMoTranDecimal'] : '00'}",
+        	"evento.detalle.impComisSalEntera":"#{['detalle']['impComisSalEntera'].replace('[^\\d.]','').length() > 0 ?  ['detalle']['impComisSalEntera'] : '0'}",
+        	"evento.detalle.impComisSalDecimal":"#{(['detalle']['impComisSalDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impComisSalDecimal'] : '00'}",
+        	"evento.detalle.monComisSal":"#{(['detalle']['impComisSalEntera'].replace('[^\\d.]','').length() + ['detalle']['impComisSalDecimal'].replace('[^\\d.]','').length()) > 0 ?  ['detalle']['monComisSal'] : ['detalle']['codMoTran']}"
+		}
+	}
+}
+

@@ -1,0 +1,10 @@
+{
+  "00000026-01" : {
+    "id":"00000026",
+    "version":"01",
+    "name":"Suceso00000026v01",
+    "description":"Detalle de suceso 00000026v01",
+    "happeningTimestampField":"cabecera.timeRecepSuceso",
+    "type":"XML FRAME"
+  }
+}

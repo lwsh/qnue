@@ -1,0 +1,49 @@
+{
+  "00000051-01": {
+    "id": "00000051",
+    "version": "01",
+    "name": "00000051 happening format defintion",
+    "description": "00000050 happening format defintion",
+    "happeningTimestampField":"cabecera.timeRecepSucesoC",
+    "type": "HOST_TRANSACTION_CONTENT",
+    "preFormatDefinitions": [
+      "hostHeader_ES"
+    ],
+    "formatDefinition": [
+      {
+        "detalle": [
+          {
+            "tipoBloqueo": {
+              "length": 10,
+              "type": "string"
+            }
+          },
+          {
+            "xtiBloqueo": {
+              "length": 1,
+              "type": "string"
+            }
+          },
+          {
+            "codTipoPro": {
+              "length": 2,
+              "type": "string"
+            }
+          },
+          {
+            "timIniBlo": {
+              "length": 26,
+              "type": "string"
+            }
+          },
+          {
+            "timFinBlo": {
+              "length": 26,
+              "type": "string"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

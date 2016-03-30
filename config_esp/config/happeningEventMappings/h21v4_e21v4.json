@@ -1,0 +1,16 @@
+{
+   
+   "00000021-04>>event21v4" : {
+      "id" : "00000021-04>>event21v4",
+      "happeningId" : "00000021-04",
+      "eventId" : "event21v4",
+      "eventUniqueID" : "event.header.eventId",
+      "mappings" : {
+         "event.header" : "header(happening>correlid;happeningMode>eventMode)",
+         "event.header.eventId" : "#{T(java.util.UUID).randomUUID()}",
+         "event.header.eventType" : "#{'00000021'}",
+         "event.customer" : "#{['customersEnricher'].enrichCustomer(['header'], 'bank.countryId', 'robinsons', 'irrInvestment', 'arrears', 'externalId', 'employeeData.type', 'classification.globalSegmentation', 'contactsInformation', 'birthDate')}",
+         "event.detail" : "detail"
+      }
+   }
+}

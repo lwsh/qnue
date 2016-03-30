@@ -1,0 +1,83 @@
+{
+   "00000407-01":{
+      "id":"00000407",
+      "version":"01",
+      "name":"P2P Expiracion 7 dias - solicitud a emisor",
+      "description":"Expiracion periodo de respuesta (7 dias) aviso solicitud a emisor - (PE4)",
+      "happeningTimestampField":"cabecera.timeRecepSucesoC",
+      "preFormatDefinitions":[
+         "hostHeader_ES"
+      ],
+      "formatDefinition":[
+         {
+            "detalle":
+[
+  {"nombreReceptor": {
+    "length": 80,
+    "type": "string"
+  }},
+  {"telefonoReceptor_ini": {
+    "length": 9,
+    "type": "string"
+  }},
+  {"telefonoReceptor_fin": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"importeTransaccion_entero": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"importeTransaccion_decimal": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"divisaTransaccion": {
+    "length": 3,
+    "type": "string"
+  }},
+  {"importeCliente_entero": {
+    "length": 13,
+    "type": "string"
+  }},
+  {"importeCliente_decimal": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"divisaCliente": {
+    "length": 3,
+    "type": "string"
+  }},
+  {"fechaHora": {
+    "length": 12,
+    "type": "string"
+  }},
+  {"texto": {
+    "length": 254,
+    "type": "string"
+  }},
+  {"paisEmisor": {
+    "length": 2,
+    "type": "string"
+  }},
+  {"entidadEmisor": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"contrapartidaEmisor": {
+    "length": 4,
+    "type": "string"
+  }},
+  {"iucEmisor": {
+    "length": 26,
+    "type": "string"
+  }},
+  {"clienteEmisor": {
+    "length": 9,
+    "type": "string"
+  }}
+]
+         }
+      ]
+   }
+}

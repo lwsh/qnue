@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<verifySync xmlns="http://verify.services.verisign.com/">
+		<arg0 xsi:type="ns1:KeyValuePair" xmlns="" xmlns:ns1="http://verify.services.verisign.com/">
+			<key>AMOUNT</key>
+			<value xsi:type="xsd:string">$evento.M.amount.amount</value>
+		</arg0>
+		<arg0 xsi:type="ns2:KeyValuePair" xmlns="" xmlns:ns2="http://verify.services.verisign.com/">
+			<key>AMOUNT_ORIG</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns3:KeyValuePair" xmlns="" xmlns:ns3="http://verify.services.verisign.com/">
+			<key>APPLICATION</key>
+			<value xsi:type="xsd:string">$evento.applicationUUAA</value>
+		</arg0>
+		<arg0 xsi:type="ns4:KeyValuePair" xmlns="" xmlns:ns4="http://verify.services.verisign.com/">
+			<key>AUTH_FACTOR</key>
+			<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns5:KeyValuePair" xmlns="" xmlns:ns5="http://verify.services.verisign.com/">
+			<key>CREDIT_DEBIT</key>
+			<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns6:KeyValuePair" xmlns="" xmlns:ns6="http://verify.services.verisign.com/">
+			<key>CURRENCY</key>
+			<value xsi:type="xsd:string">$evento.M.amount.currency</value>
+		</arg0>
+		<arg0 xsi:type="ns7:KeyValuePair" xmlns="" xmlns:ns7="http://verify.services.verisign.com/">
+			<key>DST_ACCOUNT</key>
+			<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns8:KeyValuePair" xmlns="" xmlns:ns8="http://verify.services.verisign.com/">
+				<key>DST_ACCOUNT_OFFICE</key>
+				<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns9:KeyValuePair" xmlns="" xmlns:ns9="http://verify.services.verisign.com/">
+			<key>DST_CARD_BIN</key>
+			<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns10:KeyValuePair" xmlns="" xmlns:ns10="http://verify.services.verisign.com/">
+			<key>DST_CARD_PAN</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns11:KeyValuePair" xmlns="" xmlns:ns11="http://verify.services.verisign.com/">
+			<key>DST_INSTITUTION_COUNTRY</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns12:KeyValuePair" xmlns="" xmlns:ns12="http://verify.services.verisign.com/">
+			<key>DST_INSTITUTION_NAME</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns13:KeyValuePair" xmlns="" xmlns:ns13="http://verify.services.verisign.com/">
+			<key>ENTRY_MODE</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns14:KeyValuePair" xmlns="" xmlns:ns14="http://verify.services.verisign.com/">
+			<key>IP</key>
+			<value xsi:type="xsd:string">$evento.H.x-forwarded-for</value>
+		</arg0>
+		<arg0 xsi:type="ns15:KeyValuePair" xmlns="" xmlns:ns15="http://verify.services.verisign.com/">
+			<key>LOCALE</key>
+			<value xsi:type="xsd:string">$evento.H.accept-language</value>
+		</arg0>
+		<arg0 xsi:type="ns16:KeyValuePair" xmlns="" xmlns:ns16="http://verify.services.verisign.com/">
+			<key>MOBILE</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns17:KeyValuePair" xmlns="" xmlns:ns17="http://verify.services.verisign.com/">
+			<key>SESSIONID</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns18:KeyValuePair" xmlns="" xmlns:ns18="http://verify.services.verisign.com/">
+			<key>SIGNATURE_TYPE</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns19:KeyValuePair" xmlns="" xmlns:ns19="http://verify.services.verisign.com/">
+			<key>SRC_ACCOUNT</key>
+			<value xsi:type="xsd:string">*********</value>
+		</arg0>
+		<arg0 xsi:type="ns20:KeyValuePair" xmlns="" xmlns:ns20="http://verify.services.verisign.com/">
+			<key>SRC_ACCOUNT_OFFICE</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns21:KeyValuePair" xmlns="" xmlns:ns21="http://verify.services.verisign.com/">
+			<key>SRC_CARD_BIN</key>
+			<value xsi:type="xsd:string">*******</value>
+		</arg0>
+		<arg0 xsi:type="ns22:KeyValuePair" xmlns="" xmlns:ns22="http://verify.services.verisign.com/">
+			<key>SRC_CARD_PAN</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns23:KeyValuePair" xmlns="" xmlns:ns23="http://verify.services.verisign.com/">
+			<key>SRC_INSTITUTION_COUNTRY</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns24:KeyValuePair" xmlns="" xmlns:ns24="http://verify.services.verisign.com/">
+			<key>SRC_INSTITUTION_NAME</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns25:KeyValuePair" xmlns="" xmlns:ns25="http://verify.services.verisign.com/">
+			<key>SRC_VALIDATED_PHONE</key>
+			<value xsi:type="xsd:string">********</value>
+		</arg0>
+		<arg0 xsi:type="ns26:KeyValuePair" xmlns="" xmlns:ns26="http://verify.services.verisign.com/">
+			<key>TRANSFER_CATEGORY</key>
+			<value xsi:type="xsd:string">wire_transfer</value>
+		</arg0>
+		<arg0 xsi:type="ns27:KeyValuePair" xmlns="" xmlns:ns27="http://verify.services.verisign.com/">
+			<key>TRANSFER_DATE</key>
+			<value xsi:type="xsd:string">2015-01-01 00:00:00.0</value>
+		</arg0>
+		<arg0 xsi:type="ns28:KeyValuePair" xmlns="" xmlns:ns28="http://verify.services.verisign.com/">
+			<key>TYPE</key>
+			<value xsi:type="xsd:string">es_card_load_particulares</value>
+		</arg0>
+		<arg0 xsi:type="ns29:KeyValuePair" xmlns="" xmlns:ns29="http://verify.services.verisign.com/">
+			<key>USERAGENT</key>
+			<value xsi:type="xsd:string">$evento.H.user-agent</value>
+		</arg0>
+		<arg0 xsi:type="ns30:KeyValuePair" xmlns="" xmlns:ns30="http://verify.services.verisign.com/">
+			<key>USERNAME</key>
+			<value xsi:type="xsd:string">$evento.user</value>
+		</arg0>
+		<arg1 xmlns="">es_bbva_card</arg1>
+		</verifySync>
+	</soapenv:Body>
+</soapenv:Envelope>

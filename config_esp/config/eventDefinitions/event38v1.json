@@ -1,0 +1,11 @@
+{
+	"event38v1" : {
+		"id": "event38v1",
+		"name": "event 38 version 1",
+		"description": "event 38 version 1",
+		"validationRule" : "#{['evento']['detalle']['impTransferencia'] >=1000000000}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "xml",
+		"eventTarget" : "crmBatchStream"
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "00000209-01>>event209bv1" : {
+      "id" : "00000209-01>>event209bv1",
+      "happeningId" : "00000209-01",
+      "eventId" : "event209bv1",
+      "mappings" : {         
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000209b01'}",
+         "evento.cabecera.requestId" : "#{T(org.apache.commons.lang.RandomStringUtils).randomNumeric(11)}",
+         "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.detalle":"detalle(exclude:impMoTransaEntera;exclude:impMoTransaDecimal;exclude:impComisEntera;exclude:impComisDecimal;exclude:codDivCom)",
+         "evento.detalle.impMoTransaEntera":"#{['detalle']['impMoTransaEntera'].replace('[^\\d.]','').length() > 0 ? ['detalle']['impMoTransaEntera']  : '0'}",
+         "evento.detalle.impMoTransaDecimal":"#{(['detalle']['impMoTransaDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impMoTransaDecimal'] : '00'}",
+         "evento.detalle.impComisEntera":"#{['detalle']['impComisEntera'].replace('[^\\d.]','').length() > 0 ?  ['detalle']['impComisEntera'] : '0'}",
+         "evento.detalle.impComisDecimal":"#{(['detalle']['impComisDecimal'].replace('[^\\d.]','').length() > 0) ? ['detalle']['impComisDecimal'] : '00'}",
+         "evento.detalle.codDivCom":"#{(['detalle']['codDivCom'].length() > 0) ? ['detalle']['codDivCom'] : '978'}"
+      }
+   }
+}

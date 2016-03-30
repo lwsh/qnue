@@ -1,0 +1,11 @@
+{
+	"event208cv2" :{
+		"id": "event208cv2",
+		"name": "Compra con tarjeta anulada",
+		"description": "Compra con tarjeta anulada",
+		"validationRule" : "#{['evento']['detalle']['xtiCompraAdi'] == 'C' && ['evento']['detalle']['codCclienAdi'].length() > 2 && ['evento']['detalle']['codIdContraAdi'].length() > 0 && ['evento']['detalle']['codRespuesta'] == '400'}",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

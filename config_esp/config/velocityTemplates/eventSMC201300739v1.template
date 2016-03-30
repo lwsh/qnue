@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <verifySync xmlns="http://verify.services.verisign.com/">
+         <arg0 xmlns="" xmlns:ns1="http://verify.services.verisign.com/" xsi:type="ns1:KeyValuePair">
+            <key>CONSUMERID</key>
+            <value xsi:type="xsd:string">{{evento.consumerRequestId}}</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns2="http://verify.services.verisign.com/" xsi:type="ns2:KeyValuePair">
+            <key>AUTHENTICATIONTYPE</key>
+            <value xsi:type="xsd:string">{{evento.L.authenticationType}}</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns3="http://verify.services.verisign.com/" xsi:type="ns3:KeyValuePair">
+            <key>AUTHENTICATIONDATA</key>
+            <value xsi:type="xsd:string">0000</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns4="http://verify.services.verisign.com/" xsi:type="ns4:KeyValuePair">
+            <key>USERNAME</key>
+            <value xsi:type="xsd:string">{{evento.user}}</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns5="http://verify.services.verisign.com/" xsi:type="ns5:KeyValuePair">
+            <key>APPLICATION</key>
+            <value xsi:type="xsd:string">{{evento.applicationUUAA}}</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns6="http://verify.services.verisign.com/" xsi:type="ns6:KeyValuePair">
+            <key>TYPE</key>
+            <value xsi:type="xsd:string">es_granting</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns7="http://verify.services.verisign.com/" xsi:type="ns7:KeyValuePair">
+            <key>PHYSICALBRANCHCODE</key>
+            <value xsi:type="xsd:string">$evento.M.arguments.connectiondata.physicalBranch</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns8="http://verify.services.verisign.com/" xsi:type="ns8:KeyValuePair">
+            <key>TERMINALID</key>
+            <value xsi:type="xsd:string">$evento.M.arguments.connectiondata.terminal</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns9="http://verify.services.verisign.com/" xsi:type="ns9:KeyValuePair">
+            <key>IDENTITYDOCUMENTTYPE</key>
+            <value xsi:type="xsd:string">$evento.M.arguments.identitydata.identityType</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns10="http://verify.services.verisign.com/" xsi:type="ns10:KeyValuePair">
+            <key>IDENTITYDOCUMENTNUMBER</key>
+            <value xsi:type="xsd:string">$evento.M.arguments.identitydata.identityCode</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns11="http://verify.services.verisign.com/" xsi:type="ns11:KeyValuePair">
+            <key>CHANNELCONTACTID</key>
+            <value xsi:type="xsd:string">$evento.M.arguments.contactID</value>
+         </arg0>
+         <arg0 xmlns="" xmlns:ns12="http://verify.services.verisign.com/" xsi:type="ns12:KeyValuePair">
+            <key>DATE</key>
+            <value xsi:type="xsd:string">$evento.timestamp.date</value>
+         </arg0>
+         <arg1 xmlns="">es_bbva_granting_ticket</arg1>
+      </verifySync>
+   </soapenv:Body>
+</soapenv:Envelope>

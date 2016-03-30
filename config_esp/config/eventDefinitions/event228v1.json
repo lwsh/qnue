@@ -1,0 +1,16 @@
+{
+	"event228v1" : {
+		"id": "event228v1",
+		"name": "Bloqueo y desbloqueo de oficinas",
+		"description": "Bloqueo y desbloqueo de oficinas",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

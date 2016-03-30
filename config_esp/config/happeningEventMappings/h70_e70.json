@@ -1,0 +1,13 @@
+{
+   
+   "00000070-01>>event70v1" : {
+      "id" : "00000070-01>>event70v1",
+      "happeningId" : "00000070-01",
+      "eventId" : "event70v1",
+      "mappings" : {
+         "evento.cabecera" : "cabecera(suceso>correlid;tipoSuceso>tipoEvento;modoSuceso>modoEvento;exclude:suceso)",
+         "evento.cabecera.eventoC" : "#{ T(org.apache.commons.lang.RandomStringUtils).randomAlphanumeric(10) + '0000007001'}",
+         "evento.detalle" : "detalle"
+      }
+   }
+}

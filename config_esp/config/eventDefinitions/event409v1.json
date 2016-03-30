@@ -1,0 +1,11 @@
+{
+	"event409v1" : {
+		"id": "event409v1",
+		"name": "Cliente pasa a estar operativo",
+		"description": "Tras alta de cliente en la Net, se ha desbloqueado la cuenta",		
+		"validationRule" : "#{['event']['detail']['ContactKey'] != null}",
+		"eventTimestampField" : "event.header.eventGenerated",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx400-Stream"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"event227v2" : {
+		"id": "event227v2",
+		"name": "Bloqueo y desbloqueo de tarjetas desde oficina, cajeros y banca telefonica",
+		"description": "Bloqueo y desbloqueo de tarjetas desde oficina, cajeros y banca telefonica",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "velocity_apx_descripcion",
+		"eventTarget" : "apx200-Stream",
+		"discardedIn": 
+		[
+			"desarollo",
+			"integrado",
+			"produccion"
+		]
+	}
+}

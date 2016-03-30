@@ -1,0 +1,10 @@
+{
+	"event400v1" :{
+		"id": "event400v1",
+		"name": "event 400 version 1",
+		"description": "event 400 version 1",
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx400-Stream"
+	}
+}
