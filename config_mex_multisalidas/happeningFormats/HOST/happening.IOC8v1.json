@@ -1,0 +1,240 @@
+{
+    "0000IOC8": {
+        "id": "0000IOC8",
+        "version": "01",
+        "name": "IOC8 happening format defintion (version 1)",
+        "description": "IOC8 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMBINTDC": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODPROM": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMSOL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHAOPER": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVEUSUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVECANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CTROCONT": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CTROORIG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPANA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANALCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMBINTDC": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODPROM": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMSOL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPLIMFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHAOPER": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVEUSUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVECANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CTROCONT": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CTROORIG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPANA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANALCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

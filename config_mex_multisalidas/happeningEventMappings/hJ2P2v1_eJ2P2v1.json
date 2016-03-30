@@ -1,0 +1,13 @@
+{
+   "0000J2P2>>eventJ2P2v1":{
+      "id":"0000J2P2>>eventJ2P2v1",
+      "happeningId":"0000J2P2",
+      "eventId":"eventJ2P2v1",
+      "mappings":{
+         "evento.cabecera":"header",
+         "evento.cabecera.apxUser":"#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.entrada":"input",
+		 "evento.salida":"output"
+      }
+   }
+}

@@ -1,0 +1,51 @@
+<evento>
+    <cabecera>
+        <appOrigen>{{evento.cabecera.appOrigen}}</appOrigen>
+        <tipoEvento>00000021</tipoEvento>
+        <correlid>{{evento.cabecera.correlid}}</correlid>
+        <eventoC>{{evento.cabecera.eventoC}}</eventoC>
+        <banco>{{evento.cabecera.banco}}</banco>
+        <pais>{{evento.cabecera.pais}}</pais>
+        <cliente>{{evento.cabecera.cliente}}</cliente>
+        <tipoCliente>{{evento.cabecera.tipoCliente}}</tipoCliente>
+        <noClient>{{evento.cabecera.noClient}}</noClient>
+        <canal>{{evento.cabecera.canal}}</canal>
+        <medio>{{evento.cabecera.medio}}</medio>
+        <version>{{evento.cabecera.version}}</version>
+        <timeGen>{{#renderDate}}evento.cabecera.timeGen, yyyy-MM-dd'T'HH:mm:ssXXX{{/renderDate}}</timeGen>
+        <timeRecepSucesoC>{{#renderDate}}evento.cabecera.timeRecepSucesoC{{/renderDate}}</timeRecepSucesoC>
+        <timeGenEvento>{{#renderDate}}evento.cabecera.timeGenEvento{{/renderDate}}</timeGenEvento>
+        <idioma>{{evento.cabecera.idioma}}</idioma>
+        <fuenteSuceso>{{evento.cabecera.fuenteSuceso}}</fuenteSuceso>
+        <modoEvento>{{evento.cabecera.modoEvento}}</modoEvento>
+        <oficina>{{evento.cabecera.oficina}}</oficina>
+        <servicio>{{evento.cabecera.servicio}}</servicio>
+    </cabecera>
+    <detalle>
+        <producto>{{evento.detalle.producto}}</producto>
+        <fecoperacion>{{#renderDate}}evento.detalle.fecoperacion, yyyy-MM-dd{{/renderDate}}</fecoperacion>
+        <signoimpcompra>{{evento.detalle.signoimpcompra}}</signoimpcompra>
+        <impcompra>{{evento.detalle.impcompraStr}}</impcompra>
+        <divisa>{{evento.detalle.divisa}}</divisa>
+        <signodisponible>{{evento.detalle.signodisponible}}</signodisponible>
+        <disponible>{{evento.detalle.disponibleStr}}</disponible>
+        <signolimite>{{evento.detalle.signolimite}}</signolimite>
+        <limite>{{evento.detalle.limiteStr}}</limite>
+        <comercio>{{evento.detalle.comercio}}</comercio>
+        <nombreComercio>{{evento.detalle.nombreComercio}}</nombreComercio>
+        <ramo>{{evento.detalle.ramo}}</ramo>
+        <localidad>{{evento.detalle.localidad}}</localidad>
+        <paisCom>{{evento.detalle.paisCom}}</paisCom>
+        <numAutorizacion>{{evento.detalle.numAutorizacion}}</numAutorizacion>
+        <panTarjeta>{{evento.detalle.panTarjeta}}</panTarjeta>
+        <indCredDeb>{{evento.detalle.indCredDeb}}</indCredDeb>
+        <estContrato>{{evento.detalle.estContrato}}</estContrato>
+        <estTarjeta>{{evento.detalle.estTarjeta}}</estTarjeta>
+        <bloqTarjeta>{{evento.detalle.bloqTarjeta}}</bloqTarjeta>
+        <bloqContrato>{{evento.detalle.bloqContrato}}</bloqContrato>
+        <modPago>{{evento.detalle.modPago}}</modPago>
+        <codOperacion>{{evento.detalle.codOperacion}}</codOperacion>
+        <indClausuladoMovil>{{evento.detalle.indClausuladoMovil}}</indClausuladoMovil>
+    </detalle>
+</evento>
+

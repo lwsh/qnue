@@ -1,0 +1,11 @@
+{
+	"eventMDMGI713v1" : {
+		"id": "eventMDMGI713v1",
+		"name": "event MDMGI713 version 1",
+		"description": "Respuesta a ofertas vía SMS",
+		"validationRule" : "#{'I713    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

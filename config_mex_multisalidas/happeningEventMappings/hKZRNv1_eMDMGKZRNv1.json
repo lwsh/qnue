@@ -1,0 +1,14 @@
+{
+   "0000KZRN>>eventMDMGKZRNv1" : {
+      "id" : "0000KZRN>>eventMDMGKZRNv1",
+      "happeningId" : "0000KZRN",
+      "eventId" : "eventMDMGKZRNv1",
+      "mappings" : {
+       "evento.cabecera" : "header",
+		   "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		   "evento.entrada" : "input",
+		   "evento.salida" : "output",
+       "evento.cliente":"#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['CLIENTE'])}"
+      }
+   }
+}

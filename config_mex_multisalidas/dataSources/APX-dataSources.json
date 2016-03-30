@@ -1,0 +1,19 @@
+{
+	"apxOnlineMQ" : {        
+		"hostName" : "${env.conf.mq.apx.host}",
+		"port" : "${env.conf.mq.apx.port}",
+		"channel" : "${env.conf.mq.apx.channel}",
+		"queueManager" : "${env.conf.mq.apx.queueManager}",
+		"queue" : "${env.conf.mq.apx.queue}"
+     },
+     
+     "apxOnlineRabbitMQ" : {
+        "host" : "${env.conf.rabbitmq.apx.host}",
+		"port" : "${env.conf.rabbitmq.apx.port}",
+		"username" : "${env.conf.rabbitmq.apx.username}",
+		"password" : "${env.conf.rabbitmq.apx.password}",
+		"virtualHost" : "${env.conf.rabbitmq.apx.virtualHost}",
+        "destination": "${env.conf.rabbitmq.apx.routingKey:qwpo-fromAny}",
+        "exchange": "${env.conf.rabbitmq.apx.exchange:jms.durable.queues}"
+    }
+}

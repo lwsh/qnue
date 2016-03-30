@@ -1,0 +1,11 @@
+{
+	"eventMDMGMPITv1" : {
+		"id": "eventMDMGMPITv1",
+		"name": "event MDMGMPIT version 1",
+		"description": "Incremento de línea de crédito EECC",
+		"validationRule" : "#{'MPIT    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

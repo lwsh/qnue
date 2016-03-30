@@ -1,0 +1,504 @@
+{
+    "0000KZRN": {
+        "id": "0000KZRN",
+        "version": "01",
+        "name": "KZRN happening format defintion (version 1)",
+        "description": "KZRN happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CLIENTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "RESPUES": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "REFEREN": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PERFIL": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "USUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LLAMADO": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVECNAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPSECU": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ESTATUS": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "SECUENC": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA01": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA02": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA03": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+				{
+                    "IMPOR01": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+				{
+                    "IMPOR02": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+				{
+                    "IMPOR03": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+				{
+                    "PORCE01": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+				{
+                    "PORCE02": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORCE03": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+				{
+                    "NUMER01": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+				{
+                    "NUMER02": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+				{
+                    "NUMER03": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TEXTO01": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TEXTO02": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TEXTO03": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TEXTO04": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TEXTO05": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CAMPO01": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CAMPO02": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CAMPO03": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+				{
+                    "INDIC01": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+				{
+                    "INDIC02": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+				{
+                    "INDIC03": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+				{
+                    "ESTAT01": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+				{
+                    "ESTAT02": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+				{
+                    "ESTAT03": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CLIENTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "RESPUES": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "REFEREN": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PERFIL": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "USUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LLAMADO": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CVECNAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPSECU": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ESTATUS": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "SECUENC": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA01": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA02": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA03": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPOR01": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPOR02": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPOR03": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORCE01": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORCE02": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORCE03": {
+                        "length": "14",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMER01": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMER02": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMER03": {
+                        "length": "18",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TEXTO01": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TEXTO02": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TEXTO03": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TEXTO04": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TEXTO05": {
+                        "length": "25",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CAMPO01": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CAMPO02": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CAMPO03": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIC01": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIC02": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIC03": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ESTAT01": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ESTAT02": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ESTAT03": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+	"eventB503v1" : {
+		"id": "eventB503v1",
+		"name": "evento B503 version 1",
+		"description": "Reintegro Traspasos",
+		"validationRule" : "#{'B503    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

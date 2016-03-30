@@ -1,0 +1,16 @@
+{
+   "0000MDIE>>eventMDMGMDIEv1" : {
+      "id" : "0000MDIE>>eventMDMGMDIEv1",
+      "happeningId" : "0000MDIE",
+      "eventId" : "eventMDMGMDIEv1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.entrada" : "input",
+		 "evento.salida" : "output",
+		 "evento.adicionales" : "aditional",
+         "evento.adicionalesne":"#{((['aditional'])!=null)?((['aditional'][0]['NE']!=null)?(['aditional'][0]):((['aditional'][(['aditional']).size()-2]['NE']!=null)?(['aditional'][(['aditional']).size()-2]):((['aditional'][(['aditional']).size()-1]['NE']!=null)?(['aditional'][(['aditional']).size()-1]):(null)))):(null)}",
+         "evento.cliente":"#{((['aditional'])!=null)?((['aditional'][0]['MDMGCECR']!=null)?(['customersEnricherLong'].enrichCustomerByCustomerId(['aditional'][0]['MDMGCECR']['NUMCLIEN'])):(null)):(null)}"
+      }
+   }
+}

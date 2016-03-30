@@ -1,0 +1,101 @@
+{
+	"message-parser": {
+		"messagesTimeout": 180,
+		"workers": 2,
+		"ackers": 2,
+		"spouts": [{
+			"id": "IncomingMessageParserSpout",
+			"description": "Read from a rabbitMQ",
+			"type": "com.bbva.qnue.nema.common.spout.rabbitmq.RabbitMQSpout",
+			"messagesPrefetch": 250,
+			"queueName": "${qnue.incoming.message.parser.queue}",
+			"connectionManager": {
+				"type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+				"source": "rabbitMQConnection"
+			},
+			"deserializationScheme": {
+				"type": "com.bbva.qnue.nema.common.spout.rabbitmq.schemes.BsonValuesDeserializeScheme",
+				"encoding": "UTF-8",
+				"declare": {
+					"mainStream": [
+						"happeningType",
+						"monitoringInfo"
+					]
+				}
+			},
+			"requeued": true,
+			"executorsNumber": 4,
+			"tasksNumber": 4
+		}],
+		"bolts": [{
+			"id": "01.MessageParserBolt",
+			"type": "com.bbva.qnue.nema.source.parsing.bolt.MessageParserBolt",
+			"declare": {
+				"mainStream": ["happeningFrame", "monitoringInfo"],
+				"history": ["happeningFrame", "monitoringInfo"]
+			},
+			"stream": "mainStream",
+			"errorStream": "errorStream",
+			"historyStream": "history",
+			"parsers": {
+				"type": "com.bbva.qnue.nema.source.parsing.parser.AltamiraParser",
+				"formats": {
+					"splitPattern": ";",
+					"type": "com.bbva.qnue.nema.source.parsing.parser.Altamira.AltamiraFileFormatProvider",
+					"nameIndexField": 7,
+					"lenghtIndexField": 10,
+					"decimalLengthIndexField": 11,
+					"ASTAConfiguration" : "${env.conf.file}"
+				}
+			},
+
+			"chainedTo": {
+				"id": "IncomingMessageParserSpout",
+				"stream": "mainStream"
+			},
+
+			"executorsNumber": 8,
+			"tasksNumber": 8
+		}, {
+			"id": "01.1.IncomingMessageParserMainBolt",
+			"type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+			"exchange": "${qnue.exchange.default}",
+			"routingKey": "${qnue.message.parser.main.incoming.queue}",
+			"errorStream": "errorStream",
+			"stream": "noStream",
+			"serializer": {
+				"type": "com.bbva.qnue.nema.common.bolt.BsonRawTupleSerializer"
+			},
+			"connectionManager": {
+				"type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+				"source": "rabbitMQConnection"
+			},
+			"chainedTo": [{
+				"id": "01.MessageParserBolt",
+				"stream": "mainStream"
+			}],
+			"executorsNumber": 8,
+			"tasksNumber": 8
+		}, {
+			"id": "01.1.IncomingMessageParserHistoryBolt",
+			"type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+			"exchange": "${qnue.exchange.default}",
+			"routingKey": "${qnue.message.parser.history.incoming.queue}",
+			"errorStream": "errorStream",
+			"stream": "noStream",
+			"serializer": {
+				"type": "com.bbva.qnue.nema.common.bolt.BsonRawTupleSerializer"
+			},
+			"connectionManager": {
+				"type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+				"source": "rabbitMQConnection"
+			},
+			"chainedTo": [{
+				"id": "01.MessageParserBolt",
+				"stream": "history"
+			}],
+			"executorsNumber": 8,
+			"tasksNumber": 8
+		}]
+	}
+}
