@@ -1,0 +1,591 @@
+{
+    "event-manager": {
+        "messagesTimeout": 180,
+        "workers": 5,
+        "ackers": 5,
+        "workerChildopts": "-Xmx4096m -Xms512m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+UseCompressedOops",
+        
+		"commons": [{
+            "id": "propertyResolver",
+            "type": "com.bbva.qnue.nema.enrichers.EnvPropertiesEnricher"
+        },{
+			"id": "dateOperations",
+			"type": "com.bbva.qnue.nema.event.validation.rules.DateOperations"
+		},{
+            "id": "customerEnricherMongoConnection",
+            "type": "com.bbva.qnue.nema.common.mongo.MongoConnectionManager",
+            "addresses": "${mongo.connection.enrich.servers}",
+            "mongoDBName": "${mongo.connection.enrich.db}",
+            "username": "${mongo.connection.enrich.username}",
+            "password": "${mongo.connection.enrich.password}"
+        }],
+
+        "enrichers": [
+        	{
+	           "id": "customersEnricherLong",
+	           "type": "com.bbva.qnue.nema.enrichers.mongo.CustomerMxMongoEnricher",
+	           "connection": {
+	               "refId": "customerEnricherMongoConnection"
+	           },
+	           "customerMongoCollection": "${mongo.connection.enrich.customersCollection}",
+	
+	           "cclientMongoFieldName": "customer.id",
+	           "accountIndexMongoFieldName": "customer.contract.accountIndex_long"
+        	},
+			{
+	           "id": "customersEnricherShort",
+	           "type": "com.bbva.qnue.nema.enrichers.mongo.CustomerMxMongoEnricher",
+	           "connection": {
+	               "refId": "customerEnricherMongoConnection"
+	           },
+	           "customerMongoCollection": "${mongo.connection.enrich.customersCollection}",
+	
+	           "cclientMongoFieldName": "customer.id",
+	           "accountIndexMongoFieldName": "customer.contract.accountIndex_short"
+        	}
+        ],
+        
+        "validators": [],
+        
+        "spouts": [{
+            "id": "CopyIncomingSpout",
+            "descripton": "Read from a rabbitMQ",
+            "type": "com.bbva.qnue.nema.common.spout.rabbitmq.RabbitMQSpout",
+
+            "messagesPrefetch": 250,
+            "queueName": "${qnue.incoming.queue}",
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "deserializationScheme": {
+                "type": "com.bbva.qnue.nema.common.spout.rabbitmq.schemes.TextWithTimestampDeserializeScheme",
+                "encoding": "UTF-8",
+                "declare": {
+                    "mainStream": ["source", "timestamp"]
+                }
+            },
+            
+            "requeued": true,
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "IncomingRetryIncomingSpout",
+            "descripton": "Read from a rabbitMQ of services",
+            "type": "com.bbva.qnue.nema.common.spout.rabbitmq.RabbitMQSpout",
+
+            "messagesPrefetch": 250,
+            "queueName": "${qnue.incoming.retry.queue}",
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "deserializationScheme": {
+                "type": "com.bbva.qnue.nema.common.spout.rabbitmq.schemes.BsonValuesDeserializeScheme",
+                "encoding": "UTF-8",
+                "declare": {
+                    "mainStream": ["inErrorIdComponent", "idException", "errorMessage", "inputValues"]
+                }
+            },
+            "requeued": true,
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "DeliveryRetryIncomingSpout",
+            "descripton": "Read from a rabbitMQ retry queue",
+            "type": "com.bbva.qnue.nema.common.spout.rabbitmq.RabbitMQSpout",
+
+            "messagePrefetch": 250,
+            "queueName": "${qnue.retry.queue}",
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "deserializationScheme": {
+                "type": "com.bbva.qnue.nema.common.spout.rabbitmq.schemes.BsonValuesDeserializeScheme",
+                "declare": {
+                    "mainStream": ["inErrorIdComponent", "idException", "errorMessage", "inputValues"]
+                }
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }],
+
+        "bolts": [{
+            "id": "01.Identification",
+            "description": "Identifies happenings",
+            "type": "com.bbva.qnue.nema.source.identification.bolt.HappeningIdentificationBolt",
+
+            "declare": {
+                "mainStream": ["happeningFrame", "monitoringInfo"]
+            },
+			"headerType" : "MX",
+            "errorStream": "errorStream",
+			"positions": [216, 224],
+            "chainedTo": [{
+                "stream": "mainStream",
+                "id": "CopyIncomingSpout"
+            }],
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "02.Parser",
+            "type": "com.bbva.qnue.nema.source.parsing.bolt.HappeningParserBolt",
+            "declare": {
+                "mainStream": ["happeningFrame", "monitoringInfo"],
+                "history": ["happeningFrame", "monitoringInfo"]
+            },
+            "stream": "mainStream",
+            "errorStream": "errorStream",
+            "historyStream": "history",
+			
+			
+			"parsers" : {
+				"type": "com.bbva.qnue.nema.source.parsing.parser.AltamiraParser",
+				 
+				"formats" : {
+					"type": "com.bbva.qnue.nema.source.parsing.parser.Altamira.AltamiraFileFormatProvider",
+					"splitPattern" : ";",
+					"nameIndexField" : 7,
+					"lenghtIndexField" : 10,
+					"decimalLengthIndexField" : 11,
+					"ASTAConfiguration" : "${env.conf.file}"
+				}
+			},
+
+            "chainedTo": {
+                "id": "01.Identification",
+                "stream": "mainStream"
+            },
+
+            "executorsNumber": 8,
+            "tasksNumber": 8
+        }, {
+            "id": "01.RetryRouterHandler",
+            "type": "com.bbva.qnue.nema.event.retry.EventRetryRouterBolt",
+
+            "monitorizationFieldName": "monitoringInfo",
+            "historyStream" : "historyStream",
+
+            "declare": {
+                "03.BuilderIdentification": ["happeningId","monitoringInfo"],
+                "03.Builder": ["happeningTypeId","monitoringInfo"],
+                "04.Validation": ["eventsMap", "monitoringInfo"],
+                "07.Dispatcher" : ["eventType","monitoringInfo"],
+                "errorStream": ["inErrorIdComponent", "idException", "errorMessage", "inputValues"],
+                "historyStream": ["destination", "monitoringInfo"]
+            },
+
+            "errorStream": "errorStream",
+            "retryNumber": "${env.conf.retry.retryNumber}",
+
+
+            "chainedTo": [{
+                "id": "IncomingRetryIncomingSpout",
+                "stream": "mainStream"
+            },{
+            	"id": "DeliveryRetryIncomingSpout",
+                "stream": "mainStream"
+            }],
+
+            "executorsNumber": 8,
+            "tasksNumber": 8
+        }, {
+            "id": "03.HappeningHistoryRouter",
+            "type": "com.bbva.qnue.nema.common.bolt.history.router.HappeningHistoryRouter",
+
+            "declare": {
+                "history": ["monitoringInfo"],
+                "n2mStream": ["happeningId", "happeningType"]
+            },
+
+            "historyStream": "history",
+            "n2mStream": "n2mStream",
+
+            "chainedTo": {
+                "id": "02.Parser",
+                "stream": "history"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "03.RetryFailedHistory",
+            "type": "com.bbva.qnue.nema.event.retry.HistoryRetryFailedBolt",
+
+            "declare": {
+                "eventHistory": ["monitoringInfo"],
+                "happeningHistory": ["monitoringInfo"]
+            },
+
+            "eventsHistoryStream": "eventHistory",
+            "happeningsHistoryStream": "happeningHistory",
+            
+            "eventsRetryDestination": {
+            	"08.OutputDelivery": "08.OutputDelivery",
+				"08.APX200MQEventsDelivery": "08.APX200MQEventsDelivery",
+            	"07.Dispatcher": "07.Dispatcher"
+            },
+
+            "chainedTo": {
+                "id": "01.RetryRouterHandler",
+                "stream": "historyStream"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        },{
+            "id": "03.BuilderIdentification",
+            "type": "com.bbva.qnue.nema.event.builder.bolt.EventBuilderIdentificationBolt",
+
+            "chainedTo": [{
+                "id": "02.Parser",
+                "stream": "mainStream"
+            }, {
+                "id": "01.RetryRouterHandler",
+                "stream": "03.BuilderIdentification"
+            }],
+            "stream": "mainStream",
+            "errorStream": "errorStream",
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "03.Builder",
+            "description": "Event builder bolt",
+            "type": "com.bbva.qnue.nema.event.builder.bolt.EventBuilderBolt",
+
+            "declare": {
+                "mainStream": ["eventsMap", "monitoringInfo"]
+            },
+
+            "exceptionList": ["com.mongodb.MongoException"],
+
+            "errorStream": "errorStream",
+            "retryStream": "retryStream",
+
+            "chainedTo": [{
+                "id": "03.BuilderIdentification",
+                "stream": "mainStream"
+            }, {
+                "id": "01.RetryRouterHandler",
+                "stream": "03.Builder"
+            }],
+            "executorsNumber": 24,
+            "tasksNumber": 24
+        }, {
+            "id": "03.HappeningHistory",
+            "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+
+            "exchange": "${qnue.exchange.monitoring.happenings}",
+            "routingKey": "${qnue.monitoring.happenings.routingkey}",
+
+            "errorStream": "errorStream",
+            "stream": "noStream",
+
+            "serializer": {
+                "type": "com.bbva.qnue.nema.history.rabbitmq.serializer.StormJsonFlatTupleSerializer",
+                "field" : "monitoringInfo"
+            },
+
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "chainedTo": [{
+                "id": "03.HappeningHistoryRouter",
+                "stream": "history"
+            },
+            {
+                "id": "03.RetryFailedHistory",
+                 "stream": "happeningHistory"
+            }],
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "04.Validation",
+            "type": "com.bbva.qnue.nema.event.validation.bolt.EventValidationBolt",
+            "declare": {
+                "mainStream": ["eventsMap", "monitoringInfo"]
+            },
+
+            "exceptionList": ["com.mongodb.MongoException"],
+
+            "errorStream": "errorStream",
+            "retryStream": "retryStream",
+
+            "chainedTo": [{
+                "id": "03.Builder",
+                "stream": "mainStream"
+            }, {
+                "id": "01.RetryRouterHandler",
+                "stream": "04.Validation"
+            }],
+
+            "executorsNumber": 8,
+            "tasksNumber": 8
+        }, {
+            "id": "05.Render",
+            "type": "com.bbva.qnue.nema.event.render.bolt.EventRendererBolt",
+            "declare": {
+                "mainStream": ["eventsRenderMap", "monitoringInfo"]
+            },
+
+            "errorStream": "errorStream",
+
+            "chainedTo": [{
+                "id": "04.Validation",
+                "stream": "mainStream"
+            }],
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "07.Dispatcher",
+            "type": "com.bbva.qnue.nema.event.dispatch.bolt.EventDispatcherDeliveryBolt",
+
+            "chainedTo": [{
+                "id": "05.Render",
+                "stream": "mainStream"
+            }, {
+            	"id": "01.RetryRouterHandler",
+            	"stream": "07.Dispatcher"
+            }],
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "10.ErrorDeliveryBolt",
+
+            "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+            "exchange": "${qnue.exchange.default}",
+            "routingKey": "${qnue.error.routingKey}",
+
+            "errorStream": "errorStream",
+            "stream": "noStream",
+
+            "serializer": {
+                "type": "com.bbva.qnue.nema.common.bolt.BsonRawTupleSerializer"
+            },
+
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "chainedTo": [{
+                "id": "01.Identification",
+                "stream": "errorStream"
+            }, {
+                "id": "02.Parser",
+                "stream": "errorStream"
+            }, {
+                "id": "03.BuilderIdentification",
+                "stream": "errorStream"
+            }, {
+                "id": "03.Builder",
+                "stream": "errorStream"
+
+            }, {
+                "id": "04.Validation",
+                "stream": "errorStream"
+            }, {
+                "id": "05.Render",
+                "stream": "errorStream"
+            }, {
+                "id": "07.Dispatcher",
+                "stream": "errorStream"
+
+            }, {
+                "id": "01.RetryRouterHandler",
+                "stream": "errorStream"
+            }],
+
+            "executorsNumber": 8,
+            "tasksNumber": 8
+        }, {
+            "id": "10.IncomingRetryOutgoingBolt",
+            "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+
+            "exchange": "${qnue.exchange.default}",
+            "routingKey": "${qnue.incoming.retry.outgoing.routingKey}",
+
+            "errorStream": "errorStream",
+            "stream": "noStream",
+
+            "serializer": {
+                "type": "com.bbva.qnue.nema.common.bolt.BsonRawTupleSerializer"
+            },
+
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "chainedTo": [{
+                "id": "03.Builder",
+                "stream": "retryStream"
+            }, {
+                "id": "04.Validation",
+                "stream": "retryStream"
+            }],
+
+            "executorsNumber": 8,
+            "tasksNumber": 8
+        }, {
+            "id": "08.OutputDelivery",
+            "type": "com.bbva.qnue.nema.common.bolt.delivery.DeliveryHandlerBolt",
+
+            "declare": {
+                "historyStream": ["eventRender", "monitoringInfo"],
+                "errorStream": ["eventRender", "monitoringInfo"]
+            },
+
+            "errorStream": "errorStream",
+            "historyStream": "historyStream",
+
+            "delivery": {
+                "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+
+                "exchange": "${qnue.output.exchange}",
+                "routingKey": "${qnue.output.routingKey}",
+
+                "serializer": {
+                    "type": "com.bbva.qnue.nema.common.bolt.TextTupleSerializer",
+					"encoding" : "UTF-8",
+                    "tupleField": "#{T(com.bbva.qnue.nema.event.dispatch.bolt.EventDispatcherDeliveryBolt).EVENT_RENDERED_MODEL_FIELD_NAME}"
+                },
+
+                "connectionManager": {
+                    "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                    "source": "rabbitMQConnection"
+                }
+
+            },
+
+            "chainedTo": {
+                "id": "07.Dispatcher",
+                "stream": "output"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "08.APX200MQEventsDelivery",
+            "type": "com.bbva.qnue.nema.common.bolt.delivery.DeliveryHandlerBolt",
+
+            "declare": {
+                "historyStream": ["eventRender", "monitoringInfo"],
+                "errorStream": ["eventRender", "monitoringInfo"]
+            },
+
+            "errorStream": "errorStream",
+            "historyStream": "historyStream",
+
+			"delivery": {
+                "type": "com.bbva.qnue.nema.common.bolt.jms.ConfigurableJMSBolt",
+                "jmsProvider": {
+                    "type": "com.bbva.qnue.nema.common.spout.jms.provider.MQSeriesJmsProvider",
+                    "source": "apxOnlineMQ"
+                },
+                "producer": {
+                    "type": "com.bbva.qnue.nema.common.bolt.jms.producer.ConfigurableTextJMSMessageProducer",
+                    "defaultPriority": 4
+                }
+            },
+
+            "chainedTo": {
+                "id": "07.Dispatcher",
+                "stream": "apx200-Stream"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "09.EventHistoryRouter",
+            "type": "com.bbva.qnue.nema.common.bolt.history.router.EventHistoryRouter",
+
+            "declare": {
+                "historyStream": ["monitoringInfo"]
+            },
+
+            "historyStream": "historyStream",
+
+            "chainedTo": [{
+                "id": "08.OutputDelivery",
+                "stream": "historyStream"
+            }, {
+                "id": "08.APX200MQEventsDelivery",
+                "stream": "historyStream"
+            }],
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "09.EventsHistory",
+            "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+            "chainedTo": [{
+                "id": "09.EventHistoryRouter",
+                "stream": "historyStream"
+            },
+            {
+                "id": "03.RetryFailedHistory",
+                 "stream": "eventHistory"
+            }
+            ],
+
+            "declare": {
+                "noStream": ["monitoringInfo"]
+            },
+
+            "errorStream": "noStream",
+
+            "exchange": "${qnue.exchange.monitoring.events}",
+            "routingKey": "${qnue.monitoring.events.routingkey}",
+
+            "serializer": {
+                "type": "com.bbva.qnue.nema.history.rabbitmq.serializer.StormJsonFlatTupleSerializer",
+                "field": "monitoringInfo"
+            },
+
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }, {
+            "id": "09.1-RetryDelivery",
+            "type": "com.bbva.qnue.nema.common.bolt.RabbitMQBolt",
+            "chainedTo": [{
+                "id": "08.OutputDelivery",
+                "stream": "errorStream"
+            }, {
+                "id": "08.APX200MQEventsDelivery",
+                "stream": "errorStream"
+            }],
+
+            "exchange": "${qnue.exchange.default}",
+            "routingKey": "${qnue.retry.outgoin.routingKey}",
+
+            "serializer": {
+                "type": "com.bbva.qnue.nema.common.bolt.BsonRawTupleSerializer"
+            },
+
+            "connectionManager": {
+                "type": "com.bbva.qnue.nema.common.rabbitmq.manager.RabbitMQConnectionManager",
+                "source": "rabbitMQConnection"
+            },
+
+            "executorsNumber": 4,
+            "tasksNumber": 4
+        }]
+    }
+}

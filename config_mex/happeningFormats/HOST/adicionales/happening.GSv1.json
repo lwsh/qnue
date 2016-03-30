@@ -1,0 +1,32 @@
+{
+ "GS":
+	{
+		"id" : "GS",
+		"version" : "01",
+		"name" : "Cabecera GS de aditional data",
+		"description" : "Cabecera GS de aditional data",
+		"formatDefinition" : 
+		[{
+			"GS" : [
+				{
+	               "asasas":{
+	                  "length":4,
+	                  "type":"string"
+	               }
+	            },
+	            {
+	               "fdfdfdfd":{
+	                  "length":8,
+	                  "type":"string"
+	               }
+	            },
+	            {
+	               "hghgjghjg":{
+	                  "length":8,
+	                  "type":"string"
+	               }
+	            }
+			]
+		}]
+	}
+}

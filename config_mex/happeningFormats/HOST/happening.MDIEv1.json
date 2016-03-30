@@ -1,0 +1,11 @@
+{  
+   "0000MDIE":{  
+      "id":"0000MDIE",
+      "version":"01",
+      "name":"MDIE happening format defintion (version 1)",
+      "description":"MDIE happening format defintion (version 1)",
+      "happeningTimestampField":"header.timeGen",
+      "executionIdLocation":"header.appOrigen", 
+	  "formatDefinition" : [{}]
+	  }	  
+}

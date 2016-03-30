@@ -1,0 +1,17 @@
+{
+	"rabbitMQOutputConnection" : {
+        "host" : "${env.conf.rabbitmqOutput.host}",
+		"port" : "${env.conf.rabbitmqOutput.port}",
+		"username" : "${env.conf.rabbitmqOutput.username}",
+		"password" : "${env.conf.rabbitmqOutput.password}",
+		"virtualHost" : "${env.conf.rabbitmqOutput.virtualHost}"
+    },
+	
+	"apxOnlineMQ" : {        
+		"hostName": "${env.conf.mq.01.host}",
+		"port": "${env.conf.mq.01.port}",
+		"channel": "${env.conf.mq.01.channel}",
+		"queueManager": "${env.conf.mq.01.queueManager}",
+		"queue": "${env.conf.mq.01.queue}"
+     }
+}

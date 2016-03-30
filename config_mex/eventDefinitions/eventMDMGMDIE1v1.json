@@ -1,0 +1,11 @@
+{
+	"eventMDMGMDIE1v1" : {
+		"id": "eventMDMGMDIE1v1",
+		"name": "event MDMGMDIE version 1",
+		"description": "CRM Cajero Automatico",
+		"validationRule" : "#{'MDIE    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA']) && '1210'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE']) && '30'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '00'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR']) && ('99'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '12'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '17'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '18'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '19'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR'])  )}",				
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

@@ -1,0 +1,14 @@
+{
+   "0000B63A>>eventB63Av1" : {
+      "id" : "0000B63A>>eventB63Av1",
+      "happeningId" : "0000B63A",
+      "eventId" : "eventB63Av1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.input" : "input",
+		 "evento.salida" : "output",
+		 "evento.adicionales" : "aditional"
+      }
+   }
+}

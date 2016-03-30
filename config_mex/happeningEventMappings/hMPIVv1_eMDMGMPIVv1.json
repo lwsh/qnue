@@ -1,0 +1,14 @@
+{
+   "0000MPIV>>eventMDMGMPIVv1" : {
+      "id" : "0000MPIV>>eventMDMGMPIVv1",
+      "happeningId" : "0000MPIV",
+      "eventId" : "eventMDMGMPIVv1",
+      "mappings" : {
+       "evento.cabecera" : "header",
+  		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+  		 "evento.entrada" : "input",
+  		 "evento.salida" : "output",
+       "evento.cliente":"#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['NUMCLIE'])}"
+      }
+   }
+}

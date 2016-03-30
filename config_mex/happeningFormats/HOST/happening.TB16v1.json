@@ -1,0 +1,396 @@
+{
+    "0000TB16": {
+        "id": "0000TB16",
+        "version": "01",
+        "name": "TB16 happening format defintion (version 1)",
+        "description": "TB16 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "AE0COD": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "AUSUARI": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PALACVE": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PALACV2": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ASUNPPA": {
+                        "length": "37",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ASUNSEC": {
+                        "length": "37",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA01": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA02": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPORTE": {
+                        "length": "19",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPOAUX": {
+                        "length": "19",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDPAGI": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDICNI": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIAUX": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIAU2": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAUX": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAU2": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAU3": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMEAUX": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMEAU2": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINA": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPUERF": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "REFANUL": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFOR": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOPRE": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "APAGINA": {
+                        "length": "50",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG1SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG2SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG3SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "AE0COD": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "AUSUARI": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PALACVE": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PALACV2": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ASUNPPA": {
+                        "length": "37",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ASUNSEC": {
+                        "length": "37",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA01": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHA02": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPORTE": {
+                        "length": "19",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPOAUX": {
+                        "length": "19",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDPAGI": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDICNI": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIAUX": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDIAU2": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAUX": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAU2": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODIAU3": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMEAUX": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMEAU2": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINA": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPUERF": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "REFANUL": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFOR": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOPRE": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "APAGINA": {
+                        "length": "50",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG1SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG2SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LUG3SUC": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

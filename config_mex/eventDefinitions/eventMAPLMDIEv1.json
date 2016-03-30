@@ -1,0 +1,11 @@
+{
+	"eventMAPLMDIEv1" : {
+		"id": "eventMAPLMDIEv1",
+		"name": "event MAPLMDIE version 1",
+		"description": "Disposiciones-Depositos TDC BG ATM y Practicajas ",
+		"validationRule" : "#{'MDIE    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA']) && (('13'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE'].substring(0,2)) && '10'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '00'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR']) ) || ('13'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE'].substring(0,2)) && '10'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '20'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR']) ) || ('12'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE'].substring(0,2)) && '10'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '20'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR'])) || ('12'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE'].substring(0,2)) && '10'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '00'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR']) ))}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}
