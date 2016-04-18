@@ -1,0 +1,9 @@
+{
+    "0000B633": {
+        "id": "0000B633",
+        "version": "01",
+        "name": "B633 happening format defintion (version 1)",
+        "description": "B633 happening format defintion (version 1)",
+        "formatDefinition" : [{}]
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "hostHeader_MX" : {
+      "id":"hostHeader_MX",
+      "name":"Header(MX)",
+      "description":"Mexican header",
+      "type":"HOST_TRANSACTION_HEADER",
+      "happeningSourceIds":[
+      ],
+      "preFormatDefinitions": [
+      	"cabecera", "contextoH"
+      ],
+	  "formatDefinition" : []      
+	}
+}

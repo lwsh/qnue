@@ -6,6 +6,6 @@
 		"validationRule" : "#{'MPIT    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
 		"eventTimestampField" : "evento.cabecera.timeGen",
 		"eventFormat" : "VELOCITY",
-		"eventTarget" : "output"
+		"eventTarget" : "apx200-Stream"
 	}
 }

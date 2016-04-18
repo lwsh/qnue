@@ -1,0 +1,11 @@
+{
+	"eventMDMGMPIVv1" : {
+		"id": "eventMDMGMPIVv1",
+		"name": "event MDMGMPIV version 1",
+		"description": "Incremento de línea de crédito en ventanilla",
+		"validationRule" : "#{'MPIV    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

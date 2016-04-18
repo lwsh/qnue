@@ -1,0 +1,14 @@
+{
+   "0000B633>>eventMDMGB633v1" : {
+      "id" : "0000B633>>eventMDMGB633v1",
+      "happeningId" : "0000B633",
+      "eventId" : "eventMDMGB633v1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.entrada" : "input",
+		 "evento.adicionales" : "aditional",
+         "evento.cliente":"#{((['aditional'])!=null)?((['aditional'][0]['BGWCSPR6']!=null)?(['customersEnricherLong'].enrichCustomerByCustomerId(['aditional'][0]['BGWCSPR6']['SPR6CLIENTE'])):(null)):(null)}"
+      }
+   }
+}

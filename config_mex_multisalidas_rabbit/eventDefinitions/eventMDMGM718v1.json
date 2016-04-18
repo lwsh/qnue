@@ -1,0 +1,11 @@
+{
+	"eventMDMGM718v1" : {
+		"id": "eventMDMGM718v1",
+		"name": "event M718 version 1",
+		"description": "event M718 version 1",
+		"validationRule" : "#{'M718    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA']) && !'9'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE'].substring(0,1))}",		
+		"eventTimestampField" : "evento.header.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

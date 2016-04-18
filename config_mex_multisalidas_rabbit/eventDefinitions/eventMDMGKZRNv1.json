@@ -1,0 +1,11 @@
+{
+	"eventMDMGKZRNv1" : {
+		"id": "eventMDMGKZRNv1",
+		"name": "event MDMGKZRN version 1",
+		"description": "Respuesta a ofertas CRM-SDAT",
+		"validationRule" : "#{'KZRN    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"eventB63Av1" : {
+		"id": "eventB63Av1",
+		"name": "event B63A version 1",
+		"description": "Ingreso solo efectivo",
+		"validationRule" : "#{'B633    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

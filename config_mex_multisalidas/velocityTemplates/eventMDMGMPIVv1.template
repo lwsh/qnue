@@ -63,12 +63,12 @@
 					
 					<com:simpleFieldType><!--11,2 Double:-->
 					   <com:name>initialCreditLimit</com:name>
-					   <com:value>$!evento.entrada.LCREACT</com:value>
+					   <com:value>$!evento.salida.MPRMIVS1.LCREACT</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--11,2 Double:-->
 					   <com:name>finalCreditLimit</com:name>
-					   <com:value>$!evento.entrada.LCREFNL</com:value>
+					   <com:value>$!evento.salida.MPRMIVS1.LCREFNL</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--4 String:-->

@@ -63,17 +63,17 @@
 					
 					<com:simpleFieldType><!--11,2 Double:-->
 					   <com:name>initialCreditLimit</com:name>
-					   <com:value>$!evento.entrada.ILCANT</com:value>
+					   <com:value>$!evento.salida.MPIT00S1.ILCANT</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--11,2 Double:-->
 					   <com:name>finalCreditLimit</com:name>
-					   <com:value>$!evento.entrada.ILCACT</com:value>
+					   <com:value>$!evento.salida.MPIT00S1.ILCACT</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--4 String:-->
 					   <com:name>contractChannel</com:name>
-					   <com:value>$!event.entrada.MCCANAL</com:value>
+					   <com:value>$!evento.entrada.MCCANAL</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--4 String:-->

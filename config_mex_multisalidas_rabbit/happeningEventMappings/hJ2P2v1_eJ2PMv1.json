@@ -1,0 +1,14 @@
+{
+   "0000J2P2>>eventJ2PMv1":{
+      "id":"0000J2P2>>eventJ2PMv1",
+      "happeningId":"0000J2P2",
+      "eventId":"eventJ2PMv1",
+      "mappings":{
+         "evento.cabecera":"header",
+         "evento.cabecera.apxUser":"#{['propertyResolver'].resolve('env.conf.apx.username')}",
+         "evento.entrada":"input",
+		 "evento.salida":"output",
+		 "evento.cliente" : "#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['MSG01'],'customer.name')}"
+      }
+   }
+}

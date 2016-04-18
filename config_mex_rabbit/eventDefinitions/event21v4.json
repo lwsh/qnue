@@ -1,0 +1,11 @@
+{
+	"event21v4" : {
+		"id": "event21v4",
+		"name": "event 21 version 4",
+		"description": "event 21 version 4",
+		"validationRule" : "#{'QGSU    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "XML",
+		"eventTarget" : "output"
+	}
+}

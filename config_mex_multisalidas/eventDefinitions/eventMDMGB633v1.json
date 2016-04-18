@@ -1,0 +1,11 @@
+{
+	"eventMDMGB633v1" : {
+		"id": "eventMDMGB633v1",
+		"name": "event MDMGB633 version 1",
+		"description": "Ingreso solo efectivo",
+		"validationRule" : "#{'B633    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

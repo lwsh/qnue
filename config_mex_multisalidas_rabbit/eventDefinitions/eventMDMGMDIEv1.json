@@ -1,0 +1,11 @@
+{
+	"eventMDMGMDIEv1" : {
+		"id": "eventMDMGMDIEv1",
+		"name": "event MDMGMDIE version 1",
+		"description": "CRM Cajero Automatico",
+		"validationRule" : "#{'MDIE    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA']) && '1210'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTIDMISRE']) && '30'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCCOPERAR']) && '00'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTORIR']) && ('99'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '12'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '62'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '65'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '57'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '63'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) || '66'.equalsIgnoreCase(['evento']['adicionalesne']['NE']['WFORMCTCTDESR']) )}",				
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

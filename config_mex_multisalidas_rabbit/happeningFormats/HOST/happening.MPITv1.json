@@ -1,0 +1,144 @@
+{
+    "0000MPIT": {
+        "id": "0000MPIT",
+        "version": "01",
+        "name": "MPIT happening format defintion (version 1)",
+        "description": "MPIT happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ILCREAC": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ILCREPR": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORSOL": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCLIE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ILCREAC": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "ILCREPR": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PORSOL": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCLIE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

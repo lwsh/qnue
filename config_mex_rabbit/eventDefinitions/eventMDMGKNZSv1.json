@@ -1,0 +1,11 @@
+{
+	"eventMDMGKNZSv1" : {
+		"id": "eventMDMGKNZSv1",
+		"name": "event MDMGKNZS version 1",
+		"description": "Aplicación oferta One click/Vida Bancomer",
+		"validationRule" : "#{'KNZS    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

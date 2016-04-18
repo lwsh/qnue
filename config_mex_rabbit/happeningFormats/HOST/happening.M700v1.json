@@ -1,0 +1,10 @@
+{
+    "0000M700": {
+        "id": "0000M700",
+        "version": "01",
+        "name": "M700 happening format defintion (version 1)",
+        "description": "M700 happening format defintion (version 1)",
+        "formatDefinition" : [{}]
+	}	
+	
+}

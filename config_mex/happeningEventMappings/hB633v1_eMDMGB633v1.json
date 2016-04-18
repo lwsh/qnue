@@ -1,0 +1,13 @@
+{
+   "0000B633>>eventB633v1" : {
+      "id" : "0000B633>>eventB633v1",
+      "happeningId" : "0000B633",
+      "eventId" : "eventB633v1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.input" : "input",
+		 "evento.salida" : "output",
+      }
+   }
+}

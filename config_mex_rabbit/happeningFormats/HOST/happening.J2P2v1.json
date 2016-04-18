@@ -1,0 +1,38 @@
+{
+   "0000J2P2":{
+      "id":"0000J2P2",
+      "version":"01",
+      "name":"J2P2 happening format defintion (version 1)",
+      "description":"J2P2 happening format defintion (version 1)",
+      "happeningTimestampField":"cabecera.timeGen",
+      "executionIdLocation":"cabecera.appOrigen",
+      "formatDefinition":{
+         "input":[
+            {
+               "FORMATO":{
+                  "length":8,
+                  "type":"string"
+               }
+            },
+            {
+               "TIPOFORMATO":{
+                  "length":1,
+                  "type":"string"
+               }
+            },
+            {
+               "LONGITUD":{
+                  "length":5,
+                  "type":"string"
+               }
+            },
+            {
+               "MSG01":{
+                  "length":539,
+                  "type":"string"
+               }
+            }
+         ]
+      }
+   }
+}

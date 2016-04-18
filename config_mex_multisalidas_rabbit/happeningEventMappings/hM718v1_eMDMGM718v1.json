@@ -1,0 +1,15 @@
+{
+   "0000M718>>eventMDMGM718v1":{
+      "id":"0000M718>>eventMDMGM718v1",
+      "happeningId":"0000M718",
+      "eventId":"eventMDMGM718v1",
+      "mappings":{
+         "evento.cabecera":"header",
+         "evento.cabecera.apxUser":"#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.entrada":"input",
+         "evento.adicionales":"aditional",
+         "evento.adicionalesne":"#{((['aditional']).size()>0)?((['aditional'][0]['NE']!=null)?(['aditional'][0]):((['aditional'][(['aditional']).size()-2]['NE']!=null)?(['aditional'][(['aditional']).size()-2]):((['aditional'][(['aditional']).size()-1]['NE']!=null)?(['aditional'][(['aditional']).size()-1]):(null)))):(null)}",
+ 		 "evento.cliente":"#{((['aditional']).size()>0)?((['aditional'][0]['NE']!=null)?(['customersEnricherLong'].enrichCustomerByAccountIndex(['aditional'][0]['NE']['WFORMCNENTCOR'], ['aditional'][0]['NE']['WFORMCNOFICOR'], ['aditional'][0]['NE']['WFORMCTCONTRR'], ['aditional'][0]['NE']['WFORMCNCONTRR'], 'T', '01')):((['aditional'][(['aditional']).size()-2]['NE']!=null)?(['customersEnricherLong'].enrichCustomerByAccountIndex(['aditional'][(['aditional']).size()-2]['NE']['WFORMCNENTCOR'], ['aditional'][(['aditional']).size()-2]['NE']['WFORMCNOFICOR'], ['aditional'][(['aditional']).size()-2]['NE']['WFORMCTCONTRR'], ['aditional'][(['aditional']).size()-2]['NE']['WFORMCNCONTRR'], 'T', '01')):((['aditional'][(['aditional']).size()-1]['NE']!=null)?(['customersEnricherLong'].enrichCustomerByAccountIndex(['aditional'][(['aditional']).size()-1]['NE']['WFORMCNENTCOR'], ['aditional'][(['aditional']).size()-1]['NE']['WFORMCNOFICOR'], ['aditional'][(['aditional']).size()-1]['NE']['WFORMCTCONTRR'], ['aditional'][(['aditional']).size()-1]['NE']['WFORMCNCONTRR'], 'T', '01')):(null)))):(null)}"
+      }
+   }
+}

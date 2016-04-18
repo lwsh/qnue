@@ -1,0 +1,14 @@
+{
+   "0000MPIT>>eventMDMGMPITv1" : {
+      "id" : "0000MPIT>>eventMDMGMPITv1",
+      "happeningId" : "0000MPIT",
+      "eventId" : "eventMDMGMPITv1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.entrada" : "input",
+		 "evento.salida" : "#{['output'].replace(' ','')}",
+         "evento.cliente":"#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['NUMCLIE'])}"
+      }
+   }
+}

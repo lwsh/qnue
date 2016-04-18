@@ -1,0 +1,252 @@
+{
+    "0000IEF1": {
+        "id": "0000IEF1",
+        "version": "01",
+        "name": "IEF1 happening format defintion (version 1)",
+        "description": "IEF1 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCNBINTA": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCNUMETA": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCODPRO": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCLINACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIMPSOL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCLINFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIMPOFE": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCFECOPE": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCUSERID": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCENCON": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCENORI": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCTERMIN": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCLIENT": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCNLCMR": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCNBINTA": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCNUMETA": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCODPRO": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCLINACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIMPSOL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCLINFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIMPOFE": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCFECOPE": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCUSERID": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCENCON": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCENORI": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCTERMIN": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCIDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCLIENT": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MCCNLCMR": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

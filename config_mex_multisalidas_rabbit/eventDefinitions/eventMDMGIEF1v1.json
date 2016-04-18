@@ -1,0 +1,11 @@
+{
+	"eventMDMGIEF1v1" : {
+		"id": "eventMDMGIEF1v1",
+		"name": "event MDMGIEF1 version 1",
+		"description": "Aplica incremento línea de crédito",
+		"validationRule" : "#{'IEF1    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

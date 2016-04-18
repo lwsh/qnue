@@ -78,7 +78,7 @@
 
 					<com:simpleFieldType><!--4 String:-->
 					   <com:name>status</com:name>
-					   <com:value>$!evento.entrada.ESTATUS</com:value>
+					   <com:value>$!evento.salida.KZKZRNS11.ESTATUS</com:value>
 					</com:simpleFieldType>
 
 					<com:simpleFieldType><!--17 String:-->

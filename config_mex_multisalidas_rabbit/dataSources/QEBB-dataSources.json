@@ -1,0 +1,9 @@
+{
+	"gucOnlineMQ" : {        
+		"hostName" : "${env.conf.mq.guc.host}",
+		"port" : "${env.conf.mq.guc.port}",
+		"channel" : "${env.conf.mq.guc.channel}",
+		"queueManager" : "${env.conf.mq.guc.queueManager}",
+		"queue" : "${env.conf.mq.guc.queue}"
+     }
+}

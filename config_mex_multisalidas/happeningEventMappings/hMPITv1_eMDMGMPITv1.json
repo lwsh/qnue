@@ -8,7 +8,7 @@
 		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
 		 "evento.entrada" : "input",
 		 "evento.salida" : "output",
-       "evento.cliente":"#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['NUMCLIE'])}"
+         "evento.cliente":"#{['customersEnricherLong'].enrichCustomerByCustomerId(['input']['NUMCLIE'])}"
       }
    }
 }

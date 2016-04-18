@@ -1,0 +1,11 @@
+{
+	"eventQGMUv1" : {
+		"id": "eventQGMUv1",
+		"name": "event QGMU version 1",
+		"description": "Ingreso solo efectivo",
+		"validationRule" : "#{'QGMU    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"KXDAMQ" : {        
+        "hostName" : "${env.conf.mq.kxda.host}",
+		"port" : "${env.conf.mq.kxda.port}",
+		"channel" : "${env.conf.mq.kxda.channel}",
+		"queueManager" : "${env.conf.mq.kxda.queueManager}",
+		"queue" : "${env.conf.mq.kxda.queue}"
+    }
+}

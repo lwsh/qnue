@@ -1,0 +1,14 @@
+{
+   "0000B503>>eventMDMGB503v1" : {
+      "id" : "0000B503>>eventMDMGB503v1",
+      "happeningId" : "0000B503",
+      "eventId" : "eventMDMGB503v1",
+      "mappings" : {
+         "evento.cabecera" : "header",
+		 "evento.cabecera.apxUser" : "#{['propertyResolver'].resolve('env.conf.apx.username')}",
+		 "evento.entrada": "input",
+		 "evento.adicionales" : "aditional",
+		 "evento.cliente":"#{((['aditional'])!=null)?((['aditional'][0]['BGWCSPR5']!=null)?(['customersEnricherLong'].enrichCustomerByCustomerId(['aditional'][0]['BGWCSPR5']['SPR5CLIENTE'])):(null)):(null)}"
+      }
+   }
+}

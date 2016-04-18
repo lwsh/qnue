@@ -1,0 +1,300 @@
+{
+    "0000KNZS": {
+        "id": "0000KNZS",
+        "version": "01",
+        "name": "KNZS happening format defintion (version 1)",
+        "description": "KNZS happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMBIN": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODPROM": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMAC": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMSO": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMFI": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECOPER": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "USUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CENCONT": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CENORIG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINA": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CLIENTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CANLCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+				{
+                    "TARJACC": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+				{
+                    "IDPRODU": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CANLBOV": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+				{
+                    "CAT": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FHCAT": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMBIN": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTDC": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODPROM": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMAC": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMSO": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMLIMFI": {
+                        "length": "13",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECOPER": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "USUARIO": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CENCONT": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CENORIG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TERMINA": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMPA": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CLIENTE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANLCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TARJACC": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDPRODU": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANLBOV": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CAT": {
+                        "length": "6",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FHCAT": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

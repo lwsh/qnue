@@ -1,0 +1,138 @@
+{
+    "0000B633": {
+        "id": "0000B633",
+        "version": "01",
+        "name": "B633 happening format defintion (version 1)",
+        "description": "B633 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CCC": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "OBSERV": {
+                        "length": "40",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPEFEC": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECVEFE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "HORA": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CODOPER": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "DIVISA": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PAPEL": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FECHOFF": {
+                        "length": "12",
+                        "type": "string"
+                    }
+                },
+                {
+                    "REFEREN": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "FOLIO": {
+                        "length": "7",
+                        "type": "string"
+                    }
+                },
+                {
+                    "EFEREAL": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MOVIL": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PAIS": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "PRIMER": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CUENTA": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPORTE": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

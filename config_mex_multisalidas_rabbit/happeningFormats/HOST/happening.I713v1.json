@@ -1,0 +1,252 @@
+{
+    "0000I713": {
+        "id": "0000I713",
+        "version": "01",
+        "name": "I713 happening format defintion (version 1)",
+        "description": "I713 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZTRACES": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZTABLAC": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODEVE": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODEMP": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZREFDES": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZIDDEST": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZDISDES1": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZDISDES3": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-COMPANIA": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-CELULAR": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-FILLER": {
+                        "length": "50",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODPLA": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZIDMENS": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZRESHDR": {
+                        "length": "46",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZLONMSG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALMEN": {
+                        "length": "2500",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZTRACES": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZTABLAC": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODEVE": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODEMP": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZREFDES": {
+                        "length": "35",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZIDDEST": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZDISDES1": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZDISDES3": {
+                        "length": "3",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-COMPANIA": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-CELULAR": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALDES-FILLER": {
+                        "length": "50",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZCODPLA": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZIDMENS": {
+                        "length": "2",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZRESHDR": {
+                        "length": "46",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZLONMSG": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "KZVALMEN": {
+                        "length": "2500",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

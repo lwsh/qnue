@@ -1,0 +1,126 @@
+{
+    "0000QGMU": {
+        "id": "0000QGMU",
+        "version": "01",
+        "name": "QGMU happening format defintion (version 1)",
+        "description": "QGMU happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPFMT1": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "VECES1": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MSG01": {
+                        "length": "10",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPFMT2": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "VECES2": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MSG02": {
+                        "length": "15",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPFMT3": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "VECES3": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MSG03": {
+                        "length": "20",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPFMT4": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "VECES4 ": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MSG04": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPFMT5": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "VECES5": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "MSG05": {
+                        "length": "30",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,779 +1,1454 @@
 {
-  "TS" : {
-		"id" : "TS",
-		"version" : "01",
-		"name" : "Cabecera TS de aditional data",
-		"description" : "Cabecera TS de aditional data",
-		"formatDefinition" : [{
-				"TS" : [{
-						"codapp" : {
-							"length" : 2,
-							"type" : "string"
-						}
-					}, {
-						"length" : {
-							"length" : 5,
-							"type" : "string"
-						}
-					}, {
-						"app" : {
-							"length" : 2,
-							"type" : "string"
-						}
-					}, {
-						"addCode" : {
-							"length" : 19,
-							"type" : "string"
-						}
-					}, {
-						"transcode" : {
-							"length" : 4,
-							"type" : "string"
-						}
-					}, {
-						"daheader" : {
-							"length" : 8,
-							"type" : "string"
-						}
-					}
-				]
-			}
-		],
-		
-		"customDefinition" :
-		[{
-			"header" : "dadheader"
-		}]
-	},
-	
-	
-	"QGECASAL" : {
-		"QGECASAL" : [
-                {
-                    "CA-MCNENTCU": {
-                        "length": 4,
-                        "type": "string"
+    "TS": {
+        "id": "TS",
+        "version": "01",
+        "name": "Cabecera TS de aditional data",
+        "description": "Cabecera TS de aditional data",
+        "formatDefinition": [
+            {
+                "TS": [
+                    {
+                        "codapp": {
+                            "length": 2,
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "length": {
+                            "length": 5,
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "app": {
+                            "length": 2,
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "addCode": {
+                            "length": 19,
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "transcode": {
+                            "length": 4,
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "daheader": {
+                            "length": 8,
+                            "type": "string"
+                        }
                     }
-                },
-                {
-                    "CA-MCNOFICU": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCTCUENT": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCNCUENT": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCSDESCP": {
-                        "length": 17,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCYREICJ": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCYRETLB": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCCESCUE": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCYFANIF": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCIDSDIL": {
-                        "length": 13,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCNMOVOR": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCCIDIOM": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCFSTAMP": {
-                        "length": 26,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCNOFGES": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCREGFIS": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCEMPRE": {
-                        "length": 6,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCFECOPE": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCHOROPE": {
-                        "length": 5,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCTIPMOV": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCDIVISA": {
-                        "length": 3,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCMONTO": {
-                        "length": 17,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCSDOFIN": {
-                        "length": 17,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCCODOPE": {
-                        "length": 3,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CA-MCCODLEY": {
-                        "length": 3,
-                        "type": "string"
-                    }
+                ]
+            }
+        ],
+        "customDefinition": [
+            {
+                "header": "dadheader"
+            }
+        ]
+    },
+        
+    "MDMGCECR": {
+        "MDMGCECR": [
+            {
+                "NUMCLIEN": {
+                    "length": 8,
+                    "type": "string"
                 }
-			]
-	},
-	
-	"QGECC100" :{
-		"QGECC100":[
-                {
-                    "CANAL-LLAMANTE": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "TIPO-LEYENDA": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "TIPO-ASUNTO": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "ASUNTO": {
-                        "length": 35,
-                        "type": "string"
-                    }
-                },
-                {
-                    "TIPO-MOVTO": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-                {
-                    "IMPORTE-MOVTO": {
-                        "length":19,
-                        "type": "string"
-                    }
-                },
-                {
-                    "SALDO-ASUNTO": {
-                        "length": 19,
-                        "type": "string"
-                    }
-                },
-                {
-                    "DIVISA-ASUNTO": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "FECHA-PROCESO": {
-                        "length": 26,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CODIGO-OPERA": {
-                        "length": 40,
-                        "type": "string"
-                    }
-                },
-                {
-                    "NUMERO-MOVTO": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "LEYENDA": {
-                        "length": 50,
-                        "type": "string"
-                    }
-                },
-                {
-                    "AREA-LIBRE": {
-                        "length": 50,
-                        "type": "string"
-                    }
-                },
-
-                {
-                    "COD-RESPUESTA": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "COD-ERROR": {
-                        "length": 7,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VALOR-ERROR-UNO": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VALOR-ERROR-DOS": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "COD-AVISO": {
-                        "length": 7,
-                        "type": "string"
-                    }
-                },
-                {
-                    "OBJETO-DB2": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "PROGRAMA": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "REFERENCIA": {
-                        "length": 100,
-                        "type": "string"
-                    }
-                },
-                {
-                    "OBJETO": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "SQLCODE": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "SQLERRM": {
-                        "length": 70,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "EIBFN": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBSRCE": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBRCODE": {
-                        "length": 6,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBRESP1": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBRESP1": {
-                        "length": 10,
-                        "type": "string"
-                    }
+            },
+            {
+                "FOLIOLDA": {
+                    "length": 4,
+                    "type": "string"
                 }
-			]
-	},
-	
-	"KZDCGNOT" : 
-	{
-		"KZDCGNOT":[
-                {
-                    "CNCNLIDA": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNCCLIPU": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNFUNCID": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNDESFUN": {
-                        "length": 50,
-                        "type": "string"
-                    }
-                },
-                {
-                    "KZCODEVE": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "KZCODPLS": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNFMTTPRO": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNIASPRI": {
-                        "length": 35,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNFMTASO": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNIASASO": {
-                        "length": 35,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNCDIVIS": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNIOPERA": {
-                        "length": 17,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNNFOLIO": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNFTRANS": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNHTRANS": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNUSERID": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNREFINT": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNREFEX1": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CNREFEX2": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "RC": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "ROLLBACK": {
-                        "length": 1,
-                        "type": "string"
-                    }
-                },
-				{
-                    "APLICACION": {
-                        "length": 10,
-                        "type": "string"
-                    }
-                },
-                {
-                    "PROGRAMA": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-				{
-                    "REFERENCIA": {
-                        "length": 100,
-                        "type": "string"
-                    }
-                },
-                {
-                    "OBJETO-CICS": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBFN": {
-                        "length": 2,
-                        "type": "string"
-                    }
-                },
-                {
-                    "EIBRSRCE": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "EIBRCODE": {
-                        "length": 6,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "EIBRESP1": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-				{
-                    "EIBRESP2": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-				{
-                    "OBJETO-DB2": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-				{
-                    "SQLCODE": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-				{
-                    "SQLERRM": {
-                        "length": 70,
-                        "type": "string"
-                    }
+            },
+            {
+                "CVEMODGEN": {
+                    "length": 3,
+                    "type": "string"
                 }
-			]
-	},
-	"MDMGCECR" : 
-	{
-		"MDMGCECR":[
-                {
-                    "NUMCLIEN": {
-                        "length": 8,
-                        "type": "string"
-                    }
-                },
-                {
-                    "FOLIOLDA": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CVEMODGEN": {
-                        "length": 3,
-                        "type": "string"
-                    }
-                },
-                {
-                    "FOLIOGENERACION": {
-                        "length": 6,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CVEOFERTA": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "NUMOFERTA": {
-                        "length": 3,
-                        "type": "string"
-                    }
-                },
-                {
-                    "CVECANAL": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "TIPOEVENTO": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VALOREVENTO": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-				{
-                    "ESTATUSCTE": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-				{
-                    "SECUENCIACTE": {
-                        "length": 4,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR1": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR2": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR3": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR4": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR5": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR6": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR7": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR8": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR9": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR10": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR11": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR12": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-				{
-                    "VAR13": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR14": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR15": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-				{
-                    "VAR16": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-                {
-                    "VAR17": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "VAR18": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-				
-                {
-                    "VAR19": {
-                        "length": 20,
-                        "type": "string"
-                    }
-                },
-				{
-                    "VAR20": {
-                        "length": 20,
-                        "type": "string"
-                    }
+            },
+            {
+                "FOLIOGENERACION": {
+                    "length": 6,
+                    "type": "string"
                 }
-			]
-	}
+            },
+            {
+                "CVEOFERTA": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "NUMOFERTA": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "CVECANAL": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "TIPOEVENTO": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "VALOREVENTO": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "ESTATUSCTE": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SECUENCIACTE": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR1": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR2": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR3": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR4": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR5": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR6": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR7": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR8": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR9": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR10": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR11": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR12": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR13": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR14": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR15": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR16": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR17": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR18": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR19": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "VAR20": {
+                    "length": 20,
+                    "type": "string"
+                }
+            }
+        ]
+    },
+    "BGWCSPR6": {
+        "BGWCSPR6": [
+            {
+                "SPR6RELLENO": {
+                    "length": 12,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPDEPL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPDEPA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPDEP": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6PRODUL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6PRODUA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6PRODU": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6SUBPRODL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6SUBPRODA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6SUBPROD": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CLIENTEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CLIENTEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CLIENTE": {
+                    "length": 30,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CUENTAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CUENTAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CUENTA": {
+                    "length": 11,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPORTEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPORTEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPORTE": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TARIFAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TARIFAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TARIFA": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTROL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTROA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTRO": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6FECHAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6FECHAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6FECHA": {
+                    "length": 10,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6HORAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6HORAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6HORA": {
+                    "length": 8,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6LEYENDAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6LEYENDAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6LEYENDA": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVDEPL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVDEPA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVDEP": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPDEVL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPDEVA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPDEV": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPOPEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPOPEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPOPE": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPEFEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPEFEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPEFE": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPTOTL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPTOTA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPTOT": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVABONL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVABONA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6DIVABON": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6EFEREALL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6EFEREALA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6EFEREAL": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMPZAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMPZAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMPZA": {
+                    "length": 30,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOVIL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOVIA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOVI": {
+                    "length": 9,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMBENEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMBENEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NOMBENE": {
+                    "length": 40,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMBENEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMBENEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMBENE": {
+                    "length": 9,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6INDBENEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6INDBENEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6INDBENE": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCIL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCIA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCI": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPCINL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPCINA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6IMPCIN": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCLYL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCLYA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCLY": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCAML": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCAMA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TIPOCAM": {
+                    "length": 7,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTOPEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTOPEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CENTOPE": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TERMINAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TERMINAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6TERMINA": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6USUARIOL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6USUARIOA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6USUARIO": {
+                    "length": 8,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CTAABONL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CTAABONA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6CTAABON": {
+                    "length": 10,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6RFCCTAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6RFCCTAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6RFCCTA": {
+                    "length": 37,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOV2L": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOV2A": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR6NUMMOV2": {
+                    "length": 9,
+                    "type": "string"
+                }
+            }
+        ]
+    },
+    "BGWCSPR5": {
+        "BGWCSPR5": [
+            {
+                "SPR5RELLENO": {
+                    "length": 12,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TIPDEPL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TIPDEPA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TIPDEP": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5PRODUL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5PRODUA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5PRODU": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUBPRODL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUBPRODA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUBPROD": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CLIENTEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CLIENTEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CLIENTE": {
+                    "length": 30,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CUENTAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CUENTAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CUENTA": {
+                    "length": 11,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPORTEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPORTEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPORTE": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TARIFAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TARIFAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TARIFA": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OFICINAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OFICINAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OFICINA": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CHEQUEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CHEQUEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5CHEQUE": {
+                    "length": 10,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPOPEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPOPEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPOPE": {
+                    "length": 8,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMMOVL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMMOVA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMMOV": {
+                    "length": 20,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DIVISAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DIVISAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DIVISA": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DESDIVL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DESDIVA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DESDIV": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMBENEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMBENEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMBENE": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMPZAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMPZAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NOMPZA": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPRETL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPRETA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPRET": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5COMIRETL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5COMIRETA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5COMIRET": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IVARETL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IVARETA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IVARET": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPTOTL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPTOTA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IMPTOT": {
+                    "length": 30,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUCURSAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUCURSAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5SUCURSA": {
+                    "length": 9,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FECHOPEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FECHOPEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FECHOPE": {
+                    "length": 40,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5HORAOPEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5HORAOPEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5HORAOPE": {
+                    "length": 9,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5USUARIOL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5USUARIOA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5USUARIO": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FIRMELEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FIRMELEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5FIRMELE": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IDENTIFL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IDENTIFA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5IDENTIF": {
+                    "length": 14,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMIDENL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMIDENA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMIDEN": {
+                    "length": 3,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMTARJL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMTARJA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5NUMTARJ": {
+                    "length": 7,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TERMCAJL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TERMCAJA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5TERMCAJ": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5ENTCENTL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5ENTCENTA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5ENTCENT": {
+                    "length": 4,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DISPOL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DISPOA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5DISPO": {
+                    "length": 8,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5LIMITEL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5LIMITEA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5LIMITE": {
+                    "length": 10,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5REFERENL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5REFERENA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5REFEREN": {
+                    "length": 37,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OBSERVAL": {
+                    "length": 2,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OBSERVAA": {
+                    "length": 1,
+                    "type": "string"
+                }
+            },
+            {
+                "SPR5OBSERVA": {
+                    "length": 9,
+                    "type": "string"
+                }
+            }
+        ]
+    }
 }

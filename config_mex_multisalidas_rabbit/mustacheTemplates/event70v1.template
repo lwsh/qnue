@@ -1,0 +1,52 @@
+<evento>
+    <cabecera>
+        <appOrigen>{{evento.cabecera.appOrigen}}</appOrigen>
+        <tipoEvento>00000070</tipoEvento>
+        <correlid>{{evento.cabecera.correlid}}</correlid>
+        <eventoC>{{evento.cabecera.eventoC}}</eventoC>
+        <banco>{{evento.cabecera.banco}}</banco>
+        <pais>{{evento.cabecera.pais}}</pais>
+        <cliente>{{evento.cabecera.cliente}}</cliente>
+        <tipoCliente>{{evento.cabecera.tipoCliente}}</tipoCliente>
+        <noClient>{{evento.cabecera.noClient}}</noClient>
+        <canal>{{evento.cabecera.canal}}</canal>
+        <medio>{{evento.cabecera.medio}}</medio>
+        <version>{{evento.cabecera.version}}</version>
+        <servicio>{{evento.cabecera.servicio}}</servicio>
+        <oficina>{{evento.cabecera.oficina}}</oficina>
+        <timeGen>{{#renderDate}}evento.cabecera.timeGen, yyyy-MM-dd'T'HH:mm:ssXXX{{/renderDate}}</timeGen>
+        <timeGenEvento>{{#renderDate}}evento.cabecera.timeGenEvento{{/renderDate}}</timeGenEvento>
+        <timeRecepSucesoC>{{#renderDate}}evento.cabecera.timeRecepSucesoC{{/renderDate}}</timeRecepSucesoC>
+        <idioma>{{evento.cabecera.idioma}}</idioma>
+        <modoEvento>{{evento.cabecera.modoEvento}}</modoEvento>
+        <fuenteSuceso>{{evento.cabecera.fuenteSuceso}}</fuenteSuceso>
+    </cabecera>
+	<detalle>
+		<pais_cod>{{evento.detalle.codPais}}</pais_cod>
+		<entidad_cod>{{evento.detalle.codEntidad}}</entidad_cod>
+		<proceso_cod>{{evento.detalle.codProceso}}</proceso_cod>
+		<tarea_cod>{{evento.detalle.codTarea}}</tarea_cod>
+		<proceso_fecha>{{evento.detalle.fecProceso}}</proceso_fecha>
+		<elem_codigo_1>{{evento.detalle.codDatos_1}}</elem_codigo_1>
+		<elem_valor_1>{{evento.detalle.desValor_1}}</elem_valor_1>
+		<elem_codigo_2>{{evento.detalle.codDatos_2}}</elem_codigo_2>
+		<elem_valor_2>{{evento.detalle.desValor_2}}</elem_valor_2>
+		<elem_codigo_3>{{evento.detalle.codDatos_3}}</elem_codigo_3>
+		<elem_valor_3>{{evento.detalle.desValor_3}}</elem_valor_3>
+		<elem_codigo_4>{{evento.detalle.codDatos_4}}</elem_codigo_4>
+		<elem_valor_4>{{evento.detalle.desValor_4}}</elem_valor_4>
+		<elem_codigo_5>{{evento.detalle.codDatos_5}}</elem_codigo_5>
+		<elem_valor_5>{{evento.detalle.desValor_5}}</elem_valor_5>
+		<elem_codigo_6>{{evento.detalle.codDatos_6}}</elem_codigo_6>
+		<elem_valor_6>{{evento.detalle.desValor_6}}</elem_valor_6>
+		<elem_codigo_7>{{evento.detalle.codDatos_7}}</elem_codigo_7>
+		<elem_valor_7>{{evento.detalle.desValor_7}}</elem_valor_7>
+		<elem_codigo_8>{{evento.detalle.codDatos_8}}</elem_codigo_8>
+		<elem_valor_8>{{evento.detalle.desValor_8}}</elem_valor_8>
+		<elem_codigo_9>{{evento.detalle.codDatos_9}}</elem_codigo_9>
+		<elem_valor_9>{{evento.detalle.desValor_9}}</elem_valor_9>
+		<elem_codigo_10>{{evento.detalle.codDatos_10}}</elem_codigo_10>
+		<elem_valor_10>{{evento.detalle.desValor_10}}</elem_valor_10>
+	</detalle>
+</evento>
+

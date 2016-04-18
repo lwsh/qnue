@@ -92,7 +92,7 @@ xmlns:com="http://common.apx.pg.otma.domain.integration.elara.bbva.com">
             </com:simpleFieldType>
             <com:simpleFieldType>
               <com:name>cuenta</com:name>
-              <com:value>$!evento.cliente.customer.contract.accountIndex_long</com:value>
+              <com:value>$!evento.adicionalesne.NE.WFORMCNENTCOR$!evento.adicionalesne.NE.WFORMCNOFICOR$!evento.adicionalesne.NE.WFORMCTCONTRR$!evento.adicionalesne.NE.WFORMCNCONTRR</com:value>
             </com:simpleFieldType>
             <com:simpleFieldType>
               <com:name>fechaAltaCuenta</com:name>

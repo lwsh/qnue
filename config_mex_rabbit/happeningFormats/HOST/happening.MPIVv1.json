@@ -1,0 +1,192 @@
+{
+    "0000I713": {
+        "id": "0000I713",
+        "version": "01",
+        "name": "I713 happening format defintion (version 1)",
+        "description": "I713 happening format defintion (version 1)",
+        "happeningTimestampField": "cabecera.timeGen",
+        "executionIdLocation": "cabecera.appOrigen",
+        "formatDefinition": {
+            "input": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCLIE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTJTA": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREADI": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDPARC": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPARCL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CCONVIV": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                }
+            ],
+            "input-BMS": [
+                {
+                    "FORMATO": {
+                        "length": 8,
+                        "type": "string"
+                    }
+                },
+                {
+                    "TIPOFORM": {
+                        "possiblesValues": [
+                            "C",
+                            "B"
+                        ],
+                        "length": 1,
+                        "type": "string"
+                    }
+                },
+                {
+                    "LONGDATOS": {
+                        "length": "5",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMCLIE": {
+                        "length": "8",
+                        "type": "string"
+                    }
+                },
+                {
+                    "NUMTJTA": {
+                        "length": "16",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREACT": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREADI": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "LCREFIN": {
+                        "length": "11",
+                        "type": "string"
+                    }
+                },
+                {
+                    "INDPARC": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IMPARCL": {
+                        "length": "9",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANAL": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "IDCAMP": {
+                        "length": "17",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CANCRM": {
+                        "length": "4",
+                        "type": "string"
+                    }
+                },
+                {
+                    "CCONVIV": {
+                        "length": "1",
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

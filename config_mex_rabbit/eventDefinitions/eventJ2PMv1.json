@@ -1,0 +1,11 @@
+{
+	"eventJ2PMv1" : {
+		"id": "eventJ2PMv1",
+		"name": "event J2P2 v1",
+		"description": "event J2P2 v1",		
+		"eventTimestampField" : "evento.cabecera.timeGenEvento",
+		"validationRule" : "#{'J2P2    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA']) && ['evento']['entrada']['MSG01'].length()==8}",		
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "apx200-Stream"
+	}
+} 

@@ -1,0 +1,11 @@
+{
+	"eventMDMGIOC8v1" : {
+		"id": "eventMDMGIOC8v1",
+		"name": "event MDMGIOC8 version 1",
+		"description": "Aplica incremento línea de crédito One-click",
+		"validationRule" : "#{'IOC8    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}

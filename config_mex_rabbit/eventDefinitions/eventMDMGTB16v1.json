@@ -1,0 +1,11 @@
+{
+	"eventMDMGTB16v1" : {
+		"id": "eventMDMGTB16v1",
+		"name": "event MDMGTB16 version 1",
+		"description": "Respuesta oferta LBMR",
+		"validationRule" : "#{'TB16    '.equalsIgnoreCase(['evento']['cabecera']['COD-TRANFISICA'])}",		
+		"eventTimestampField" : "evento.cabecera.timeGen",
+		"eventFormat" : "VELOCITY",
+		"eventTarget" : "output"
+	}
+}
